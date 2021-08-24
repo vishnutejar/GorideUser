@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.customviews.fancyimageviews.FancyImageVIew
+                android:id="@+id/iv_vehicle_type"
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp60"
+                android:layout_marginTop="@dimen/dp15"
+                android:padding="@dimen/dp5"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_riksya"
+                app:centerX="0.50"
+                app:centerY="0.50"
+                app:img_bg_color="@color/color_white"
+                app:rect_strokeColor="?attr/btn_bg_color"
+                app:rect_strokeWidth="0dp"
+                app:transformation_type="CIRCULAR" />
+
+            <View
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp60"
+                android:layout_marginTop="@dimen/dp15"
+                android:background="@drawable/stroke_circle" />
+
+
+            <com.customviews.TypefaceTextView
+                android:id="@+id/tv_available_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_vehicle_type"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_driver_available"
+                android:gravity="center"
+                android:maxWidth="@dimen/dp60"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_white"
+                android:textSize="?attr/app_text_size_extra_small"
+                app:custom_font="?attr/app_font_normal" />
+
+            <com.customviews.TypefaceTextView
+                android:id="@+id/tv_vehicle_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_vehicle_type"
+                android:layout_centerHorizontal="true"
+                android:text="taxi"
+                android:textColor="?attr/app_text_color"
+                android:textSize="?attr/app_text_size_small"
+                app:custom_font="?attr/app_font_normal" />
+
+            <ImageView
+                android:id="@+id/iv_select"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/black_circle"
+                android:padding="@dimen/dp5"
+                android:src="@mipmap/right_black" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

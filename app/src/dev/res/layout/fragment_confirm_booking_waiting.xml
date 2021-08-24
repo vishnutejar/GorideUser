@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp10">
+
+            <ProgressBar
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20" />
+
+            <com.customviews.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="@string/waiting_for_driver"
+                android:textColor="?attr/app_text_color"
+                android:textSize="?attr/app_text_size_normal"
+                app:custom_font="?attr/app_font_normal" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dv1"
+            android:background="?attr/app_divider_color" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shimmer_animation_duration="1300"
+            app:shimmer_color="?attr/app_divider_color">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10">
+
+                <View
+                    android:id="@+id/iv_vehicle_type"
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle_solid_gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_toRightOf="@+id/iv_vehicle_type"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="@dimen/dp100"
+                        android:layout_height="@dimen/dp15"
+                        android:background="@color/colorGray_50" />
+
+                    <View
+                        android:layout_width="@dimen/dp60"
+                        android:layout_height="@dimen/dp15"
+                        android:layout_marginTop="@dimen/dp8"
+                        android:background="@color/colorGray_50" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/iv_driver_image"
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/circle_solid_gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_toLeftOf="@+id/iv_driver_image"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="@dimen/dp60"
+                        android:layout_height="@dimen/dp15"
+                        android:background="@color/colorGray_50" />
+
+                    <View
+                        android:layout_width="@dimen/dp50"
+                        android:layout_height="@dimen/dp15"
+                        android:layout_marginTop="@dimen/dp8"
+                        android:background="@color/colorGray_50" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dv1"
+            android:background="?attr/app_divider_color" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_cancel_ride"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:padding="@dimen/dp5"
+                android:src="@mipmap/ic_close"
+                android:tint="?attr/app_link_text_color" />
+
+            <com.customviews.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="@string/cancel_ride"
+                android:textColor="?attr/app_text_color"
+                android:textSize="?attr/app_text_size_normal"
+                app:custom_font="?attr/app_font_normal" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

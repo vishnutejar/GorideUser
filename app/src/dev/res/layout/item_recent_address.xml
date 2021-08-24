@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp15"
+    android:paddingRight="@dimen/dp15">
+
+    <ImageView
+        android:id="@+id/iv_recent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp10"
+        android:padding="@dimen/dp2"
+        android:src="@mipmap/ic_recent"
+        android:tint="?attr/app_text_color_sec" />
+
+    <com.customviews.TypefaceTextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/iv_favorite"
+        android:layout_toRightOf="@+id/iv_recent"
+        android:paddingTop="@dimen/dp10"
+        android:text="No name"
+        android:textColor="?attr/app_text_color"
+        android:textSize="?attr/app_text_size_normal"
+        app:custom_font="?attr/app_font_normal" />
+
+    <com.customviews.TypefaceTextView
+        android:id="@+id/tv_sub_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_header"
+        android:layout_toLeftOf="@+id/iv_favorite"
+        android:layout_toRightOf="@+id/iv_recent"
+        android:paddingBottom="@dimen/dp5"
+        android:text="No name"
+        android:textColor="?attr/app_text_color_sec"
+        android:textSize="?attr/app_text_size_small"
+        app:custom_font="?attr/app_font_normal" />
+
+    <ImageView
+        android:id="@+id/iv_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dp5"
+        android:src="@mipmap/ic_un_favorite"
+        android:tint="?attr/app_text_color_sec" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dv1"
+        android:layout_below="@+id/tv_sub_header"
+        android:layout_toRightOf="@+id/iv_recent"
+        android:background="?attr/app_divider_color" />
+
+</RelativeLayout>

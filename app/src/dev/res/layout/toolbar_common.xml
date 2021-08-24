@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rl_tool_bar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/actionBarColor"
+                android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/iv_menu_left"
+        android:layout_width="?attr/actionBarIconSize"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp5"
+        android:padding="@dimen/dp8"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_menu"
+        android:tint="?attr/actionBarIconTint"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="?attr/actionBarIconSize"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp15"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_back"
+        android:tint="?attr/actionBarIconTint"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dp5"
+        android:layout_marginRight="@dimen/dp5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_bagghi_icon"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp5"
+            android:padding="@dimen/dp5"
+
+            android:src="@mipmap/logo1"/>
+
+        <com.customviews.TypefaceTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="?attr/actionBarIconTint"
+            android:textSize="?attr/actionBarTitleSize"
+            app:custom_font="?attr/app_font_medium"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_right_menu"
+        android:layout_width="?attr/actionBarIconSize"
+        android:layout_height="?attr/actionBarIconSize"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp10"
+        android:padding="@dimen/dp10"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_edit"
+        android:tint="?attr/actionBarIconTint"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
+
+
+
+

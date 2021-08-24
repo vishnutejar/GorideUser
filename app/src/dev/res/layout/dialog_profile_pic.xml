@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_black"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp5"
+        android:paddingTop="@dimen/dp5">
+
+        <LinearLayout
+            android:id="@+id/ll_camera_lay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:padding="@dimen/dp5"
+                android:src="@mipmap/camera_edit"/>
+
+            <com.customviews.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera"
+                android:textColor="@color/color_white"
+                android:textSize="?attr/app_text_size_normal"
+                app:custom_font="?attr/app_font_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_gallery_lay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:padding="@dimen/dp5"
+                android:src="@mipmap/camera_edit"/>
+
+            <com.customviews.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gallery"
+                android:textColor="@color/color_white"
+                android:textSize="?attr/app_text_size_normal"
+                app:custom_font="?attr/app_font_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_remove_lay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:padding="@dimen/dp10"
+                android:src="@mipmap/close_circle"
+                android:tint="@color/color_white"/>
+
+            <com.customviews.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove"
+                android:textColor="@color/color_white"
+                android:textSize="?attr/app_text_size_normal"
+                app:custom_font="?attr/app_font_normal"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

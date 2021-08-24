@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?attr/app_screen_bg_color"
+              android:clickable="true"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:scrollbarThumbVertical="@drawable/bg_transparent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp15">
+
+                <ImageView
+                    android:layout_width="@dimen/dp35"
+                    android:layout_height="@dimen/dp30"
+                    android:src="@mipmap/wallet_icon"
+                    android:tint="?attr/app_link_text_color"/>
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:text="@string/wallet_balance"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_normal"
+                    app:custom_font="?attr/app_font_normal"/>
+
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_75"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_normal"
+                    app:custom_font="?attr/app_font_normal"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dv1"
+                android:background="?attr/app_divider_color"/>
+
+
+            <com.customviews.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/dp15"
+                android:text="@string/how_much_would_you_like_to_add"
+                android:textColor="?attr/app_text_color"
+                android:textSize="?attr/app_text_size_normal"
+                app:custom_font="?attr/app_font_normal"/>
+
+
+            <com.customviews.TypefaceEditText
+                android:id="@+id/et_wallet"
+                android:layout_width="@dimen/dp150"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="?attr/et_bg_drawable"
+                android:gravity="center"
+                android:hint="@string/_75"
+                android:inputType="number"
+                android:maxLength="@integer/walletAmountMaxLength"
+                android:padding="@dimen/dp10"
+                android:singleLine="true"
+                android:textColor="?attr/et_text_color"
+                android:textColorHint="?attr/et_hint_text_color"
+                android:textSize="?attr/app_text_size_big"
+                app:custom_font="?attr/app_font_normal"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|top"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp15">
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_100"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edit_text_stroke_only"
+                    android:gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:text="@string/_100"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_normal"
+                    app:custom_font="?attr/app_font_normal"/>
+
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_200"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edit_text_stroke_only"
+                    android:gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:text="@string/_200"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_normal"
+                    app:custom_font="?attr/app_font_normal"/>
+
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_500"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edit_text_stroke_only"
+                    android:gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:text="@string/_500"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_normal"
+                    app:custom_font="?attr/app_font_normal"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.customviews.TypefaceTextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/btn_height"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/dp15"
+        android:background="?attr/btn_bg_drawable"
+        android:gravity="center"
+        android:text="@string/text_next"
+        android:textAllCaps="true"
+        android:textColor="?attr/btn_text_color"
+        android:textSize="?attr/btn_text_size"
+        app:custom_font="?attr/app_font_medium"/>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1062715869406",
+    "firebase_url": "https://starcabs-202b2.firebaseio.com",
+    "project_id": "starcabs-202b2",
+    "storage_bucket": "starcabs-202b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062715869406:android:911579e427cc186c1ada4f",
+        "android_client_info": {
+          "package_name": "com.starcabsdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062715869406-hakh3oufcg1rrpodtagrutq9cqt5tmdb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBbsJmqRphLiB3NLhvQbW01fJBW-nE7hU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062715869406-hakh3oufcg1rrpodtagrutq9cqt5tmdb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062715869406:android:d8007e69f5a023141ada4f",
+        "android_client_info": {
+          "package_name": "com.starcabsrider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062715869406-hakh3oufcg1rrpodtagrutq9cqt5tmdb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBbsJmqRphLiB3NLhvQbW01fJBW-nE7hU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062715869406-hakh3oufcg1rrpodtagrutq9cqt5tmdb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

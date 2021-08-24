@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/app_screen_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.customviews.TypefaceTextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="Dialog Title"
+            android:textColor="?attr/app_text_color"
+            android:textSize="?attr/app_text_size_extra_big"
+            app:custom_font="?attr/app_font_medium" />
+
+        <com.customviews.TypefaceTextView
+            android:id="@+id/tv_dialog_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="Dialog SubTitle"
+            android:textColor="?attr/app_text_color"
+            android:textSize="?attr/app_text_size_normal"
+            app:custom_font="?attr/app_font_normal" />
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="?attr/app_screen_bg_color"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="?attr/app_link_text_color"
+            app:tabIndicatorHeight="@dimen/dp3"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="?attr/app_link_text_color"
+            app:tabTextAppearance="@style/CustomTabWidget"
+            app:tabTextColor="?attr/app_text_color_sec" />
+
+
+        <com.customviews.WrappingViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp250" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

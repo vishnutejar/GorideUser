@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/app_screen_bg_color"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/map_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp8"
+            android:paddingStart="@dimen/dp10"
+            android:paddingEnd="@dimen/dp10"
+            android:theme="@style/TextLabel">
+
+            <com.customviews.TypefaceEditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/et_height"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:hint="Location"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="50"
+                android:paddingEnd="@dimen/dp10"
+                android:singleLine="true"
+                android:textColorHint="?attr/app_text_color_sec"
+                android:textColor="?attr/app_text_color"
+                android:textSize="?attr/app_text_size_small"
+                app:custom_font="?attr/app_font_normal"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.customviews.TypefaceTextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/btn_height"
+            android:layout_marginStart="@dimen/dp30"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginEnd="@dimen/dp50"
+            android:layout_marginBottom="@dimen/dp10"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="SAVE"
+            android:textColor="?attr/btn_text_color"
+            android:textSize="?attr/btn_text_size"
+            app:custom_font="@string/heebo_regular" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="?attr/actionBarIconSize"
+        android:layout_height="?attr/actionBarIconSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/dp10"
+        android:src="@mipmap/ic_back"
+        android:tint="@color/color_black" />
+
+</RelativeLayout>

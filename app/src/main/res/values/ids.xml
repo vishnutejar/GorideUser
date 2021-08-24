@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="item_click_support" type="id"/>
+    <item name="image_path_tag" type="id"/>
+    <item name="image_path_thumb_tag" type="id"/>
+    <item name="notification_image_tag" type="id"/>
+</resources>

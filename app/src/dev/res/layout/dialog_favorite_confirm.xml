@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp20"
+        android:background="@drawable/bg_dialog_white"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rb_address_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp10"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingTop="@dimen/dp10">
+
+            <com.customviews.TypefaceRadioButton
+                android:id="@+id/radio_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:text="Home"
+                android:textColor="?attr/app_text_color"
+                android:textSize="?attr/app_text_size_normal"
+                app:custom_font="?attr/app_font_normal"/>
+
+            <com.customviews.TypefaceRadioButton
+                android:id="@+id/radio_work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:text="Work"
+                android:textColor="?attr/app_text_color"
+                android:textSize="?attr/app_text_size_normal"
+                app:custom_font="?attr/app_font_normal"/>
+
+            <com.customviews.TypefaceRadioButton
+                android:id="@+id/radio_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:text="Other"
+                android:textColor="?attr/app_text_color"
+                android:textSize="?attr/app_text_size_normal"
+                app:custom_font="?attr/app_font_normal"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:padding="@dimen/dp5"
+                android:src="@mipmap/ic_home"
+                android:tint="?attr/app_link_text_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_address_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dp10"
+                    android:visibility="gone">
+
+                    <com.customviews.TypefaceEditText
+                        android:id="@+id/et_address_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="Name your favourite (Ex. Park)"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:paddingBottom="@dimen/dp10"
+                        android:textColor="?attr/et_text_color"
+                        android:textColorHint="?attr/et_hint_text_color"
+                        android:textSize="?attr/app_text_size_small"
+                        app:custom_font="?attr/app_font_normal"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dv1"
+                        android:background="?attr/app_divider_color"/>
+
+                </LinearLayout>
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:text="@string/dummy_address"
+                    android:textColor="?attr/et_text_color"
+                    android:textColorHint="?attr/et_hint_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/btn_height"
+            android:layout_marginTop="@dimen/dp8"
+            android:background="?attr/btn_bg_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <com.customviews.TypefaceTextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="Cancel"
+                android:textAllCaps="true"
+                android:textColor="?attr/btn_text_color"
+                android:textSize="?attr/btn_text_size"
+                app:custom_font="?attr/app_font_normal"/>
+
+            <View
+                android:layout_width="@dimen/dv1"
+                android:layout_height="match_parent"
+                android:background="?attr/app_divider_color"/>
+
+            <com.customviews.TypefaceTextView
+                android:id="@+id/tv_save"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="Save"
+                android:textAllCaps="true"
+                android:textColor="?attr/btn_text_color"
+                android:textSize="?attr/btn_text_size"
+                app:custom_font="?attr/app_font_normal"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

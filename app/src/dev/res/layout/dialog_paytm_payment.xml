@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/app_screen_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.customviews.TypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/btn_bg_color"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="@string/Wallet_Recharge"
+            android:textColor="?attr/btn_text_color"
+            android:textSize="?attr/btn_text_size"
+            android:visibility="gone"
+            app:custom_font="?attr/app_font_medium"/>
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

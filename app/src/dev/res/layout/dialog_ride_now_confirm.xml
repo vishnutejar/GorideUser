@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@drawable/bg_transparent">
+
+        <RelativeLayout
+            android:id="@+id/rl_pickup_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp20"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp30"
+                android:background="@drawable/bg_dialog_white"
+                android:orientation="vertical">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:gravity="center"
+                    android:text="@string/ride_confirmation"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_big"
+                    app:custom_font="?attr/app_font_bold" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_package_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="(Package name)"
+                    android:textColor="?attr/app_text_color_sec"
+                    android:textSize="?attr/app_text_size_normal"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dv1"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:background="?attr/app_divider_color" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingRight="@dimen/dp10">
+
+                    <LinearLayout
+                        android:id="@+id/ll_puckAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="@dimen/dv1"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:id="@+id/iv_green"
+
+                                android:layout_width="@dimen/dp12"
+                                android:layout_height="@dimen/dp12"
+                                android:src="@mipmap/green_dot"
+                                android:tint="@color/color_green" />
+
+                            <View
+                                android:layout_width="@dimen/dv1"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="?attr/app_divider_color" />
+                        </LinearLayout>
+
+                        <com.customviews.TypefaceTextView
+                            android:id="@+id/tv_pickup_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dp10"
+                            android:paddingTop="@dimen/dp2"
+                            android:paddingBottom="@dimen/dp2"
+                            android:text="@string/dummy_address"
+                            android:textColor="?attr/app_text_color"
+                            android:textSize="?attr/app_text_size_small"
+                            app:custom_font="?attr/app_font_normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_dropAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_puckAddress"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="@dimen/dv1"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:background="?attr/app_divider_color" />
+
+                            <ImageView
+                                android:id="@+id/iv_red"
+                                android:layout_width="@dimen/dp12"
+                                android:layout_height="@dimen/dp12"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/red_dot"
+                                android:tint="@color/red" />
+
+                            <View
+                                android:layout_width="@dimen/dv1"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <com.customviews.TypefaceTextView
+                            android:id="@+id/tv_drop_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:paddingLeft="@dimen/dp10"
+                            android:paddingTop="@dimen/dp2"
+                            android:paddingBottom="@dimen/dp2"
+                            android:text="@string/dummy_address"
+                            android:textColor="?attr/app_text_color"
+                            android:textSize="?attr/app_text_size_small"
+                            app:custom_font="?attr/app_font_normal" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dv1"
+                        android:layout_centerVertical="true"
+                        android:background="?attr/app_divider_color" />
+
+                    <ImageView
+                        android:id="@+id/iv_more_less"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/bg_more_less_arrow"
+                        android:padding="@dimen/dp10"
+                        android:rotation="180"
+                        android:src="@mipmap/ic_arrow"
+                        android:tint="?attr/app_link_text_color" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_more_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingRight="@dimen/dp10">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.customviews.TypefaceTextView
+                                android:id="@+id/tv_vehicle_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Auto"
+                                android:textColor="?attr/app_text_color"
+                                android:textSize="?attr/app_text_size_small"
+                                app:custom_font="?attr/app_font_bold" />
+
+                            <com.customviews.TypefaceTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:gravity="end"
+                                android:text="Available in"
+                                android:textColor="?attr/app_text_color"
+                                android:textSize="?attr/app_text_size_small"
+                                app:custom_font="?attr/app_font_normal" />
+
+                            <com.customviews.TypefaceTextView
+                                android:id="@+id/tv_vehicle_reached_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="2 mins away"
+                                android:textColor="?attr/app_text_color"
+                                android:textSize="?attr/app_text_size_small"
+                                app:custom_font="?attr/app_font_normal" />
+
+
+                        </LinearLayout>
+
+                        <com.customviews.TypefaceTextView
+                            android:id="@+id/tv_approx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="end"
+                            android:text="@string/approx"
+                            android:textColor="?attr/app_text_color"
+                            android:textSize="?attr/app_text_size_small"
+                            app:custom_font="?attr/app_font_bold" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_travel_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_approx"
+                            android:layout_alignParentRight="true"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <com.customviews.TypefaceTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/travel_time"
+                                android:textColor="?attr/app_text_color"
+                                android:textSize="?attr/app_text_size_small"
+                                app:custom_font="?attr/app_font_normal" />
+
+                            <com.customviews.TypefaceTextView
+                                android:id="@+id/tv_approx_travel_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="10 Min"
+                                android:textColor="?attr/app_text_color"
+                                android:textSize="?attr/app_text_size_small"
+                                app:custom_font="?attr/app_font_normal" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_travel_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ll_travel_time"
+                            android:layout_alignParentRight="true"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <com.customviews.TypefaceTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/travel_distance"
+                                android:textColor="?attr/app_text_color"
+                                android:textSize="?attr/app_text_size_small"
+                                app:custom_font="?attr/app_font_normal" />
+
+                            <com.customviews.TypefaceTextView
+                                android:id="@+id/tv_approx_travel_distance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="10 M"
+                                android:textColor="?attr/app_text_color"
+                                android:textSize="?attr/app_text_size_small"
+                                app:custom_font="?attr/app_font_normal" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <com.customviews.TypefaceTextView
+                        android:id="@+id/tv_approx_fare_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="?attr/app_link_text_color"
+                        android:textSize="?attr/app_text_size_extra_big"
+                        android:textStyle="bold"
+                        app:custom_font="?attr/app_font_bold" />
+
+                    <com.customviews.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/approx_fare"
+                        android:textColor="?attr/app_text_color_sec"
+                        android:textSize="?attr/app_text_size_small"
+                        app:custom_font="?attr/app_font_normal" />
+
+
+                    <com.customviews.TypefaceTextView
+                        android:id="@+id/tv_approx_fare_msg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingRight="@dimen/dp10"
+                        android:text="@string/note_this_is_an_approximate_estimate_actual_cost_and_n_travel_time_may_be_different"
+                        android:textColor="?attr/app_text_color_sec"
+                        android:textSize="?attr/app_text_size_small"
+                        app:custom_font="?attr/app_font_normal" />
+                </LinearLayout>
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_promocode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:gravity="center"
+                    android:text="Promocode : NEW50"
+                    android:textColor="@color/color_green"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_medium" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_schedule_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Schedule at : Thu, Jul 26, 10:00 AM"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/btn_height"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:orientation="horizontal">
+
+                    <com.customviews.TypefaceTextView
+                        android:id="@+id/tv_confirm"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="@dimen/dp12"
+                        android:text="@string/confirm"
+                        android:textColor="?attr/btn_text_color"
+                        android:textSize="?attr/btn_text_size"
+                        app:custom_font="?attr/app_font_medium" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <com.customviews.fancyimageviews.FancyImageVIew
+
+                    android:id="@+id/iv_vehicle_type"
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:padding="@dimen/dp5"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_riksya"
+                    app:centerX="0.50"
+                    app:centerY="0.50"
+                    app:img_bg_color="@color/color_white"
+                    app:rect_strokeColor="?attr/btn_bg_color"
+                    app:rect_strokeWidth="0dp"
+                    app:transformation_type="CIRCULAR" />
+
+                <View
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:background="@drawable/stroke_circle"></View>
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_layout"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/icon_cancel" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_pickup_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/app_screen_bg_color"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/right_big" />
+
+        <com.customviews.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:text="@string/booking_confirmed"
+            android:textColor="?attr/app_text_color"
+            android:textSize="?attr/app_text_size_normal"
+            app:custom_font="?attr/app_font_normal" />
+
+        <com.customviews.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/your_booking_has_confirmed"
+            android:textColor="?attr/app_text_color"
+            android:textSize="?attr/app_text_size_small"
+            app:custom_font="?attr/app_font_normal" />
+    </LinearLayout>
+
+</RelativeLayout>

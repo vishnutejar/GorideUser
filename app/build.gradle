@@ -1,0 +1,107 @@
+import com.android.builder.model.ProductFlavor
+
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    flavorDimensions "client", "server"
+    compileSdkVersion 28
+
+    signingConfigs {
+
+        liveConfig {
+            Properties keystore_properties = new Properties();
+            keystore_properties.load(project.rootProject.file('keystore/keystore.properties')
+                    .newDataInputStream())// to load properties
+
+            keyAlias keystore_properties.getProperty("KEY_ALIAS")
+            keyPassword keystore_properties.getProperty("KEY_PASSWORD")
+            storeFile new File(rootDir, keystore_properties.getProperty("STORE_PATH"))
+            storePassword keystore_properties.getProperty("STORE_PASSWORD")
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.starcabsrider"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 9
+        versionName "1.0.9"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.liveConfig
+        }
+        debug {
+            signingConfig signingConfigs.liveConfig
+            debuggable true
+        }
+    }
+
+    productFlavors {
+        dev {
+            dimension "client"
+        }
+
+        starcab {
+            dimension "server"
+            /*applicationId "com.swanrider"
+            versionCode 1
+            versionName "1.0.0"*/
+        }
+
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            def buildDate = new Date().format("dd_MM_yyyy")
+            def buildType = variant.getBuildType().name
+            def flavorName = variant.flavorName
+            def appName = "${project.rootProject.name}_${flavorName}_v${defaultConfig.getVersionCode()}_${buildDate}-${buildType}.apk"
+
+            outputFileName = appName
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation 'com.google.firebase:firebase-core:17.0.0'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    implementation 'com.google.firebase:firebase-messaging:19.0.1'
+
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+//    implementation 'com.google.maps.android:android-maps-utils:0.4'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+//    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.google.android.libraries.places:places:1.1.0'
+
+    implementation 'com.amazonaws:aws-android-sdk-core:2.13.6'
+    implementation 'com.amazonaws:aws-android-sdk-s3:2.13.6'
+    implementation 'com.amazonaws:aws-android-sdk-ddb:2.13.6'
+
+
+    implementation project(':pusher')
+
+    implementation 'com.kyleduo.switchbutton:library:1.4.6'
+    implementation 'com.tuyenmonkey:mkloader:1.4.0'
+    implementation 'com.medy:retrofitwrapper:1.4.9'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.Kunzisoft:Android-SwitchDateTimePicker:1.9'
+    implementation 'io.supercharge:shimmerlayout:2.1.0'
+
+}
+
+apply plugin: 'com.google.gms.google-services'

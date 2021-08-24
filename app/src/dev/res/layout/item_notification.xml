@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp5"
+        app:cardBackgroundColor="@color/color_white"
+        app:cardCornerRadius="@dimen/dp5"
+        app:cardElevation="@dimen/dp2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp1"
+                    android:layout_marginRight="@dimen/dp1"
+                    android:layout_marginTop="@dimen/dp1"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_riksya"/>
+
+                <ProgressBar
+                    android:id="@+id/pb_image"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+            <com.customviews.TypefaceTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_image"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@null"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Test Message"
+                android:textColor="?attr/app_text_color"
+                android:textSize="?attr/app_text_size_normal"
+                app:custom_font="?attr/app_font_bold"/>
+
+
+            <com.customviews.ReadMoreTextView
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@null"
+                android:text="@string/dummy_address"
+                android:textColor="?attr/app_text_color"
+                android:textSize="?attr/app_text_size_small"
+                app:colorClickableText="?attr/app_link_text_color"
+                app:custom_font="?attr/app_font_normal"
+                app:trimLength="150"
+                app:trimMode="trimModeLength"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_message"
+                android:layout_marginBottom="@dimen/dp5"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:src="@mipmap/ic_time"
+                    android:tint="?attr/app_link_text_color"/>
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:text="05:00 PM"
+                    android:textColor="?attr/app_text_color_sec"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_message"
+                android:layout_marginBottom="@dimen/dp5"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_toRightOf="@id/ll_time"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:src="@mipmap/ic_calender"
+                    android:tint="?attr/app_link_text_color"/>
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:text="19 Feb 2018"
+                    android:textColor="?attr/app_text_color_sec"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

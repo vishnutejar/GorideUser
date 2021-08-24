@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_dialog_white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp8"
+            android:paddingLeft="@dimen/dp5"
+            android:paddingRight="@dimen/dp5"
+            android:paddingTop="@dimen/dp8">
+
+            <com.customviews.fancyimageviews.FancyImageVIew
+                android:id="@+id/iv_texi_image"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:padding="@dimen/dp2"
+                android:src="@mipmap/ic_book_ride"
+                app:rect_strokeColor="?attr/btn_bg_color"
+                app:rect_strokeWidth="@dimen/dp1"
+                app:transformation_type="CIRCULAR"/>
+
+
+            <com.customviews.TypefaceTextView
+                android:id="@+id/tv_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:text="2 Min"
+                android:textColor="?attr/app_text_color_sec"
+                android:textSize="?attr/app_text_size_normal"
+                app:custom_font="?attr/app_font_normal"/>
+
+
+            <com.customviews.TypefaceTextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="Mini"
+                android:textColor="?attr/app_text_color"
+                android:textSize="?attr/app_text_size_normal"
+                app:custom_font="?attr/app_font_normal"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dv1"
+            android:background="?attr/app_divider_color"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

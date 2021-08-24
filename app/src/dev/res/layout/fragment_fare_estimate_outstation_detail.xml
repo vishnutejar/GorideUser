@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/app_screen_bg_color"
+    android:clickable="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/dp2"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardCornerRadius="@dimen/dp1"
+                app:contentPadding="@dimen/dp10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/dp8"
+                        android:paddingRight="@dimen/dp8"
+                        android:paddingBottom="@dimen/dp8">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp10"
+                            android:layout_height="@dimen/dp10"
+                            android:src="@mipmap/green_dot"
+                            android:tint="@color/color_green" />
+
+                        <View
+                            android:id="@+id/v_line"
+                            android:layout_width="@dimen/dv1"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="?attr/app_divider_color" />
+
+                        <ImageView
+                            android:id="@+id/iv_red_dot"
+                            android:layout_width="@dimen/dp10"
+                            android:layout_height="@dimen/dp10"
+                            android:src="@mipmap/red_dot"
+                            android:tint="@color/red" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.customviews.TypefaceTextView
+                            android:id="@+id/tv_pickup_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:hint="Enter pickup location"
+                            android:maxLines="1"
+                            android:paddingRight="@dimen/dp5"
+                            android:paddingBottom="@dimen/dp5"
+                            android:singleLine="true"
+                            android:textColor="?attr/et_text_color"
+                            android:textColorHint="?attr/et_hint_text_color"
+                            android:textSize="?attr/app_text_size_small"
+                            app:custom_font="?attr/app_font_normal" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_drop_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:id="@+id/v_divider"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dv1"
+                                android:layout_marginTop="@dimen/dp5"
+                                android:background="?attr/app_divider_color" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp5"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingRight="@dimen/dp5"
+                                android:paddingBottom="@dimen/dp5">
+
+                                <com.customviews.TypefaceTextView
+                                    android:id="@+id/tv_drop_address"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:hint="Enter drop location"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:textColor="?attr/et_text_color"
+                                    android:textColorHint="?attr/et_hint_text_color"
+                                    android:textSize="?attr/app_text_size_small"
+                                    app:custom_font="?attr/app_font_normal" />
+
+                                <ImageView
+                                    android:id="@+id/iv_clear_drop"
+                                    android:layout_width="@dimen/dp20"
+                                    android:layout_height="@dimen/dp20"
+                                    android:padding="@dimen/dp2"
+                                    android:src="@mipmap/ic_clear"
+                                    android:tint="?attr/btn_bg_color"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/dp2"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardCornerRadius="@dimen/dp1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_leaveon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingTop="@dimen/dp10"
+                        android:paddingRight="@dimen/dp10"
+                        android:paddingBottom="@dimen/dp10">
+
+                        <com.customviews.TypefaceTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Leave on"
+                            android:textColor="?attr/app_text_color"
+                            android:textSize="?attr/app_text_size_normal"
+                            app:custom_font="?attr/app_font_normal" />
+
+                        <com.customviews.TypefaceTextView
+                            android:id="@+id/tv_leaveon_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="27 Dec, 04:15 PM"
+                            android:textColor="?attr/app_link_text_color"
+                            android:textSize="?attr/app_text_size_normal"
+                            app:custom_font="?attr/app_font_normal" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dv1"
+                        android:background="?attr/app_divider_color" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_returnby"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingTop="@dimen/dp10"
+                        android:paddingRight="@dimen/dp10"
+                        android:paddingBottom="@dimen/dp10">
+
+                        <com.customviews.TypefaceTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Return by"
+                            android:textColor="?attr/app_text_color"
+                            android:textSize="?attr/app_text_size_normal"
+                            app:custom_font="?attr/app_font_normal" />
+
+                        <com.customviews.TypefaceTextView
+                            android:id="@+id/tv_returnby_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="27 Dec, 04:15 PM"
+                            android:textColor="?attr/app_link_text_color"
+                            android:textSize="?attr/app_text_size_normal"
+                            app:custom_font="?attr/app_font_normal" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp5"
+                android:elevation="@dimen/dp2"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardCornerRadius="@dimen/dp1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorGray_30"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dp10"
+                    android:paddingBottom="@dimen/dp10">
+
+                    <ImageView
+                        android:id="@+id/iv_vehicle_type"
+                        android:layout_width="@dimen/dp60"
+                        android:layout_height="@dimen/dp40"
+                        android:padding="@dimen/dp7"
+                        android:src="@mipmap/ic_riksya" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.customviews.TypefaceTextView
+                            android:id="@+id/tv_vehicle_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="MINI"
+                            android:textColor="?attr/app_text_color"
+                            android:textSize="?attr/app_text_size_normal"
+                            app:custom_font="?attr/app_font_normal" />
+
+                        <com.customviews.TypefaceTextView
+                            android:id="@+id/tv_seat_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="4 Seater"
+                            android:textColor="?attr/app_text_color"
+                            android:textSize="?attr/app_text_size_small"
+                            app:custom_font="?attr/app_font_normal" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:elevation="@dimen/dp2"
+                app:cardBackgroundColor="@color/color_white"
+                app:cardCornerRadius="@dimen/dp1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dv1"
+                        android:background="?attr/app_divider_color" />
+
+                    <com.customviews.TypefaceTextView
+                        android:id="@+id/tv_trip_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:padding="@dimen/dp5"
+                        android:singleLine="true"
+                        android:text="One way trip of about 140 km"
+                        android:textColor="?attr/app_link_text_color"
+                        android:textSize="?attr/app_text_size_small"
+                        app:custom_font="?attr/app_font_normal" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dv1"
+                        android:background="?attr/app_divider_color" />
+
+                    <com.customviews.TypefaceTextView
+                        android:id="@+id/tv_per_km_fare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/dp15"
+                        android:singleLine="true"
+                        android:text="10/Km"
+                        android:textColor="?attr/app_text_color"
+                        android:textSize="?attr/app_text_size_small"
+                        app:custom_font="?attr/app_font_normal" />
+
+                    <com.customviews.TypefaceTextView
+                        android:id="@+id/tv_fare_estimate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/dp15"
+                        android:singleLine="true"
+                        android:text="3303"
+                        android:textColor="?attr/app_link_text_color"
+                        android:textSize="?attr/app_text_size_extra_big"
+                        app:custom_font="?attr/app_font_medium" />
+
+                    <com.customviews.TypefaceTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Estimated fare"
+                        android:textColor="?attr/app_text_color_sec"
+                        android:textSize="?attr/app_text_size_small"
+                        app:custom_font="?attr/app_font_normal" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dv1"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:background="?attr/app_divider_color" />
+
+                    <com.customviews.TypefaceTextView
+                        android:id="@+id/tv_see_fare_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:padding="@dimen/dp5"
+                        android:singleLine="true"
+                        android:text="See Fare Detail"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="?attr/app_text_size_small"
+                        app:custom_font="?attr/app_font_medium" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dv1"
+                        android:background="?attr/app_divider_color" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_faredetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp10">
+
+                            <com.customviews.TypefaceTextView
+                                android:id="@+id/tv_base_fare_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Base fare"
+                                android:textColor="?attr/app_text_color"
+                                android:textSize="?attr/app_text_size_normal"
+                                app:custom_font="?attr/app_font_normal" />
+
+                            <com.customviews.TypefaceTextView
+                                android:id="@+id/tv_base_fare_desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_base_fare_title"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:text="140km x 10"
+                                android:textColor="?attr/app_text_color_sec"
+                                android:textSize="?attr/app_text_size_extra_small"
+                                app:custom_font="?attr/app_font_normal" />
+
+                            <com.customviews.TypefaceTextView
+                                android:id="@+id/tv_base_fare"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="1400"
+                                android:textColor="?attr/app_text_color"
+                                android:textSize="?attr/app_text_size_normal"
+                                app:custom_font="?attr/app_font_medium" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_remain_km_fare"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp10">
+
+                            <com.customviews.TypefaceTextView
+                                android:id="@+id/tv_remain_km_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Fare for remaining km"
+                                android:textColor="?attr/app_text_color"
+                                android:textSize="?attr/app_text_size_normal"
+                                app:custom_font="?attr/app_font_normal" />
+
+                            <com.customviews.TypefaceTextView
+                                android:id="@+id/tv_remain_km_desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_remain_km_title"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:text="132 km x 10 (charged only if travelled)"
+                                android:textColor="?attr/app_text_color_sec"
+                                android:textSize="?attr/app_text_size_extra_small"
+                                app:custom_font="?attr/app_font_normal" />
+
+                            <com.customviews.TypefaceTextView
+                                android:id="@+id/tv_remain_km_charge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="1400"
+                                android:textColor="?attr/app_text_color"
+                                android:textSize="?attr/app_text_size_normal"
+                                app:custom_font="?attr/app_font_medium" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/dp10"
+                            android:paddingTop="@dimen/dp10"
+                            android:paddingRight="@dimen/dp10">
+
+                            <com.customviews.TypefaceTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Taxes &amp; fees"
+                                android:textColor="?attr/app_text_color"
+                                android:textSize="?attr/app_text_size_normal"
+                                app:custom_font="?attr/app_font_normal" />
+
+                            <com.customviews.TypefaceTextView
+                                android:id="@+id/tv_tax_fee_charge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="200"
+                                android:textColor="?attr/app_text_color"
+                                android:textSize="?attr/app_text_size_normal"
+                                app:custom_font="?attr/app_font_medium" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_driver_allowance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/dp10"
+                            android:paddingRight="@dimen/dp10">
+
+                            <com.customviews.TypefaceTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Driver allowance"
+                                android:textColor="?attr/app_text_color_sec"
+                                android:textSize="?attr/app_text_size_small"
+                                app:custom_font="?attr/app_font_normal" />
+
+                            <com.customviews.TypefaceTextView
+                                android:id="@+id/tv_driver_allowance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="0"
+                                android:textColor="?attr/app_text_color_sec"
+                                android:textSize="?attr/app_text_size_small"
+                                app:custom_font="?attr/app_font_medium" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_night_allowance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/dp10"
+                            android:paddingRight="@dimen/dp10">
+
+                            <com.customviews.TypefaceTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Night allowance"
+                                android:textColor="?attr/app_text_color_sec"
+                                android:textSize="?attr/app_text_size_small"
+                                app:custom_font="?attr/app_font_normal" />
+
+                            <com.customviews.TypefaceTextView
+                                android:id="@+id/tv_night_allowance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="0"
+                                android:textColor="?attr/app_text_color_sec"
+                                android:textSize="?attr/app_text_size_small"
+                                app:custom_font="?attr/app_font_medium" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_taxes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/dp10"
+                            android:paddingRight="@dimen/dp10">
+
+                            <com.customviews.TypefaceTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Taxes"
+                                android:textColor="?attr/app_text_color_sec"
+                                android:textSize="?attr/app_text_size_small"
+                                app:custom_font="?attr/app_font_normal" />
+
+                            <com.customviews.TypefaceTextView
+                                android:id="@+id/tv_taxes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="0"
+                                android:textColor="?attr/app_text_color_sec"
+                                android:textSize="?attr/app_text_size_small"
+                                app:custom_font="?attr/app_font_medium" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dv1"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:background="?attr/app_divider_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/dp10">
+
+                            <com.customviews.TypefaceTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="Estimated fare"
+                                android:textColor="?attr/app_text_color"
+                                android:textSize="?attr/app_text_size_normal"
+                                app:custom_font="?attr/app_font_medium" />
+
+                            <com.customviews.TypefaceTextView
+                                android:id="@+id/tv_fare_estimate_detail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="3303"
+                                android:textColor="?attr/app_text_color"
+                                android:textSize="?attr/app_text_size_normal"
+                                app:custom_font="?attr/app_font_medium" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dv1"
+                            android:background="?attr/app_divider_color" />
+
+
+                        <com.customviews.TypefaceTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:background="@null"
+                            android:text="Fare Rules"
+                            android:textColor="?attr/app_text_color"
+                            android:textSize="?attr/app_text_size_small"
+                            app:custom_font="?attr/app_font_normal" />
+
+                        <com.customviews.TypefaceTextView
+                            android:id="@+id/tv_fare_rules"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_marginTop="@dimen/dp1"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:background="@null"
+                            android:text=""
+                            android:textColor="?attr/app_text_color_sec"
+                            android:textSize="?attr/app_text_size_extra_small"
+                            app:custom_font="?attr/app_font_normal" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dv1"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:background="?attr/app_divider_color" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@color/color_white"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="?attr/app_divider_color" />
+
+                <LinearLayout
+                    android:id="@+id/ll_promocode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp8"
+                    android:visibility="gone">
+
+                    <com.customviews.TypefaceTextView
+                        android:id="@+id/tv_promocode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Have_a_promo_code"
+                        android:textColor="@color/color_green"
+                        android:textSize="?attr/app_text_size_normal"
+                        app:custom_font="?attr/app_font_normal" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_cancel_promocode"
+                        android:layout_width="@dimen/dp20"
+                        android:layout_height="@dimen/dp20"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/ic_close"
+                        android:tint="?attr/et_img_tint_color" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="?attr/app_divider_color" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp10">
+
+                    <com.customviews.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/payment"
+                        android:textColor="?attr/app_text_color_sec"
+                        android:textSize="?attr/app_text_size_normal"
+                        app:custom_font="?attr/app_font_normal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|right"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_payment_icon"
+                            android:layout_width="@dimen/dp20"
+                            android:layout_height="@dimen/dp20"
+                            android:src="@mipmap/ic_cash"
+                            android:tint="?attr/app_link_text_color" />
+
+                        <com.customviews.TypefaceTextView
+                            android:id="@+id/tv_payment_mode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dp5"
+                            android:paddingRight="@dimen/dp5"
+                            android:text="Cash"
+                            android:textColor="?attr/app_text_color"
+                            android:textSize="?attr/app_text_size_small"
+                            app:custom_font="?attr/app_font_normal" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp15"
+                            android:layout_height="@dimen/dp15"
+                            android:rotation="-90"
+                            android:src="@mipmap/ic_arrow"
+                            android:tint="?attr/app_link_text_color" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="?attr/app_divider_color" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20">
+
+                    <com.customviews.TypefaceTextView
+                        android:id="@+id/tv_ride_now"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/btn_height"
+                        android:background="?attr/btn_bg_color"
+                        android:gravity="center"
+                        android:text="Confirm &amp; Book"
+                        android:textColor="?attr/btn_text_color"
+                        android:textSize="?attr/btn_text_size"
+                        app:custom_font="?attr/app_font_medium" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

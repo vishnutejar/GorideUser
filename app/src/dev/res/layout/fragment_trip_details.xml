@@ -1,0 +1,1183 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ndroid="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/app_screen_bg_color"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:scrollbarThumbVertical="@drawable/bg_transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_route"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp150">
+
+            <ImageView
+                android:id="@+id/iv_route_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#cfcece"
+                android:scaleType="centerCrop"
+                android:src="@drawable/map_grid_bg" />
+
+            <ProgressBar
+                android:id="@+id/pb_route"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dv1"
+            android:background="?attr/app_divider_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/ll_status_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white_aa"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp5"
+                android:paddingBottom="@dimen/dp5">
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_booking_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:text="Booking Id:123"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_normal"
+                    app:custom_font="?attr/app_font_medium" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:gravity="right|center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.customviews.TypefaceTextView
+                        android:id="@+id/tv_booking_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Completed"
+                        android:textColor="?attr/app_text_color"
+                        android:textSize="?attr/app_text_size_small"
+                        app:custom_font="?attr/app_font_normal" />
+
+                    <com.customviews.TypefaceTextView
+                        android:id="@+id/tv_license_plate_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/Fake_license_plate_number"
+                        android:textColor="?attr/app_text_color"
+                        android:textSize="?attr/app_text_size_small"
+                        app:custom_font="?attr/app_font_normal" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_status_img"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ll_status_lay"
+                android:layout_alignBottom="@+id/ll_status_lay"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/stamp_cancelled" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dv1"
+            android:background="?attr/app_divider_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_package"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp5">
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_package_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/Rental_Package"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_normal"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_package_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:singleLine="true"
+                    android:text="@string/dummy_date_time"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_normal"
+                    app:custom_font="?attr/app_font_normal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dv1"
+                android:background="?attr/app_divider_color" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp5"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+
+            <LinearLayout
+                android:id="@+id/ll_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/start_time"
+                    android:textColor="@color/color_green"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:singleLine="true"
+                    android:text="@string/dummy_date_time"
+                    android:textColor="@color/color_green"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_booking_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/booking_time"
+                    android:textColor="@color/color_green"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_booking_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:singleLine="true"
+                    android:text="@string/dummy_date_time"
+                    android:textColor="@color/color_green"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="@dimen/dv1"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_green"
+                        android:layout_width="@dimen/dp12"
+                        android:layout_height="@dimen/dp12"
+                        android:src="@mipmap/green_dot"
+                        android:tint="@color/color_green" />
+
+                    <View
+                        android:layout_width="@dimen/dv1"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="?attr/app_divider_color" />
+
+                </LinearLayout>
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_pickup_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingBottom="@dimen/dp5"
+                    android:text="@string/dummy_address"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="@dimen/dv1"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="?attr/app_divider_color" />
+
+                    <ImageView
+                        android:id="@+id/iv_red"
+
+                        android:layout_width="@dimen/dp12"
+                        android:layout_height="@dimen/dp12"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/red_dot"
+                        android:tint="@color/red" />
+
+                    <View
+                        android:layout_width="@dimen/dv1"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_drop_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingTop="@dimen/dp2"
+                    android:paddingBottom="@dimen/dp2"
+                    android:text="@string/dummy_address"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="horizontal">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/end_time"
+                    android:textColor="@color/red"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:singleLine="true"
+                    android:text="@string/dummy_date_time"
+                    android:textColor="@color/red"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_cancel_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="horizontal">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/cancel_time"
+                    android:textColor="@color/red"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_cancel_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:singleLine="true"
+                    android:text="@string/dummy_date_time"
+                    android:textColor="@color/red"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dv1"
+            android:background="?attr/app_divider_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp80"
+                android:layout_weight=".33"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/dp10">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/travel_time"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_travel_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:text="22 Min"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp80"
+                android:layout_weight=".33"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/dp10">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="@string/total_fare"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_final_payable_fare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:gravity="center"
+                    android:text="@string/_75"
+                    android:textColor="?attr/app_link_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp80"
+                android:layout_weight=".33"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/dp10">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="right"
+                    android:text="@string/total_distance"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_total_distances"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:gravity="right"
+                    android:text="25 Km"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dv1"
+            android:background="?attr/app_divider_color" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/color_white"
+            app:cardElevation="@dimen/dp5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/fare_details"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_normal"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_seat_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/fare_details"
+                    android:textColor="?attr/app_text_color_sec"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <LinearLayout
+                    android:id="@+id/ll_send_invoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp20"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_marginEnd="@dimen/dp5"
+                        android:layout_marginRight="@dimen/dp5"
+                        android:src="@mipmap/ic_mail"
+                        android:tint="?attr/app_link_text_color" />
+
+                    <com.customviews.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/tap_here_invoice_email"
+                        android:textColor="?attr/app_link_text_color"
+                        android:textSize="?attr/app_text_size_extra_small"
+                        app:custom_font="?attr/app_font_normal" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/ll_hide_fares"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/base_fare"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_base_fare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/_75"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_waiting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10">
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_waiting_charge_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/waiting_charge"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal"/>
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_waiting_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/_75"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_distance_fare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10">
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_distance_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/distance_fare"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <ImageView
+                    android:id="@+id/iv_distance_info"
+
+                    android:layout_width="@dimen/dp15"
+                    android:layout_height="@dimen/dp15"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_toRightOf="@+id/tv_distance_text"
+                    android:src="@mipmap/icon_info"
+                    android:tint="?attr/app_link_text_color" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_75"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_time_charges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp5">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/time_fare"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/_75"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_booking_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp5">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/booking_fee"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_booking_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/_75"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_peak_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp5">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/peak_charge"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_peak_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/_75"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_night_charge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp5">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/night_charge"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_night_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/_75"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp5">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/ride_fare"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_ride_fare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/_75"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_minimum_fare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp5">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/minimum_fare"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_minimum_fare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/_75"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_promocode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp5">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/Discount"
+                    android:textColor="@color/color_green"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+
+                    android:id="@+id/tv_promocode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/_75"
+                    android:textColor="@color/color_green"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_driver_allowance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp5">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/driver_allowance"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_driver_allowance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/_75"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_night_allowance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp5">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/night_allowance"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_night_allowance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/_75"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp5">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/taxes"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_taxes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/_75"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tolls_fare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingTop="@dimen/dp5"
+            android:paddingRight="@dimen/dp10"
+            android:paddingBottom="@dimen/dp5">
+
+            <com.customviews.TypefaceTextView
+                android:id="@+id/tv_toll_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/Toll_fare"
+                android:textColor="?attr/app_text_color"
+                android:textSize="?attr/app_text_size_small"
+                app:custom_font="?attr/app_font_normal" />
+
+            <ImageView
+
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_toRightOf="@+id/tv_toll_title"
+                android:src="@mipmap/icon_info"
+                android:tint="?attr/app_link_text_color" />
+
+            <com.customviews.TypefaceTextView
+                android:id="@+id/tv_tolls_fare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/_75"
+                android:textColor="?attr/app_text_color"
+                android:textSize="?attr/app_text_size_small"
+                app:custom_font="?attr/app_font_normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_cancellation_fare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingTop="@dimen/dp5"
+            android:paddingRight="@dimen/dp10"
+            android:paddingBottom="@dimen/dp5">
+
+            <com.customviews.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Cancellation Fare"
+                android:textColor="?attr/app_text_color"
+                android:textSize="?attr/app_text_size_small"
+                app:custom_font="?attr/app_font_normal" />
+
+            <com.customviews.TypefaceTextView
+                android:id="@+id/tv_cancellation_fare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/_75"
+                android:textColor="?attr/app_text_color"
+                android:textSize="?attr/app_text_size_small"
+                app:custom_font="?attr/app_font_normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingTop="@dimen/dp5"
+            android:paddingRight="@dimen/dp10"
+            android:paddingBottom="@dimen/dp5">
+
+            <com.customviews.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/total_fare"
+                android:textColor="?attr/app_text_color"
+                android:textSize="?attr/app_text_size_small"
+                app:custom_font="?attr/app_font_bold" />
+
+            <com.customviews.TypefaceTextView
+                android:id="@+id/tv_payable_fare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/_75"
+                android:textColor="?attr/btn_bg_color"
+                android:textSize="?attr/app_text_size_small"
+                app:custom_font="?attr/app_font_bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp5">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/wallet_money"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_wallet_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/_75"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp5">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/final_total_fair"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_bold" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_final_payable_fare_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/_75"
+                    android:textColor="?attr/btn_bg_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_payment_remaining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dv1"
+                android:background="?attr/app_divider_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp10"
+                ndroid:paddingBottom="@dimen/dp5">
+
+                <com.customviews.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/payment_remaining"
+                    android:textColor="@color/red"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_payment_remaining"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="@string/_75"
+                    android:textColor="@color/red"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_payment_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/btn_bg_drawable"
+                    android:paddingLeft="@dimen/dp15"
+                    android:paddingTop="@dimen/dp5"
+                    android:paddingRight="@dimen/dp15"
+                    android:paddingBottom="@dimen/dp5"
+                    android:singleLine="true"
+                    android:text="@string/pay"
+                    android:textColor="?attr/btn_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp20"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <com.customviews.TypefaceTextView
+
+            android:id="@+id/tv_texi_brand_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?attr/app_link_text_color"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="@string/Tolls_Detail"
+            android:textColor="@color/color_white"
+            android:textSize="?attr/app_text_size_normal"
+            app:custom_font="?attr/app_font_medium"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp2"/>
+
+        <com.customviews.TypefaceTextView
+            android:id="@+id/tv_ok"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/btn_height"
+            android:gravity="center"
+            android:text="@string/OK"
+            android:textColor="?attr/app_link_text_color"
+            android:textSize="?attr/btn_text_size"
+            app:custom_font="?attr/app_font_normal"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

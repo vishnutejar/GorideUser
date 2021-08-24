@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp20"
+        android:background="@drawable/bg_dialog_white"
+        android:orientation="vertical">
+
+        <com.customviews.TypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="Delete favourite?"
+            android:textColor="?attr/app_text_color"
+            android:textSize="?attr/app_text_size_normal"
+            app:custom_font="?attr/app_font_bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dv1"
+            android:background="?attr/app_divider_color"/>
+
+        <com.customviews.TypefaceTextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="Are you sure want to remove favourite from your favourite locations?"
+            android:textColor="?attr/app_text_color"
+            android:textSize="?attr/app_text_size_small"
+            app:custom_font="?attr/app_font_normal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/btn_height"
+            android:layout_marginTop="@dimen/dp8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <com.customviews.TypefaceTextView
+                android:id="@+id/tv_no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/btn_bg_color"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="No"
+                android:textAllCaps="true"
+                android:textColor="?attr/btn_text_color"
+                android:textSize="?attr/app_text_size_normal"
+                app:custom_font="?attr/app_font_normal"/>
+
+            <View
+                android:layout_width="@dimen/dv1"
+                android:layout_height="match_parent"
+                android:background="?attr/app_divider_color"/>
+
+            <com.customviews.TypefaceTextView
+                android:id="@+id/tv_yes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/btn_bg_color"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="Yes"
+                android:textAllCaps="true"
+                android:textColor="?attr/btn_text_color"
+                android:textSize="?attr/app_text_size_normal"
+                app:custom_font="?attr/app_font_normal"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

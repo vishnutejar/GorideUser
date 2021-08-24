@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?attr/er_bg_color"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/dp10"
+              android:paddingLeft="@dimen/dp5"
+              android:paddingRight="@dimen/dp5"
+              android:paddingTop="@dimen/dp10">
+
+    <com.customviews.TypefaceTextView
+        android:id="@+id/tv_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp5"
+        android:text="Text_message"
+        android:textColor="?attr/er_msg_color"
+        android:textSize="?attr/app_text_size_small"
+        app:custom_font="?attr/app_font_normal"/>
+
+
+    <com.customviews.TypefaceTextView
+        android:id="@+id/tv_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp5"
+        android:text="Dismiss"
+        android:textColor="?attr/er_btn_color"
+        android:textSize="?attr/app_text_size_small"
+        app:custom_font="?attr/app_font_normal"/>
+
+</LinearLayout>

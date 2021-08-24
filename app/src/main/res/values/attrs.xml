@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="custom_font" format="string"/>
+    <declare-styleable name="TypefaceTextView">
+        <attr name="custom_font"/>
+    </declare-styleable>
+
+    <declare-styleable name="TypefaceEditText">
+        <attr name="custom_font"/>
+    </declare-styleable>
+
+    <declare-styleable name="TypefaceCheckBox">
+        <attr name="custom_font"/>
+    </declare-styleable>
+
+    <declare-styleable name="TypefaceRadioButton">
+        <attr name="custom_font"/>
+    </declare-styleable>
+
+    <!--ACTION BAR ATTRS-->
+    <attr name="actionBarColor" format="color"/>
+    <attr name="actionBarTitleSize" format="dimension"/>
+    <attr name="actionBarIconSize" format="dimension"/>
+    <attr name="actionBarIconTint" format="color"/>
+    <attr name="actionBarLogoSize" format="dimension"/>
+    <!--____________________________-->
+
+    <!--APP CUSTOM ATTRS-->
+    <attr name="app_screen_bg_color" format="color"/>
+    <attr name="app_screen_bg_color_new" format="color"/>
+    <attr name="app_text_color" format="color"/>
+    <attr name="app_text_color_sec" format="color"/>
+    <attr name="app_link_text_color" format="color"/>
+    <attr name="app_text_size_extra_small" format="dimension"/>
+    <attr name="app_text_size_small" format="dimension"/>
+    <attr name="app_text_size_normal" format="dimension"/>
+    <attr name="app_text_size_big" format="dimension"/>
+    <attr name="app_text_size_extra_big" format="dimension"/>
+    <attr name="app_divider_color" format="color"/>
+    <!--__________________________-->
+
+    <!--APP ERROR DIALOG ATTRS-->
+    <attr name="er_bg_color" format="color"/>
+    <attr name="er_msg_color" format="color"/>
+    <attr name="er_btn_color" format="color"/>
+    <!--__________________________-->
+
+    <!--APP FONT ATTRS-->
+    <attr name="app_font_extra_bold" format="string"/>
+    <attr name="app_font_bold" format="string"/>
+    <attr name="app_font_medium" format="string"/>
+    <attr name="app_font_normal" format="string"/>
+    <!--___________________________-->
+
+    <!--EDIT TEXT THEME ATTRS-->
+    <attr name="et_bg_drawable" format="reference"/>
+    <attr name="et_bg_color" format="color"/>
+    <attr name="et_text_color" format="color"/>
+    <attr name="et_hint_text_color" format="color"/>
+    <attr name="et_img_tint_color" format="color"/>
+    <attr name="et_text_size" format="dimension"/>
+    <attr name="et_height" format="dimension"/>
+    <!--_______________________________________-->
+
+    <!--BUTTON THEME ATTRS-->
+    <attr name="btn_bg_drawable" format="reference"/>
+    <attr name="btn_bg_color" format="color"/>
+    <attr name="btn_text_color" format="color"/>
+    <attr name="btn_text_size" format="dimension"/>
+    <attr name="btn_height" format="dimension"/>
+    <!--_______________________________________-->
+
+    <declare-styleable name="AppTheme">
+        <attr name="app_divider_color"/>
+        <attr name="app_link_text_color"/>
+        <attr name="btn_bg_color"/>
+    </declare-styleable>
+
+</resources>

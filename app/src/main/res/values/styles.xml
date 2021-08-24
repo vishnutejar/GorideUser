@@ -1,0 +1,148 @@
+<resources>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="actionBarColor">@color/colorPrimary</item>
+        <item name="actionBarSize">@dimen/dp50</item>
+        <item name="actionBarTitleSize">@dimen/sp18</item>
+        <item name="actionBarIconSize">@dimen/dp40</item>
+        <item name="actionBarIconTint">@color/color_white</item>
+        <item name="actionBarLogoSize">@dimen/dp45</item>
+
+        <item name="app_font_bold">@string/heebo_bold</item>
+        <item name="app_font_extra_bold">@string/heebo_extra_bold</item>
+        <item name="app_font_medium">@string/heebo_medium</item>
+        <item name="app_font_normal">@string/heebo_regular</item>
+
+        <item name="app_text_color">@color/color_black</item>
+        <item name="app_text_color_sec">@color/colorGray</item>
+        <item name="app_divider_color">@color/colorGray</item>
+        <item name="app_link_text_color">@color/text_link_color</item>
+        <item name="app_text_size_extra_small">@dimen/sp12</item>
+        <item name="app_text_size_small">@dimen/sp14</item>
+        <item name="app_text_size_normal">@dimen/sp16</item>
+        <item name="app_text_size_big">@dimen/sp18</item>
+        <item name="app_text_size_extra_big">@dimen/sp20</item>
+        <item name="app_screen_bg_color">@color/app_screen_bg_color</item>
+        <item name="app_screen_bg_color_new">@color/colorPrimary</item>
+
+        <item name="et_bg_drawable">@drawable/bg_edit_text</item>
+        <item name="et_bg_color">@color/et_bg_color</item>
+        <item name="et_text_color">@color/et_text_color</item>
+        <item name="et_hint_text_color">@color/et_hint_color</item>
+        <item name="et_img_tint_color">@color/et_img_tint_color</item>
+        <item name="et_text_size">@dimen/sp16</item>
+        <item name="et_height">@dimen/dp45</item>
+
+        <item name="btn_bg_drawable">@drawable/bg_button</item>
+        <item name="btn_bg_color">@color/button_bg_color</item>
+        <item name="btn_text_color">@color/color_white</item>
+        <item name="btn_text_size">@dimen/sp18</item>
+        <item name="btn_height">@dimen/dp50</item>
+
+        <item name="er_bg_color">@color/button_bg_color</item>
+        <item name="er_msg_color">@color/color_white</item>
+        <item name="er_btn_color">@color/text_link_color</item>
+
+    </style>
+
+
+    <style name="MyTabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyTabTextAppearance</item>
+    </style>
+
+    <style name="MyTabTextAppearance" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/colorGray</item>
+        <item name="colorAccent">@color/colorGray</item>
+        <item name="colorControlNormal">@color/colorGray</item>
+        <item name="colorControlActivated">@color/colorGray</item>
+    </style>
+
+
+    <style name="AppThemeNoActionBarNoStatusBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+    </style>
+
+
+    <style name="BadeDialogStyle">
+        <item name="android:windowEnterAnimation">@anim/right_in</item>
+        <item name="android:windowExitAnimation">@anim/exittobottom</item>
+    </style>
+
+    <style name="OutstationTimeDialogStyle">
+        <item name="android:windowEnterAnimation">@anim/enterfrombottom</item>
+        <item name="android:windowExitAnimation">@anim/exittobottom</item>
+    </style>
+
+    <style name="FavoriteDialogStyle">
+        <item name="android:windowEnterAnimation">@anim/enterfromtop</item>
+        <item name="android:windowExitAnimation">@anim/exittotop</item>
+    </style>
+
+    <style name="PaymentDialogStyle">
+        <item name="android:windowEnterAnimation">@anim/right_in</item>
+        <item name="android:windowExitAnimation">@anim/right_out</item>
+    </style>
+
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorGray</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <!--<style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorGray</item>
+        <item name="colorControlActivated">@color/rating_bar_active_color</item>
+    </style>-->
+
+    <style name="CustomAlertDialogStyle" parent="android:Theme">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="PromocodeDialogStyle">
+        <item name="android:windowEnterAnimation">@anim/enterfromtop</item>
+        <item name="android:windowExitAnimation">@anim/exittotop</item>
+    </style>
+
+    <style name="SelectSeatDialogStyle">
+        <item name="android:windowEnterAnimation">@anim/enterfrombottom</item>
+        <item name="android:windowExitAnimation">@anim/exittobottom</item>
+    </style>
+
+    <style name="CustomTabWidget" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">?attr/app_text_size_normal</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/app_link_text_color</item>
+    </style>
+
+
+    <style name="CustomRatingIndicator" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/abc_ratingbar_indicator_custom</item>
+    </style>
+
+</resources>

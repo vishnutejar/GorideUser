@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_dialog_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="0.4"
+                android:src="@mipmap/logo1"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="?attr/app_divider_color"/>
+
+        <com.customviews.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="Update Is Available"
+            android:textColor="?attr/app_text_color"
+            android:textSize="?attr/app_text_size_normal"
+            app:custom_font="?attr/app_font_bold"/>
+
+
+        <com.customviews.TypefaceTextView
+            android:id="@+id/tv_message_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dp20"
+            android:paddingEnd="@dimen/dp10"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            android:paddingStart="@dimen/dp10"
+            android:paddingTop="10dp"
+            android:text=""
+            android:textColor="?attr/app_text_color"
+            android:textSize="?attr/app_text_size_normal"
+            app:custom_font="?attr/app_font_normal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.customviews.TypefaceTextView
+                android:id="@+id/tv_later"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="NOT NOW"
+                android:textColor="?attr/app_text_color"
+                android:textSize="?attr/btn_text_size"
+                android:textStyle="bold"
+                app:custom_font="?attr/app_font_medium"/>
+
+            <com.customviews.TypefaceTextView
+                android:id="@+id/tv_update"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="UPDATE"
+                android:textColor="?attr/app_link_text_color"
+                android:textSize="?attr/btn_text_size"
+                android:textStyle="bold"
+                app:custom_font="?attr/app_font_medium"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

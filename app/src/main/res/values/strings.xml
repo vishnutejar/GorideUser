@@ -1,0 +1,199 @@
+<resources>
+    <string name="app_name">7StarCab</string>
+
+    <!--GOOGLE PROJECT KEYS-->
+    <string name="browser_key">AIzaSyCyfDWKQngoGVIT83QlMyn6y3-iiLY_v3k</string>
+    <string name="android_key">AIzaSyDYkXiUdS34njU3yb8A7QVh0oCaZbAfO1E</string>
+    <string name="server_key">AIzaSyB1rlAf83dpiQqWjwOVb24cqIWL1-iNl0c</string>
+    <string name="distancematrix_apis_exernal">AlphaDMAG795kNNuJi0DjF0iWVPJG19wQ8GdoRGW</string>
+
+    <!--_________________________________-->
+
+    <string name="support_mail">contact@taxiiirider.com</string>
+    <string name="support_contact">+911234567890</string>
+    <string name="support_domain">www.taxiiirider.com</string>
+
+    <string name="dummy_share_text">Invite your contacts to join Taxi Rider and be rewarded. To share your exclusive Invite Code tap Share Via and select appropriate option</string>
+
+
+    <!--custom fonts-->
+    <string name="heebo_bold">heebo_bold.ttf</string>
+    <string name="heebo_extra_bold">heebo_extra_bold.ttf</string>
+    <string name="heebo_medium">heebo_medium.ttf</string>
+    <string name="heebo_regular">heebo_regular.ttf</string>
+
+    <string name="term_condition">Term &amp; Conditions</string>
+    <string name="rider">Rider</string>
+    <string name="email_phone">Email address/ Phone number</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="forgot_password_title">Forgot password</string>
+    <string name="new_password_title">New password</string>
+    <string name="new_user">New user?</string>
+    <string name="create_account">Create account</string>
+    <string name="email_address">Email address</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="mobile">Mobile</string>
+    <string name="sign_up">Sign up</string>
+    <string name="existing_user">Existing user?</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="enter_email_used_for_registration">Enter email address used for registration</string>
+    <string name="enter_phone_used_for_registration">Enter phone number used for registration.</string>
+    <string name="submit">SUBMIT</string>
+
+
+    <!--  Sunil -->
+    <!--₹-->
+    <string name="please_reset_your_password">Please reset your password</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="book_your_ride">Book your ride</string>
+    <string name="text_side_menu_book_ride">Book Ride</string>
+    <string name="text_side_menu_my_rides">My Rides</string>
+    <string name="text_side_menu_my_rides_history">Ride Detail</string>
+    <string name="text_side_menu_payments">Payments</string>
+    <string name="text_side_menu_profile">Profile</string>
+    <string name="text_side_menu_support">Support</string>
+    <string name="text_side_menu_notification">Notifications</string>
+    <string name="text_side_menu_invites">Invites</string>
+    <string name="text_side_menu_logout">Logout</string>
+    <string name="small_fares_for_short_rides">Small fares for short rides</string>
+    <string name="available_in">Available In</string>
+    <string name="fare_estimate">Fare Estimate</string>
+    <string name="payment">Payment</string>
+    <string name="ride_confirmation">Ride Confirmation!</string>
+    <string name="dummy_address"></string>
+    <string name="approx_fare">Approx Fare (Toll exclusive)</string>
+    <string name="approx">Approx</string>
+    <string name="_package">Package</string>
+    <string name="travel_distance">Travel distance</string>
+    <string name="note_this_is_an_approximate_estimate_actual_cost_and_n_travel_time_may_be_different">Note: This is an approximate estimate. Actual cost and travel time may be different!</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="_75">₹ 0</string>
+    <string name="_100">₹ 100</string>
+    <string name="_200">₹ 200</string>
+    <string name="_500">₹ 500</string>
+    <string name="text_notifications">Notifications</string>
+    <string name="log_out">LOG OUT</string>
+    <string name="your_ride_has_been">Your ride has been completed</string>
+    <string name="dummy_date_time"></string>
+    <string name="travel_time">Travel Time</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="payment_mode">Payment Mode</string>
+    <string name="polite_and_professional_driver">Polite and professional driver</string>
+    <string name="on_time_pickup">On-time pickup</string>
+    <string name="driver_familiar_with_route">Driver familiar with the route</string>
+    <string name="text_title_ride_details">Ride details</string>
+    <string name="text_title_pickup_arriving">Pickup Arriving</string>
+    <string name="text_title_on_trip">On Trip</string>
+    <string name="booking_confirmed">Booking Confirmed</string>
+    <string name="your_booking_has_confirmed">Your booking has been confirmed.</string>
+    <string name="call_driver">CALL DRIVER</string>
+    <string name="cancel_ride">CANCEL RIDE</string>
+    <string name="change_drop_location">Change Drop</string>
+    <string name="dummy_cash_text">Your driver\'s phone will show you the amount to pay at the end of trip.</string>
+    <string name="text_cash">Cash</string>
+    <string name="wallet_balance">Wallet Balance</string>
+    <string name="how_much_would_you_like_to_add">How much would you like to add?</string>
+    <string name="text_next">NEXT</string>
+    <string name="text_add_money">Add money</string>
+    <string name="invite_code">Invite Code</string>
+    <string name="invites">Invites</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="A_text_message">A text message with your confirmation code has been sent.</string>
+    <string name="didn_t_get_the_otp">Don\'t get the OTP?</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="referrer_id">Referrer ID</string>
+    <string name="optional">(optional)</string>
+    <string name="Change_Password">Change Password</string>
+
+    <string name="select_address">Select Address</string>
+    <string name="remining_payment">Remaining Payment</string>
+    <string name="Rental_Package">Rental Package :</string>
+    <string name="Outstation_Package">Outstation Package :</string>
+
+    <string name="booked_at">Booked at</string>
+    <string name="rupee_symbol">₹</string>
+    <string name="waiting_for_driver">Waiting for driver</string>
+    <string name="cancel_by_you">Cancelled by you</string>
+    <string name="cancel_by_driver">Cancelled by driver</string>
+    <string name="Fake_license_plate_number"></string>
+    <string name="start_time">Start Time :</string>
+    <string name="schedule_at">Schedule at :</string>
+    <string name="end_time">End Time :</string>
+    <string name="booking_time">Booking Time :</string>
+    <string name="cancel_time">Cancellation Time :</string>
+    <string name="payment_remaining">Remaining Fare :</string>
+    <string name="pay">Pay</string>
+    <string name="total_distance">Travel Distance</string>
+    <string name="booking_type">Booking type</string>
+    <string name="Wallet_Recharge">Wallet Recharge</string>
+    <string name="cash">Cash</string>
+    <string name="wallet">Wallet</string>
+    <string name="not_now">Not now</string>
+    <string name="recharge">Recharge</string>
+    <string name="cancel">Cancel</string>
+    <string name="share_via">Share via </string>
+    <string name="support_text">For suggestions, complaints and enquiries reach out to us at:</string>
+    <string name="OK">OK</string>
+    <string name="text_app_update">Update %s is available. For better experience please update application.</string>
+    <string name="no_notification_found">No notifications found</string>
+
+
+    <string name="no_ride_history">No Ride History</string>
+    <string name="no_remaining_payment">No Remaining Payment</string>
+    <string name="cancel_booking">Cancel Booking?</string>
+    <string name="please_tell_us_why_you_want_to_cancel">Please tell us why you want to cancel</string>
+    <!---->
+
+    <string name="read_more">more</string>
+    <string name="read_less">less</string>
+    <string name="trip_detail">Trip detail</string>
+    <string name="total_fare">Total Fare</string>
+    <string name="fare_details">Fare Details</string>
+    <string name="base_fare">Base Fare</string>
+    <string name="waiting_charge">Waiting Charge</string>
+    <string name="distance_fare">Distance Rate</string>
+    <string name="time_fare">Time Rate</string>
+    <string name="booking_fee">Booking Fee</string>
+    <string name="peak_charge">Peak Charge</string>
+    <string name="night_charge">Night Charge</string>
+    <string name="ride_fare">Ride Fare</string>
+    <string name="minimum_fare">Minimum Fare</string>
+    <string name="taxes">Service Tax</string>
+    <string name="Toll_fare">Toll fare</string>
+    <string name="wallet_money">Wallet Money</string>
+    <string name="final_total_fair">Final Total Fare</string>
+    <string name="custom_toast"></string>
+    <string name="no_apps_found_to_open_msg">No apps found to open.</string>
+    <string name="amount_validation_20">Amount cannot be greater than 10000</string>
+
+    <string name="reduced_queueing">Reduced Queueing</string>
+    <string name="save_time">Save Time</string>
+    <string name="management_control_information">Management Control, Information</string>
+    <string name="reduced_risk">Reduce Risk</string>
+    <string name="positive_cash_flow">Positive cash flow</string>
+    <string name="eliminate_cash_handling_costs">Eliminate cash handling costs.</string>
+    <string name="remaining_payment">Remaining Payment</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="turn_on_gps_msg">To continue, let your device turn on location, which uses location service.</string>
+    <string name="select_date_and_time">Ride Later\nSelect Date and Time</string>
+    <string name="done">Done</string>
+    <string name="Have_a_promo_code">Have a promo code?</string>
+    <string name="enter_promocode">Enter promocode</string>
+    <string name="Apply">Apply</string>
+    <string name="Discount">Discount</string>
+    <string name="Enter_comment">Enter comment</string>
+    <string name="Tolls_Detail">Tolls Detail</string>
+    <string name="tap_here_invoice_email">Tap here for send an Invoice via email</string>
+    <string name="select_cab_type">Select Cab Type</string>
+    <string name="select_package">Select Package</string>
+    <string name="driver_allowance">Driver Allowance</string>
+    <string name="night_allowance">Night Allowance</string>
+
+
+</resources>

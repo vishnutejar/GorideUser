@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="@dimen/dp3"
+        app:cardBackgroundColor="@color/color_white"
+        app:cardElevation="3dp"
+        app:contentPadding="@dimen/dp10">
+
+        <LinearLayout
+            android:id="@+id/ll_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <com.tuyenmonkey.mkloader.MKLoader
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp60"
+                app:mk_color="@color/colorPrimary"
+                app:mk_type="LineSpinner" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.customviews.TypefaceTextView
+        android:id="@+id/tv_loader_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp5"
+        android:gravity="center"
+        android:text="Wait..."
+        android:textColor="?attr/btn_text_color"
+        android:textSize="?attr/app_text_size_normal" />
+
+</RelativeLayout>

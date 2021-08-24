@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="fiv">
+        <attr name="transformation_type">
+            <enum name="CIRCULAR" value="0"/>
+            <enum name="TRIANGLE" value="1"/>
+            <enum name="ROUND_RECT" value="2"/>
+        </attr>
+        <attr name="topLeftRadius" format="dimension"/>
+        <attr name="topRightRadius" format="dimension"/>
+        <attr name="bottomLeftRadius" format="dimension"/>
+        <attr name="bottomRightRadius" format="dimension"/>
+        <attr name="corner_radius" format="dimension"/>
+        <attr name="circular_radius" format="dimension"/>
+        <attr name="triangle_outer_radius" format="dimension"/>
+        <attr name="triangle_inner_radius" format="dimension"/>
+        <attr name="triangle_start_angle_degree" format="float"/>
+        <attr name="triangle_steps" format="integer"/>
+        <attr name="centerX" format="float"/>
+        <attr name="centerY" format="float"/>
+        <attr name="rect_strokeWidth" format="dimension"/>
+        <attr name="rect_strokeColor" format="color"/>
+
+        <attr name="img_bg_color" format="color"/>
+
+    </declare-styleable>
+</resources>

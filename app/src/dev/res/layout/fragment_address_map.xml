@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <FrameLayout
+        android:id="@+id/fl_map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/iv_center_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/gps_pin_map"
+        android:tint="@color/color_black" />
+
+    <LinearLayout
+        android:id="@+id/ll_loader_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_black30"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp5">
+
+        <ProgressBar
+            android:id="@+id/pb_loader"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30" />
+
+        <com.customviews.TypefaceTextView
+            android:id="@+id/tv_loader_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp20"
+            android:gravity="center"
+            android:text="Fetching your location..."
+            android:textColor="@color/color_white"
+            android:textSize="?attr/app_text_size_normal"
+            app:custom_font="@string/heebo_regular" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp15"
+        android:clickable="true"
+        android:src="@mipmap/ic_location" />
+
+
+</RelativeLayout>

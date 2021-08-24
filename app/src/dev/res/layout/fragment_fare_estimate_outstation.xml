@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/app_screen_bg_color"
+    android:clickable="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginBottom="@dimen/dp5"
+                android:elevation="@dimen/dp2"
+                app:cardCornerRadius="@dimen/dp1"
+                app:contentPadding="@dimen/dp10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/dp8"
+                        android:paddingRight="@dimen/dp8"
+                        android:paddingBottom="@dimen/dp8">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp15"
+                            android:layout_height="@dimen/dp15"
+                            android:src="@mipmap/green_dot"
+                            android:tint="@color/color_green" />
+
+                        <View
+                            android:id="@+id/v_line"
+                            android:layout_width="@dimen/dv1"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="?attr/app_divider_color" />
+
+                        <ImageView
+                            android:id="@+id/iv_red_dot"
+                            android:layout_width="@dimen/dp15"
+                            android:layout_height="@dimen/dp15"
+                            android:src="@mipmap/red_dot"
+                            android:tint="@color/red" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.customviews.TypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="From:"
+                            android:textColor="?attr/et_hint_text_color"
+                            android:textSize="?attr/app_text_size_small"
+                            app:custom_font="?attr/app_font_normal" />
+
+
+                        <com.customviews.TypefaceTextView
+                            android:id="@+id/tv_pickup_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:hint="Enter pickup location"
+                            android:maxLines="1"
+                            android:paddingRight="@dimen/dp5"
+                            android:paddingBottom="@dimen/dp5"
+                            android:singleLine="true"
+                            android:textColor="?attr/et_text_color"
+                            android:textColorHint="?attr/et_hint_text_color"
+                            android:textSize="?attr/app_text_size_small"
+                            app:custom_font="?attr/app_font_normal" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_drop_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:id="@+id/v_divider"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dv1"
+                                android:background="?attr/app_divider_color" />
+
+                            <com.customviews.TypefaceTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="To:"
+                                android:textColor="?attr/et_hint_text_color"
+                                android:textSize="?attr/app_text_size_small"
+                                app:custom_font="?attr/app_font_normal" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingRight="@dimen/dp5"
+                                android:paddingBottom="@dimen/dp5">
+
+                                <com.customviews.TypefaceTextView
+                                    android:id="@+id/tv_drop_address"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:hint="Enter drop location"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:textColor="?attr/et_text_color"
+                                    android:textColorHint="?attr/et_hint_text_color"
+                                    android:textSize="?attr/app_text_size_small"
+                                    app:custom_font="?attr/app_font_normal" />
+
+                                <ImageView
+                                    android:id="@+id/iv_clear_drop"
+                                    android:layout_width="@dimen/dp20"
+                                    android:layout_height="@dimen/dp20"
+                                    android:padding="@dimen/dp2"
+                                    android:src="@mipmap/ic_clear"
+                                    android:tint="?attr/btn_bg_color"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <com.customviews.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp15"
+                android:background="@null"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Select date and time"
+                android:textColor="?attr/app_link_text_color"
+                android:textSize="?attr/app_text_size_small"
+                app:custom_font="?attr/app_font_normal" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginBottom="@dimen/dp5"
+                android:elevation="@dimen/dp2"
+                app:cardCornerRadius="@dimen/dp1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/rg_trip_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.customviews.TypefaceRadioButton
+                            android:id="@+id/rb_oneway"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="One way"
+                            android:textColor="?attr/app_text_color"
+                            android:textSize="?attr/app_text_size_normal" />
+
+
+                        <com.customviews.TypefaceRadioButton
+                            android:id="@+id/rb_roundtrip"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Round trip"
+                            android:textColor="?attr/app_text_color"
+                            android:textSize="?attr/app_text_size_normal" />
+
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1" />
+
+                        <com.customviews.TypefaceTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Get dropped off"
+                            android:textColor="?attr/app_text_color_sec"
+                            android:textSize="?attr/app_text_size_extra_small"
+                            app:custom_font="?attr/app_font_normal" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1" />
+
+                        <com.customviews.TypefaceTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Keep car till return"
+                            android:textColor="?attr/app_text_color_sec"
+                            android:textSize="?attr/app_text_size_extra_small"
+                            app:custom_font="?attr/app_font_normal" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dv1"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:background="?attr/app_divider_color" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_leaveon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingTop="@dimen/dp10"
+                        android:paddingRight="@dimen/dp10"
+                        android:paddingBottom="@dimen/dp10">
+
+                        <com.customviews.TypefaceTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Leave on"
+                            android:textColor="?attr/app_text_color"
+                            android:textSize="?attr/app_text_size_normal"
+                            app:custom_font="?attr/app_font_normal" />
+
+                        <com.customviews.TypefaceTextView
+                            android:id="@+id/tv_leaveon_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="27 Dec, 04:15 PM"
+                            android:textColor="?attr/app_link_text_color"
+                            android:textSize="?attr/app_text_size_normal"
+                            app:custom_font="?attr/app_font_normal" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dv1"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="?attr/app_divider_color" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_returnby"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingTop="@dimen/dp10"
+                        android:paddingRight="@dimen/dp10"
+                        android:paddingBottom="@dimen/dp10">
+
+                        <com.customviews.TypefaceTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="Return by"
+                            android:textColor="?attr/app_text_color"
+                            android:textSize="?attr/app_text_size_normal"
+                            app:custom_font="?attr/app_font_normal" />
+
+                        <com.customviews.TypefaceTextView
+                            android:id="@+id/tv_returnby_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="27 Dec, 04:15 PM"
+                            android:textColor="?attr/app_link_text_color"
+                            android:textSize="?attr/app_text_size_normal"
+                            app:custom_font="?attr/app_font_normal" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <com.customviews.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp15"
+                android:background="@null"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Select vehicle type"
+                android:textColor="?attr/app_link_text_color"
+                android:textSize="?attr/app_text_size_small"
+                app:custom_font="?attr/app_font_normal" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp5"
+                android:layout_marginBottom="@dimen/dp30"
+                android:padding="@dimen/dp5"
+                app:cardCornerRadius="@dimen/dp3"
+                app:cardElevation="@dimen/dp3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGray_50"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp10"
+                        android:paddingBottom="@dimen/dp10">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp60"
+                            android:layout_height="@dimen/dp40"
+                            android:padding="@dimen/dp7"
+                            android:src="@mipmap/gps_pin"
+                            android:tint="?attr/app_link_text_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+
+                                <com.customviews.TypefaceTextView
+                                    android:id="@+id/tv_trip_detail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text="One way trip of about 140 km"
+                                    android:textColor="?attr/app_text_color"
+                                    android:textSize="?attr/app_text_size_extra_small"
+                                    app:custom_font="?attr/app_font_medium" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp1"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp10"
+                                    android:layout_height="@dimen/dp10"
+                                    android:src="@mipmap/right_tick" />
+
+                                <com.customviews.TypefaceTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp5"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text="No pre-payment required"
+                                    android:textColor="?attr/app_text_color"
+                                    android:textSize="?attr/app_text_size_extra_small"
+                                    app:custom_font="?attr/app_font_normal" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp1"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp10"
+                                    android:layout_height="@dimen/dp10"
+                                    android:src="@mipmap/right_tick" />
+
+                                <com.customviews.TypefaceTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp5"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text="Free cancellation"
+                                    android:textColor="?attr/app_text_color"
+                                    android:textSize="?attr/app_text_size_extra_small"
+                                    app:custom_font="?attr/app_font_normal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/child_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
