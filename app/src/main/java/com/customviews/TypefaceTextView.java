@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 
 import com.fonts.FontUtils;
-import com.rider.R;
+import com.quickzetuser.R;
 
 
 /**

@@ -9,14 +9,14 @@ import android.util.AttributeSet;
 import android.widget.RadioButton;
 
 import com.fonts.FontUtils;
-import com.rider.R;
+import com.quickzetuser.R;
 
 
 /**
  * CustomRadioButton
  * Use for set custom font from .xml file
  */
-public class TypefaceRadioButton extends RadioButton {
+public class TypefaceRadioButton extends androidx.appcompat.widget.AppCompatRadioButton {
 
 
     public TypefaceRadioButton(Context context) {
@@ -33,12 +33,12 @@ public class TypefaceRadioButton extends RadioButton {
         inIt(context, attrs);
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    /*@TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public TypefaceRadioButton(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         inIt(context, attrs);
     }
-
+*/
     /**
      * Initialize and set all required param from this method
      * parsing custom style tags here

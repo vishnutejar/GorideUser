@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#f28912</color>
+    <color name="colorPrimary">#F44336</color>
     <color name="colorPrimaryDark">#f28912</color>
-    <color name="colorAccent">#dcae36</color>
+    <color name="colorAccent">#F44336</color>
 
 
     <color name="colorGray">#959595</color>
@@ -19,16 +19,16 @@
     <color name="et_img_tint_color">#000000</color>
 
     <color name="button_bg_color">#000000</color>
-    <color name="text_link_color">#dcae36</color>
+    <color name="text_link_color">#F44336</color>
     <color name="red">#9b1024</color>
 
     <color name="map_my_location_color">#50033803</color>
-    <color name="map_my_location_acc_color">#90E3B232</color>
-    <color name="map_route_start_color">#dcae36</color>
+    <color name="map_my_location_acc_color">#F8786F</color>
+    <color name="map_route_start_color">#F44336</color>
     <color name="color_black">#000000</color>
     <color name="color_black30">#30000000</color>
     <color name="color_green">#006600</color>
-    <color name="rating_bar_active_color">#E3B232</color>
+    <color name="rating_bar_active_color">#F44336</color>
     <color name="color_white_aa">#AAffffff</color>
     <color name="color_white_trasparent">#80000000</color>
 </resources>

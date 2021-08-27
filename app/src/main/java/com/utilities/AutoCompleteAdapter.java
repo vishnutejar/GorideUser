@@ -28,8 +28,8 @@ import com.google.android.libraries.places.api.model.TypeFilter;
 import com.google.android.libraries.places.api.net.FindAutocompletePredictionsRequest;
 import com.google.android.libraries.places.api.net.FindAutocompletePredictionsResponse;
 import com.google.android.libraries.places.api.net.PlacesClient;
-import com.rider.R;
-import com.rider.ui.MyApplication;
+import com.quickzetuser.R;
+import com.quickzetuser.ui.MyApplication;
 
 import java.util.ArrayList;
 import java.util.List;

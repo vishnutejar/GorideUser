@@ -28,7 +28,8 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
-import com.rider.R;
+import com.quickzetuser.R;
+
 
 public class ReadMoreTextView extends TypefaceTextView {
 

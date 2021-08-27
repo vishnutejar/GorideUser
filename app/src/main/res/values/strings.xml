@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">7StarCab</string>
+    <string name="app_name">QuickZetTrip User</string>
 
     <!--GOOGLE PROJECT KEYS-->
     <string name="browser_key">AIzaSyCyfDWKQngoGVIT83QlMyn6y3-iiLY_v3k</string>
@@ -9,11 +9,11 @@
 
     <!--_________________________________-->
 
-    <string name="support_mail">contact@taxiiirider.com</string>
-    <string name="support_contact">+911234567890</string>
-    <string name="support_domain">www.taxiiirider.com</string>
+    <string name="support_mail">support@quickzettrip.com</string>
+    <string name="support_domain">www.quickzettrip.com</string>
+    <string name="support_contact">+91 8956931858</string>
 
-    <string name="dummy_share_text">Invite your contacts to join Taxi Rider and be rewarded. To share your exclusive Invite Code tap Share Via and select appropriate option</string>
+    <string name="dummy_share_text">Invite your contacts to join QuickZetTrip User and be rewarded. To share your exclusive Invite Code tap Share Via and select appropriate option</string>
 
 
     <!--custom fonts-->
@@ -23,7 +23,7 @@
     <string name="heebo_regular">heebo_regular.ttf</string>
 
     <string name="term_condition">Term &amp; Conditions</string>
-    <string name="rider">Rider</string>
+    <string name="rider">User</string>
     <string name="email_phone">Email address/ Phone number</string>
     <string name="password">Password</string>
     <string name="sign_in">Sign in</string>

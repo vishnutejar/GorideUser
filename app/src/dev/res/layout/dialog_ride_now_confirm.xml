@@ -409,7 +409,7 @@
                 <View
                     android:layout_width="@dimen/dp60"
                     android:layout_height="@dimen/dp60"
-                    android:background="@drawable/stroke_circle"></View>
+                    android:background="@mipmap/ic_launcher"></View>
             </RelativeLayout>
 
 

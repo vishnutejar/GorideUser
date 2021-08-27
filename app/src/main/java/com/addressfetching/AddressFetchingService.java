@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 
 import com.medy.retrofitwrapper.WebRequest;
 import com.medy.retrofitwrapper.WebServiceResponseListener;
-import com.rider.R;
+import com.quickzetuser.R;
 import com.utilities.Utils;
 
 import org.json.JSONArray;

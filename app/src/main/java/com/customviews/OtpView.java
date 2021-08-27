@@ -21,7 +21,8 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 
-import com.rider.R;
+
+import com.quickzetuser.R;
 
 import java.util.ArrayList;
 import java.util.List;

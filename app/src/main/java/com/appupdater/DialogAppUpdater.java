@@ -15,7 +15,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import com.rider.R;
+
+import com.quickzetuser.R;
 
 import java.util.Locale;
 

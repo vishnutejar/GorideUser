@@ -23,7 +23,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.starcabsrider"
+        applicationId "com.quickzetuser"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 9

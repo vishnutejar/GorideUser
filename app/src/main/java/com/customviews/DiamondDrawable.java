@@ -13,7 +13,7 @@ import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.util.DisplayMetrics;
 
-import com.rider.R;
+import com.quickzetuser.R;
 
 
 /**

@@ -17,7 +17,7 @@ import androidx.fragment.app.FragmentManager;
 
 import com.base.BaseDialogFragment;
 import com.permissions.PermissionHelperNew;
-import com.rider.R;
+import com.quickzetuser.R;
 import com.utilities.Utils;
 
 

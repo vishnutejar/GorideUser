@@ -26,7 +26,7 @@
                 android:layout_width="0dp"
                 android:layout_height="45dp"
                 android:layout_weight="0.4"
-                android:src="@mipmap/logo1"/>
+                android:src="@mipmap/ic_launcher"/>
         </LinearLayout>
 
         <View
@@ -88,7 +88,7 @@
                 android:gravity="center"
                 android:padding="12dp"
                 android:text="UPDATE"
-                android:textColor="?attr/app_link_text_color"
+                android:textColor="#EA1616"
                 android:textSize="?attr/btn_text_size"
                 android:textStyle="bold"
                 app:custom_font="?attr/app_font_medium"/>

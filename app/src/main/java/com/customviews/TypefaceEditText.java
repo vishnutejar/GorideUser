@@ -14,7 +14,7 @@ import android.view.inputmethod.InputConnectionWrapper;
 import android.widget.EditText;
 
 import com.fonts.FontUtils;
-import com.rider.R;
+import com.quickzetuser.R;
 
 
 /**

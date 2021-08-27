@@ -30,7 +30,7 @@
                     android:layout_marginRight="@dimen/dp1"
                     android:layout_marginTop="@dimen/dp1"
                     android:scaleType="centerCrop"
-                    android:src="@mipmap/ic_riksya"/>
+                    android:src="@mipmap/ic_launcher"/>
 
                 <ProgressBar
                     android:id="@+id/pb_image"

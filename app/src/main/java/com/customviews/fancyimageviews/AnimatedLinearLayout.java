@@ -11,7 +11,8 @@ import android.widget.LinearLayout;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
-import com.rider.R;
+import com.quickzetuser.R;
+
 
 /**
  * @author Manish Kumar

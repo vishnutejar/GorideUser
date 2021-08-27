@@ -2,7 +2,7 @@ package com.utilities;
 
 import android.provider.Settings;
 
-import com.rider.ui.MyApplication;
+import com.quickzetuser.ui.MyApplication;
 
 /**
  * Created by bitu on 31/8/17.

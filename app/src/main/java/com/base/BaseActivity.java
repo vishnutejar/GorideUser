@@ -19,8 +19,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.models.DeviceScreenModel;
-import com.rider.R;
-import com.rider.ui.MyApplication;
+import com.quickzetuser.R;
+import com.quickzetuser.ui.MyApplication;
 import com.utilities.Utils;
 
 

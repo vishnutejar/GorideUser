@@ -22,7 +22,7 @@
                 android:layout_marginTop="@dimen/dp15"
                 android:padding="@dimen/dp5"
                 android:scaleType="fitCenter"
-                android:src="@mipmap/ic_riksya"
+                android:src="@mipmap/ic_launcher"
                 app:centerX="0.50"
                 app:centerY="0.50"
                 app:img_bg_color="@color/color_white"

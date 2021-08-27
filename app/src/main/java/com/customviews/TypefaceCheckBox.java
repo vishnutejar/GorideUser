@@ -11,7 +11,7 @@ import android.util.AttributeSet;
 import android.widget.CheckBox;
 
 import com.fonts.FontUtils;
-import com.rider.R;
+import com.quickzetuser.R;
 
 
 /**
