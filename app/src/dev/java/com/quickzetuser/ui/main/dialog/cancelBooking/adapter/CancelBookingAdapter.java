@@ -13,7 +13,7 @@ import java.util.List;
  * Created by Sunil kumar yadav on 6/3/18.
  */
 
-public class CancelBookingAdapter extends BaseRecycleAdapter {
+public class  CancelBookingAdapter extends BaseRecycleAdapter {
     private Context context;
     private  List<String> list;
     private int isSelect = -1;

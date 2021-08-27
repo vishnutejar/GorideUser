@@ -15,6 +15,7 @@ import com.quickzetuser.model.FavouriteModel;
 import java.util.ArrayList;
 import java.util.List;
 
+
 /**
  * Created by ubuntu on 23/1/17.
  */

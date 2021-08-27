@@ -34,7 +34,7 @@ import java.util.List;
  * Created by Sunil kumar yadav on 15/3/18.
  */
 
-public class FavoriteConfirmDialog extends AppBaseDialogFragment {
+public class  FavoriteConfirmDialog extends AppBaseDialogFragment {
 
     String addressType = "Home";
     ConfirmationDialogListener confirmationDialogListener;

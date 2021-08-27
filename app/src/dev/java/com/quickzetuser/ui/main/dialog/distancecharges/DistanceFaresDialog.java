@@ -22,7 +22,7 @@ import java.util.List;
  * Created by ubuntu on 10/4/18.
  */
 
-public class DistanceFaresDialog extends AppBaseDialogFragment {
+public class  DistanceFaresDialog extends AppBaseDialogFragment {
 
     private RecyclerView recycler_view;
     private TextView tv_ok;

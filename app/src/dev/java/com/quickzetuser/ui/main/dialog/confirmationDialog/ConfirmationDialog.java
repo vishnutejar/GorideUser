@@ -19,7 +19,7 @@ import com.quickzetuser.R;
  * Created by Sunil kumar yadav on 15/3/18.
  */
 
-public class ConfirmationDialog extends BaseDialogFragment {
+public class  ConfirmationDialog extends BaseDialogFragment {
 
     private TextView tv_mobile;
     private TextView tv_cancel;

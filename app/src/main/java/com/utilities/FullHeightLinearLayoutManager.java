@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
  * Created by bitu on 30/8/17.
  */
 
+
 public class FullHeightLinearLayoutManager extends LinearLayoutManager {
 
 

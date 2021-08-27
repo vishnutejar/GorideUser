@@ -27,6 +27,7 @@ import com.squareup.picasso.Picasso;
 import java.io.IOException;
 
 
+
 /**
  * @author Manish Kumar
  * @since 14/12/17

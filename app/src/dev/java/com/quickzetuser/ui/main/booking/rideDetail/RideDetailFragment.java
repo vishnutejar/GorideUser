@@ -46,7 +46,7 @@ import java.util.Map;
  * Created by Sunil kumar yadav on 13/3/18.
  */
 
-public class RideDetailFragment extends AppBaseFragment {
+public class  RideDetailFragment extends AppBaseFragment {
 
     private DriverSuggestionAdapter adapter;
     private BookCabModel bookCabModel;

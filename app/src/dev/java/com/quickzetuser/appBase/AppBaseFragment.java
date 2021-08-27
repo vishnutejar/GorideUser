@@ -21,6 +21,7 @@ import com.quickzetuser.ui.MyApplication;
 import com.quickzetuser.ui.main.MainActivity;
 import com.quickzetuser.ui.utilities.Validate;
 
+
 /**
  * Created by ubuntu on 20/2/18.
  */

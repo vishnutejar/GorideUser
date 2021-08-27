@@ -17,7 +17,7 @@ import com.quickzetuser.appBase.AppBaseFragment;
 import com.quickzetuser.model.UserModel;
 import com.utilities.Utils;
 
-public class PaytmPaymentDialog extends AppBaseDialogFragment {
+public class  PaytmPaymentDialog extends AppBaseDialogFragment {
 
     private static final String TAG = PaytmPaymentDialog.class.getSimpleName();
     private WebView web_view;

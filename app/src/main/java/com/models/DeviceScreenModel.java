@@ -10,6 +10,7 @@ import android.widget.RelativeLayout;
  * Created by bitu on 17/8/17.
  */
 
+
 public  class DeviceScreenModel {
     private static DeviceScreenModel deviceScreenModel;
     private Rect deviceRect;

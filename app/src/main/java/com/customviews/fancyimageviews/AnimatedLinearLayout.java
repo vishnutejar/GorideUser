@@ -20,6 +20,7 @@ import com.quickzetuser.R;
  */
 
 
+
 public class AnimatedLinearLayout extends LinearLayout {
 
     Animation clickAnimation;

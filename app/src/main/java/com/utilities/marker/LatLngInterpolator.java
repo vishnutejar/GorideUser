@@ -11,6 +11,7 @@ import static java.lang.Math.sqrt;
 import static java.lang.Math.toDegrees;
 import static java.lang.Math.toRadians;
 
+
 public interface LatLngInterpolator {
     LatLng interpolate (float fraction, LatLng a, LatLng b);
 

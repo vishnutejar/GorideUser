@@ -20,6 +20,7 @@ import com.quickzetuser.R;
  * Created by ubuntu on 3/12/16.
  */
 
+
 public class DiamondDrawable extends Drawable {
 
     Paint mPaint;

@@ -6,6 +6,7 @@ import com.addressfetching.LocationModelFull;
 import com.google.android.gms.maps.model.LatLng;
 import com.models.BaseModel;
 
+
 public class AddressModel extends BaseModel {
 
     private long id;

@@ -2,6 +2,7 @@ package com.quickzetuser.model;
 
 import com.models.BaseModel;
 
+
 /**
  * @author Sunil kumar Yadav
  * @Since 25/5/18

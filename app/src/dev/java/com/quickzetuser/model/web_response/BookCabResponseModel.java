@@ -3,6 +3,7 @@ package com.quickzetuser.model.web_response;
 
 import com.quickzetuser.model.BookCabModel;
 
+
 /**
  * Created by ubuntu on 18/4/18.
  */

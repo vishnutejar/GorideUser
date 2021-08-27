@@ -4,6 +4,7 @@ package com.quickzetuser.model.pusher;
 import com.distancematrix.DistanceMatrixModel;
 import com.google.android.gms.maps.model.LatLng;
 
+
 public class PusherEtaModel {
 
     public double latitude;

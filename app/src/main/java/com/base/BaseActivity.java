@@ -28,7 +28,8 @@ import com.utilities.Utils;
  * Created by bitu on 15/8/17.
  */
 
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class
+BaseActivity extends AppCompatActivity {
     private FragmentManager fm;
     private Bundle savedInstanceState;
     private Toast toast;

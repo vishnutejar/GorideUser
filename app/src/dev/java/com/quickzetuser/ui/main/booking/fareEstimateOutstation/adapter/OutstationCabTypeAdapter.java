@@ -13,6 +13,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+
 public class OutstationCabTypeAdapter extends BaseRecycleAdapter {
 
     private List<OutstationFareModel> list;

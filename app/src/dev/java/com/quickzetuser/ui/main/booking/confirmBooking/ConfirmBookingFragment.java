@@ -52,6 +52,7 @@ import static com.quickzetuser.appBase.AppBaseMapFragment.getPusherEtaDropEventN
 import static com.quickzetuser.appBase.AppBaseMapFragment.getPusherEtaPickupEventName;
 import static com.quickzetuser.appBase.AppBaseMapFragment.getPusherLocationEventName;
 
+
 /**
  * Created by Sunil kumar yadav on 14/3/18.
  */

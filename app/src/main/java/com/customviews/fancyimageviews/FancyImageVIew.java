@@ -25,6 +25,7 @@ import com.quickzetuser.R;
  */
 
 
+
 @SuppressLint("AppCompatCustomView")
 public class FancyImageVIew extends ImageView {
 

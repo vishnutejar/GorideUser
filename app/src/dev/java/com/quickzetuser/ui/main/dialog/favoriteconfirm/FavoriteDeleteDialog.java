@@ -22,7 +22,7 @@ import com.quickzetuser.model.web_response.FavouriteResponseModel;
  * Created by Sunil kumar yadav on 15/3/18.
  */
 
-public class FavoriteDeleteDialog extends AppBaseDialogFragment {
+public class  FavoriteDeleteDialog extends AppBaseDialogFragment {
 
 
     ConfirmationDialogListener confirmationDialogListener;

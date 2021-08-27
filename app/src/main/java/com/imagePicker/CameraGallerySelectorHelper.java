@@ -74,6 +74,7 @@ import java.io.File;
  *         restClient.showErrorDialog("Something went wrong");
  *         }
  */
+
 public class CameraGallerySelectorHelper {
 
     /**

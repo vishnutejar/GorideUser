@@ -3,6 +3,7 @@ package com.quickzetuser.model;
 import com.addressfetching.LocationModelFull;
 import com.quickzetuser.model.web_response.BaseWebServiceModelResponse;
 
+
 /**
  * @author Sunil kumar Yadav
  * @Since 3/7/18

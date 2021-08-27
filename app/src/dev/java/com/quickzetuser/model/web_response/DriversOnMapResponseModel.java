@@ -4,6 +4,7 @@ import com.quickzetuser.model.VehicleTypeModel;
 
 import java.util.List;
 
+
 /**
  * Created by Sunil kumar yadav on 4/5/18.
  */

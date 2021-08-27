@@ -1,6 +1,7 @@
 package com.quickzetuser.model.pusher;
 
 
+
 import com.google.android.gms.maps.model.LatLng;
 
 public class PusherLocationModel {

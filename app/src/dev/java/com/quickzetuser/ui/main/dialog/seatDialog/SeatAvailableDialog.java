@@ -11,6 +11,7 @@ import com.quickzetuser.R;
 import com.quickzetuser.appBase.AppBaseDialogFragment;
 import com.quickzetuser.model.RentalFareModel;
 
+
 public class SeatAvailableDialog extends AppBaseDialogFragment {
 
     private LinearLayout ll_one_seat, ll_second_seat;

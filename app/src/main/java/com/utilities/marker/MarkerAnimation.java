@@ -9,6 +9,7 @@ import android.view.animation.LinearInterpolator;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 
+
 public class MarkerAnimation {
     Handler movinghandler = new Handler();
     LatLngInterpolator latLngInterpolator;

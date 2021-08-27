@@ -19,6 +19,7 @@ import com.quickzetuser.ui.utilities.BookingStatusHelper;
 
 import io.supercharge.shimmerlayout.ShimmerLayout;
 
+
 /**
  * Created by Sunil kumar yadav on 7/5/18.
  */

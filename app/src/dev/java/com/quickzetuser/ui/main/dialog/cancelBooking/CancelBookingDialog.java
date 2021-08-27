@@ -30,7 +30,7 @@ import java.util.List;
  * Created by Sunil kumar yadav on 15/3/18.
  */
 
-public class CancelBookingDialog extends AppBaseDialogFragment {
+public class  CancelBookingDialog extends AppBaseDialogFragment {
 
     String message;
     String reason = "";

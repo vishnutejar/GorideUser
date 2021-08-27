@@ -25,6 +25,7 @@ import java.io.InvalidObjectException;
 public class BitmapHelper {
 
 
+
     public static Bitmap convertBitmapToFillWidth(Bitmap bitmap, int width) {
         float bitmapWidth = bitmap.getWidth();
         float bitmapHeight = bitmap.getHeight();

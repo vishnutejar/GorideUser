@@ -2,6 +2,7 @@ package com.quickzetuser.model;
 
 import com.quickzetuser.appBase.AppBaseModel;
 
+
 /**
  * Created by ubuntu on 16/4/18.
  */

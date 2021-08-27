@@ -25,6 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+
 public class ForgotPasswordActivity extends AppBaseActivity implements View.OnClickListener,
         PermissionHelperNew.OnSpecificPermissionGranted {
 

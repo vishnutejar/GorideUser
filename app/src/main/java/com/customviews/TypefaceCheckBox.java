@@ -22,6 +22,7 @@ import com.quickzetuser.R;
 public class TypefaceCheckBox extends CheckBox {
 
 
+
     public TypefaceCheckBox(Context context) {
         super(context);
     }

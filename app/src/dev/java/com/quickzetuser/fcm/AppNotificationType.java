@@ -6,6 +6,7 @@ package com.quickzetuser.fcm;
  */
 
 
+
 public interface AppNotificationType {
 
     String TYPE_AUTO_CANCEL_BOOKING = "autocancel_booking";

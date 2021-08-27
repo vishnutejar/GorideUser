@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.quickzetuser.R;
 
 
+
 public class ItemClickSupport {
     private final RecyclerView mRecyclerView;
     private OnItemClickListener mOnItemClickListener;

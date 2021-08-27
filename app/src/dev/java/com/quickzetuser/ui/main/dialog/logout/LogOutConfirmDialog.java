@@ -25,6 +25,7 @@ import com.utilities.DeviceUtils;
  * Created by Sunil kumar yadav on 26/2/18.
  */
 
+
 public class LogOutConfirmDialog extends AppBaseDialogFragment {
 
     String message;

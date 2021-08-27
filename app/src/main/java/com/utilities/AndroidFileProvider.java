@@ -38,6 +38,7 @@ import static org.xmlpull.v1.XmlPullParser.START_TAG;
  *         This class is use for make custom Provider for Naugot and above apis for open camera
  *         <p>
  */
+
 public class AndroidFileProvider extends ContentProvider {
     private static final String[] COLUMNS = {
             OpenableColumns.DISPLAY_NAME, OpenableColumns.SIZE};

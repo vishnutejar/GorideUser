@@ -20,6 +20,7 @@ import com.quickzetuser.R;
  * Created by Sunil kumar yadav on 15/3/18.
  */
 
+
 public class PaymentModeDialog extends BaseDialogFragment {
 
     private TextView tv_title;

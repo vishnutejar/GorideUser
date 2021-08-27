@@ -15,7 +15,7 @@ import java.util.Map;
 /**
  * Created by Sunil kumar on 10/5/18.
  */
-public class DriverSuggestionAdapter extends BaseRecycleAdapter {
+public class  DriverSuggestionAdapter extends BaseRecycleAdapter {
 
     private Context context;
     private List<String> list;

@@ -19,6 +19,7 @@ import com.quickzetuser.fcm.AppNotificationType;
  * Created by ubuntu on 10/4/18.
  */
 
+
 public class MessageDialog extends AppBaseDialogFragment {
 
     private TextView tv_message;

@@ -24,7 +24,7 @@ import com.quickzetuser.ui.main.booking.fareEstimaterentel.FareEstimateRentalFra
  * Created by Sunil kumar yadav on 13/3/18.
  */
 
-public class SelectedAddressFragment extends AppBaseFragment {
+public class  SelectedAddressFragment extends AppBaseFragment {
 
     private LocationModelFull.LocationModel locationModel;
     private TextView tv_pickup_address;

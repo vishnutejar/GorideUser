@@ -8,6 +8,7 @@ import com.quickzetuser.ui.MyApplication;
  * Created by bitu on 31/8/17.
  */
 
+
 public class DeviceUtils {
 
     public static String getUniqueDeviceId(){

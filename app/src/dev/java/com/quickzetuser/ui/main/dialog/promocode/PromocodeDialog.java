@@ -11,7 +11,7 @@ import com.medy.retrofitwrapper.WebRequest;
 import com.quickzetuser.R;
 import com.quickzetuser.appBase.AppBaseDialogFragment;
 
-public class PromocodeDialog extends AppBaseDialogFragment {
+public class  PromocodeDialog extends AppBaseDialogFragment {
 
     private EditText et_promocode;
     private TextView tv_cancel, tv_apply;

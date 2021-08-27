@@ -1,6 +1,7 @@
 package com.quickzetuser.model.request_model;
 
 /**
+ *
  * Created by Sunil kumar yadav on 4/5/18.
  */
 

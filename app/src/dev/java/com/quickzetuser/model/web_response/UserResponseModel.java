@@ -1,6 +1,7 @@
 package com.quickzetuser.model.web_response;
 
 
+
 import com.quickzetuser.model.UserModel;
 
 /**

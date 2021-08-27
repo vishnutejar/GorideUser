@@ -11,6 +11,7 @@ import java.util.Locale;
  */
 
 
+
 public abstract class BaseModel {
 
     public static final int TAG_ONE = 1;

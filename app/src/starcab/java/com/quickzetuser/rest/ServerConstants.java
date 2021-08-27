@@ -7,7 +7,6 @@ package com.quickzetuser.rest;
 public interface ServerConstants {
 
 
-
     /*Test*/
 
     /*String DOMAIN = "http://205.147.102.6/";

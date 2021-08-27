@@ -2,6 +2,7 @@ package com.quickzetuser.model;
 
 public class OutstationFareModel {
 
+
     private VehicleTypeModel vehicle;
     private FareData onewayfare;
     private FareData roundtripfare;

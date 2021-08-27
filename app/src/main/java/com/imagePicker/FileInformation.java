@@ -11,6 +11,7 @@ import java.io.File;
  * Created by bitu on 9/9/17.
  */
 
+
 public class FileInformation {
 
     public static final int IMAGE_SIZE_THUMB = 300;

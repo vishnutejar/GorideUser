@@ -44,7 +44,7 @@ import java.util.List;
  * Created by Sunil kumar yadav on 13/3/18.
  */
 
-public class FareEstimateRentalFragment extends AppBaseFragment implements DistanceMatrixHandler.DistanceMatrixListener {
+public class  FareEstimateRentalFragment extends AppBaseFragment implements DistanceMatrixHandler.DistanceMatrixListener {
 
 
     ConfirmBookingDialog confirmationDialog;

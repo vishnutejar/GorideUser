@@ -21,6 +21,7 @@ import com.utilities.Utils;
 import static com.utilities.Utils.PLAY_SERVICES_RESOLUTION_REQUEST;
 
 
+
 public class SplashActivity extends AppBaseActivity
         implements PermissionHelperNew.OnSpecificPermissionGranted {
 

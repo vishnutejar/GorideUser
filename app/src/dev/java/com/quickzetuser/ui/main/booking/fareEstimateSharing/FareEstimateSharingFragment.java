@@ -43,7 +43,7 @@ import java.util.List;
  * Created by Sunil kumar yadav on 17/07/19.
  */
 
-public class FareEstimateSharingFragment extends AppBaseFragment implements DistanceMatrixHandler.DistanceMatrixListener {
+public class  FareEstimateSharingFragment extends AppBaseFragment implements DistanceMatrixHandler.DistanceMatrixListener {
 
 
     ConfirmBookingDialog confirmationDialog;

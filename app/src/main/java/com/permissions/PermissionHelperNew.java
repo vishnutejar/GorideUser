@@ -29,6 +29,7 @@ import com.quickzetuser.R;
  * <p>
  * This class is use for  handle run time permission in application
  * <p>
+ *
  */
 public class PermissionHelperNew {
 

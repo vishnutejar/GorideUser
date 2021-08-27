@@ -16,6 +16,7 @@ import com.quickzetuser.appBase.AppBaseDialogFragment;
 import com.quickzetuser.model.TotalTollsModel;
 import com.quickzetuser.ui.main.dialog.tollsdetail.adapter.TollsAdapter;
 
+
 /**
  * Created by ubuntu on 10/4/18.
  */

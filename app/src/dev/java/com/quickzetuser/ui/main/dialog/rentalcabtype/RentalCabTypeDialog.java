@@ -20,6 +20,7 @@ import com.utilities.ItemClickSupport;
 
 import java.util.List;
 
+
 public class RentalCabTypeDialog extends AppBaseDialogFragment implements DistanceMatrixHandler.DistanceMatrixListener {
 
     RentalCabTypeAdapter adapter;

@@ -13,7 +13,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class RentalCabTypeAdapter extends BaseRecycleAdapter {
+public class  RentalCabTypeAdapter extends BaseRecycleAdapter {
 
     private List<RentalFareModel> list;
 

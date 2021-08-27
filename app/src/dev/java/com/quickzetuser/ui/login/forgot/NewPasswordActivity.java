@@ -23,6 +23,7 @@ import com.quickzetuser.ui.login.LoginActivity;
 import com.utilities.Utils;
 
 
+
 public class NewPasswordActivity extends AppBaseActivity implements View.OnClickListener {
 
 

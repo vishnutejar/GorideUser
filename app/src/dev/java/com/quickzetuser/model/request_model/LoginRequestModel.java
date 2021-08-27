@@ -1,5 +1,6 @@
 package com.quickzetuser.model.request_model;
 
+
 /**
  * Created by ubuntu on 30/3/18.
  */

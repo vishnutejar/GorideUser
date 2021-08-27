@@ -24,6 +24,7 @@ import com.quickzetuser.model.web_response.NewRiderResponseModel;
 import com.quickzetuser.model.web_response.UserResponseModel;
 import com.utilities.Utils;
 
+
 /**
  * Created by ubuntu on 22/3/18.
  */

@@ -9,6 +9,7 @@ import com.preferences.BasePrefs;
  * Created by bitu on 24/9/17.
  */
 
+
 public class NotificationPrefs extends BasePrefs {
 
     static final String Prefsname = "prefs_notification";

@@ -12,6 +12,7 @@ import com.quickzetuser.appBase.AppBaseFragment;
 import com.quickzetuser.model.UserModel;
 import com.quickzetuser.ui.MyApplication;
 
+
 /**
  * Created by Sunil kumar yadav on 14/3/18.
  */

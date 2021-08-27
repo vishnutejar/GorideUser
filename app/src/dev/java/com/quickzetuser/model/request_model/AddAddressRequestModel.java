@@ -2,6 +2,7 @@ package com.quickzetuser.model.request_model;
 
 public class AddAddressRequestModel extends AppBaseRequestModel {
 
+
     public String type;
     public String title;
     public String house_no;

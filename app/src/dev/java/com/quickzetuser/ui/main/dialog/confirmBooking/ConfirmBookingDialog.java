@@ -33,7 +33,7 @@ import java.util.List;
  * Created by Sunil kumar yadav on 26/2/18.
  */
 
-public class ConfirmBookingDialog extends BaseDialogFragment
+public class  ConfirmBookingDialog extends BaseDialogFragment
         implements DistanceMatrixHandler.DistanceMatrixListener {
 
     private final int TIME_INTERVAL = 1000;

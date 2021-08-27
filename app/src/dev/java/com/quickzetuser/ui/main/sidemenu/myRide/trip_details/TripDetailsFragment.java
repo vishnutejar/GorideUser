@@ -34,6 +34,7 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 
+
 /**
  * A simple {@link Fragment} subclass.
  */

@@ -57,6 +57,7 @@ import java.util.List;
 
 import static com.quickzetuser.appBase.AppBaseMapFragment.REQUEST_CHECK_SETTINGS;
 
+
 public class MainActivity extends AppBaseActivity
         implements UserPrefs.UserPrefsListener, RunningBookingHead.RunningBookingHeadListener,
         PushNotificationHelper.PushNotificationHelperListener {

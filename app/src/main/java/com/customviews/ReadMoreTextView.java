@@ -31,6 +31,7 @@ import android.view.ViewTreeObserver;
 import com.quickzetuser.R;
 
 
+
 public class ReadMoreTextView extends TypefaceTextView {
 
     private static final int TRIM_MODE_LINES = 0;

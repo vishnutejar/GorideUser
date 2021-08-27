@@ -4,6 +4,7 @@ import com.quickzetuser.appBase.AppBaseModel;
 
 import java.util.List;
 
+
 public class RentalPackageModel extends AppBaseModel {
 
     private long package_id;

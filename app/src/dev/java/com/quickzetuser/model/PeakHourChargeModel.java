@@ -2,6 +2,7 @@ package com.quickzetuser.model;
 
 import com.medy.retrofitwrapper.BaseModel;
 
+
 /**
  * Created by ubuntu on 16/4/18.
  */

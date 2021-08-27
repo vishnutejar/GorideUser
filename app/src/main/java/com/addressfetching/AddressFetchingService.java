@@ -25,6 +25,7 @@ import org.json.JSONObject;
  */
 
 
+
 public class AddressFetchingService extends IntentService {
 
     public static final String ACTION_FETCH_ADDRESS = ".fetch_address";

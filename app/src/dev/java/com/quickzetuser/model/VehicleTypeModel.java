@@ -1,5 +1,6 @@
 package com.quickzetuser.model;
 
+
 import com.distancematrix.DistanceMatrixModel;
 import com.models.BaseModel;
 import com.quickzetuser.rest.WebRequestConstants;

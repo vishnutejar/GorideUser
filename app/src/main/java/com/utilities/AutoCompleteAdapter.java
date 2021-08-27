@@ -38,6 +38,7 @@ import java.util.List;
  * Created by ubuntu on 12/4/18.
  */
 
+
 public class AutoCompleteAdapter extends BaseRecycleAdapter
         implements Filterable, TextWatcher, ItemClickSupport.OnItemClickListener {
 

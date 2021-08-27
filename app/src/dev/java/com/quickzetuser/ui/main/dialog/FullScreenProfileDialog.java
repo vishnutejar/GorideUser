@@ -12,6 +12,7 @@ import com.quickzetuser.appBase.AppBaseDialogFragment;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
+
 /**
  * Created by ubuntu on 25/4/18.
  */

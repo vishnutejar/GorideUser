@@ -18,6 +18,7 @@ import com.quickzetuser.appBase.AppBaseActivity;
 import com.quickzetuser.model.AddressModel;
 import com.utilities.Utils;
 
+
 public class SelectAddressActivity extends AppBaseActivity implements AddressMapFragment.AddressMapFragmentListener, View.OnClickListener {
 
     AddressMapFragment addressMapFragment;

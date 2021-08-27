@@ -14,7 +14,7 @@ import java.util.List;
  * Created by ubuntu on 10/4/18.
  */
 
-public class DistanceFaresAdapter extends BaseRecycleAdapter {
+public class  DistanceFaresAdapter extends BaseRecycleAdapter {
 
     public String currency_symbol = "";
 

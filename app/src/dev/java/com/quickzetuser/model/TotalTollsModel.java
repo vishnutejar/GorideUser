@@ -1,5 +1,6 @@
 package com.quickzetuser.model;
 
+
 import com.models.BaseModel;
 
 import java.util.List;

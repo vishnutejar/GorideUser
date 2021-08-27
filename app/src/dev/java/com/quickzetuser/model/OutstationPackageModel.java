@@ -4,6 +4,7 @@ import com.quickzetuser.appBase.AppBaseModel;
 
 import java.util.List;
 
+
 public class OutstationPackageModel extends AppBaseModel {
     boolean oneway;
     boolean roundtrip;

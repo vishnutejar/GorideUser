@@ -1,6 +1,7 @@
 package com.quickzetuser.model;
 
 
+
 import com.models.BaseModel;
 
 public class WalletModel extends BaseModel {

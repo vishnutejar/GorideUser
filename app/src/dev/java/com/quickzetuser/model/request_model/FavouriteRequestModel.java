@@ -3,6 +3,7 @@ package com.quickzetuser.model.request_model;
 import com.addressfetching.LocationModelFull;
 import com.medy.retrofitwrapper.ParamJSON;
 
+
 /**
  * @author Sunil kumar Yadav
  * @Since 3/7/18

@@ -23,6 +23,7 @@ import com.quickzetuser.R;
 import com.quickzetuser.appBase.AppBaseFragment;
 
 /**
+ *
  * @author Manish Kumar
  * @since 5/9/17
  */

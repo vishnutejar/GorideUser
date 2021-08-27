@@ -30,6 +30,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+
 public class SignUpActivity extends AppBaseActivity implements View.OnClickListener,
         PermissionHelperNew.OnSpecificPermissionGranted {
 

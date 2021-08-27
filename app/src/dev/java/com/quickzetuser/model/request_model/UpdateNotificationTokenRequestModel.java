@@ -1,6 +1,7 @@
 package com.quickzetuser.model.request_model;
 
 /**
+ *
  * @author Sunil kumar Yadav
  * @Since 2/7/18
  */

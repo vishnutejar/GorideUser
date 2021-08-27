@@ -17,6 +17,7 @@ import com.fonts.FontUtils;
 import com.quickzetuser.R;
 
 
+
 /**
  * CustomEditText
  * Use for set custom font from .xml file

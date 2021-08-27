@@ -2,6 +2,7 @@ package com.quickzetuser.model.web_response;
 
 import com.models.BaseModel;
 
+
 /**
  * Created by ubuntu on 27/3/18.
  */
