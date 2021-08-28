@@ -34,7 +34,7 @@
                     android:layout_marginLeft="@dimen/dp40"
                     android:layout_marginTop="@dimen/dp10"
                     android:layout_marginRight="@dimen/dp40"
-                    android:src="@mipmap/ic_launcher" />
+                    android:src="@drawable/quickzetlogo" />
 
                 <com.customviews.TypefaceTextView
                     android:layout_width="wrap_content"
