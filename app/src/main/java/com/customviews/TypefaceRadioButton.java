@@ -17,7 +17,7 @@ import com.quickzetuser.R;
  * CustomRadioButton
  * Use for set custom font from .xml file
  */
-public class TypefaceRadioButton extends androidx.appcompat.widget.AppCompatRadioButton {
+public class  TypefaceRadioButton extends androidx.appcompat.widget.AppCompatRadioButton {
 
 
     public TypefaceRadioButton(Context context) {

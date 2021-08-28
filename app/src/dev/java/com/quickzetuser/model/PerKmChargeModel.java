@@ -7,7 +7,7 @@ import com.quickzetuser.appBase.AppBaseModel;
  * Created by ubuntu on 16/4/18.
  */
 
-public class PerKmChargeModel extends AppBaseModel {
+public class   PerKmChargeModel extends AppBaseModel {
 
     private int id;
     private float min_km;

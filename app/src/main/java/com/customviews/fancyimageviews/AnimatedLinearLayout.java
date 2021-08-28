@@ -21,7 +21,7 @@ import com.quickzetuser.R;
 
 
 
-public class AnimatedLinearLayout extends LinearLayout {
+public class  AnimatedLinearLayout extends LinearLayout {
 
     Animation clickAnimation;
 

@@ -7,7 +7,7 @@ import com.models.BaseModel;
  * Created by Sunil kumar yadav on 13/3/18.
  */
 
-public class CountryModel extends BaseModel{
+public class  CountryModel extends BaseModel{
 
     private float country_id;
     private String country_name;

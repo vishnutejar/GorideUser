@@ -5,7 +5,7 @@ import com.quickzetuser.appBase.AppBaseModel;
 import java.util.List;
 
 
-public class OutstationPackageModel extends AppBaseModel {
+public class  OutstationPackageModel extends AppBaseModel {
     boolean oneway;
     boolean roundtrip;
     float outstation_driver_allounce_oneway;

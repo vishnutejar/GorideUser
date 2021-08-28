@@ -20,7 +20,7 @@ import java.util.List;
  * Created by ubuntu on 23/1/17.
  */
 
-public class BookingTable extends BaseDaoTable {
+public class  BookingTable extends BaseDaoTable {
 
     public static final class Fields implements BaseColumns {
         public static final String BOOKING_ID = "user_id";

@@ -4,7 +4,7 @@ package com.quickzetuser.model;
 
 import com.models.BaseModel;
 
-public class WalletRechargeModel extends BaseModel {
+public class  WalletRechargeModel extends BaseModel {
 
     private String ORDERID;
     private String MID;

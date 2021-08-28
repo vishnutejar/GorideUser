@@ -7,7 +7,7 @@ import com.models.BaseModel;
  * @author Sunil kumar Yadav
  * @Since 25/5/18
  */
-public class RatingModel extends BaseModel {
+public class  RatingModel extends BaseModel {
 
     long booking_id;
     float rating;

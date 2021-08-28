@@ -27,7 +27,7 @@ import com.quickzetuser.R;
 
 
 @SuppressLint("AppCompatCustomView")
-public class FancyImageVIew extends ImageView {
+public class  FancyImageVIew extends ImageView {
 
     public static final TransformationType DEFAULT_TRANSFORMATION_TYPE = TransformationType.CIRCULAR;
 

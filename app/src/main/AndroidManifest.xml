@@ -31,7 +31,7 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="manifest_pkg"
-            android:value="com.rider" />
+            android:value="com.quickzetuser" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/android_key" />

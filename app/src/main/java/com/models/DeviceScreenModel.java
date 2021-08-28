@@ -11,7 +11,7 @@ import android.widget.RelativeLayout;
  */
 
 
-public  class DeviceScreenModel {
+public  class  DeviceScreenModel {
     private static DeviceScreenModel deviceScreenModel;
     private Rect deviceRect;
     private float density;

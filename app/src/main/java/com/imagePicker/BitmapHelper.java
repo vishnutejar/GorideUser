@@ -22,7 +22,7 @@ import java.io.InvalidObjectException;
  * Created by bitu on 9/9/17.
  */
 
-public class BitmapHelper {
+public class  BitmapHelper {
 
 
 

@@ -7,7 +7,7 @@ import com.models.BaseModel;
  * @author Sunil kumar Yadav
  * @Since 24/5/18
  */
-public class NotificationModel extends BaseModel {
+public class  NotificationModel extends BaseModel {
 
     String title;
     String notification;

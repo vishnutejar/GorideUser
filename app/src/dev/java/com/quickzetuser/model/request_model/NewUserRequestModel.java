@@ -6,7 +6,7 @@ package com.quickzetuser.model.request_model;
  * Created by ubuntu on 27/3/18.
  */
 
-public class NewUserRequestModel extends AppBaseRequestModel {
+public class  NewUserRequestModel extends AppBaseRequestModel {
 
     public String firstname;
     public String lastname;

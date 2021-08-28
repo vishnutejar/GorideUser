@@ -11,7 +11,7 @@ import java.util.List;
  * @author Sunil kumar Yadav
  * @Since 13/6/18
  */
-public class DistanceMatrixModel extends BaseModel {
+public class  DistanceMatrixModel extends BaseModel {
 
     String address;
     LatLng latLng;

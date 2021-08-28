@@ -1,6 +1,6 @@
 package com.quickzetuser.model.request_model;
 
-public class AddAddressRequestModel extends AppBaseRequestModel {
+public class  AddAddressRequestModel extends AppBaseRequestModel {
 
 
     public String type;

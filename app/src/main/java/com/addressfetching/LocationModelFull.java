@@ -16,6 +16,7 @@ import java.util.ArrayList;
 
 
 
+
 public class LocationModelFull {
 
     int code = 0;

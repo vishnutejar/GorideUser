@@ -39,7 +39,7 @@ import static org.xmlpull.v1.XmlPullParser.START_TAG;
  *         <p>
  */
 
-public class AndroidFileProvider extends ContentProvider {
+public class  AndroidFileProvider extends ContentProvider {
     private static final String[] COLUMNS = {
             OpenableColumns.DISPLAY_NAME, OpenableColumns.SIZE};
 

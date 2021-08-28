@@ -11,7 +11,7 @@ import java.util.List;
  * Created by Sunil kumar yadav on 13/4/18.
  */
 
-public class VehicleTypeModel extends BaseModel {
+public class  VehicleTypeModel extends BaseModel {
 
     long id;
     String name;

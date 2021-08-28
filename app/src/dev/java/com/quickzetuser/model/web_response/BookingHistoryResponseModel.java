@@ -10,7 +10,7 @@ import java.util.List;
  * Created by ubuntu on 18/4/18.
  */
 
-public class BookingHistoryResponseModel extends BaseWebServiceModelResponse{
+public class  BookingHistoryResponseModel extends BaseWebServiceModelResponse{
 
     private List<BookCabModel> data;
 

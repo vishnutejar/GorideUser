@@ -7,7 +7,7 @@ import com.models.BaseModel;
  * Created by Sunil kumar yadav on 16/4/18.
  */
 
-public class TaxModel extends BaseModel{
+public class  TaxModel extends BaseModel{
 
     long id;
     String name;

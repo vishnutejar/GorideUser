@@ -34,7 +34,7 @@ import java.util.List;
 
 
 
-public class GoogleApiClientHelper implements
+public class  GoogleApiClientHelper implements
         GoogleApiClient.OnConnectionFailedListener,
         GoogleApiClient.ConnectionCallbacks,
         LocationListener {

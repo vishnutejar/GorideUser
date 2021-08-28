@@ -19,7 +19,7 @@ import com.quickzetuser.R;
  * Created by ubuntu on 28/12/17.
  */
 
-public class TypefaceTextView extends TextView {
+public class  TypefaceTextView extends TextView {
     public TypefaceTextView(Context context) {
         super(context);
     }

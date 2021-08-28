@@ -8,6 +8,7 @@ public class AppUpdateModal {
     public AppUpdateModal() {
     }
 
+
     public AppUpdateModal(String latestVersionName) {
         this.versionName = latestVersionName;
     }

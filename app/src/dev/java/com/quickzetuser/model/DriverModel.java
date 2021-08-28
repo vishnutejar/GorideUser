@@ -9,7 +9,7 @@ import com.models.BaseModel;
  * Created by ubuntu on 26/4/18.
  */
 
-public class DriverModel extends BaseModel {
+public class  DriverModel extends BaseModel {
 
 
     private long driver_id;

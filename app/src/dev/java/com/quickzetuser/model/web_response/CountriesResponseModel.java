@@ -10,7 +10,7 @@ import java.util.List;
  * Created by Sunil kumar yadav on 13/3/18.
  */
 
-public class CountriesResponseModel extends BaseWebServiceModelResponse{
+public class  CountriesResponseModel extends BaseWebServiceModelResponse{
 
     private List<CountryModel> data;
 

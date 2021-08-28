@@ -5,7 +5,7 @@ import com.distancematrix.DistanceMatrixModel;
 import com.google.android.gms.maps.model.LatLng;
 
 
-public class PusherEtaModel {
+public class  PusherEtaModel {
 
     public double latitude;
     public double longitude;

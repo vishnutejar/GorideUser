@@ -10,7 +10,7 @@ import com.preferences.BasePrefs;
  */
 
 
-public class NotificationPrefs extends BasePrefs {
+public class  NotificationPrefs extends BasePrefs {
 
     static final String Prefsname = "prefs_notification";
     static NotificationPrefs instance;

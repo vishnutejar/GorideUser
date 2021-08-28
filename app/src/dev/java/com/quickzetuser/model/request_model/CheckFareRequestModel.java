@@ -5,7 +5,7 @@ package com.quickzetuser.model.request_model;
  * Created by ubuntu on 11/4/18.
  */
 
-public class CheckFareRequestModel extends AppBaseRequestModel {
+public class  CheckFareRequestModel extends AppBaseRequestModel {
 
     public double latitude_from;
     public double longitude_from;

@@ -1,6 +1,6 @@
 package com.quickzetuser.model;
 
-public class OutstationFareModel {
+public class  OutstationFareModel {
 
 
     private VehicleTypeModel vehicle;

@@ -12,7 +12,7 @@ import android.view.animation.LinearInterpolator;
  * @since 29/8/18
  */
 
-public class ViewAnimationUtils {
+public class  ViewAnimationUtils {
 
     public static void expand (final View v, final InterPolatedTimeListener interPolatedTimeListener) {
         v.measure(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);

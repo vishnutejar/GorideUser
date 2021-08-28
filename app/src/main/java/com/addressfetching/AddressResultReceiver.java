@@ -15,6 +15,7 @@ import com.utilities.Utils;
  */
 
 
+
 public abstract class AddressResultReceiver extends ResultReceiver {
 
     public static final String TAG = "AddressResultReceiver";

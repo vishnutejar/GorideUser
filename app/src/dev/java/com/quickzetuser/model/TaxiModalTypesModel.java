@@ -8,7 +8,7 @@ import com.models.BaseModel;
  * Created by ubuntu on 3/4/18.
  */
 
-public class TaxiModalTypesModel extends BaseModel {
+public class  TaxiModalTypesModel extends BaseModel {
 
     private long model_id;
     private String model_name;

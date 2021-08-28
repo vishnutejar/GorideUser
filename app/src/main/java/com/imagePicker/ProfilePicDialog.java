@@ -26,7 +26,7 @@ import com.utilities.Utils;
  */
 
 
-public class ProfilePicDialog extends BaseDialogFragment {
+public class  ProfilePicDialog extends BaseDialogFragment {
 
     public static final String TAG = "ProfilePicDialog";
 

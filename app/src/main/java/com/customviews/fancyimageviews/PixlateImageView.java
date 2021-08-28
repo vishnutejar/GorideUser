@@ -21,7 +21,7 @@ import com.customviews.fancyimageviews.transforms.PixlateTransformation;
 
 
 
-public class PixlateImageView extends ImageView {
+public class  PixlateImageView extends ImageView {
 
     PixlateTransformation pixlateTransformation;
 

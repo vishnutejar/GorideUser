@@ -12,7 +12,7 @@ import java.util.Locale;
  * Created by ubuntu on 5/4/18.
  */
 
-public class AppBaseModel extends BaseModel {
+public class  AppBaseModel extends BaseModel {
 
     public final String PER_KM = "/KM";
     public final String KM = " KM";

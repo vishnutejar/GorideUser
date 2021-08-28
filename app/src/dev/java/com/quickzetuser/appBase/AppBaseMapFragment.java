@@ -81,7 +81,7 @@ import java.util.Set;
  * Created by ubuntu on 10/4/18.
  */
 
-public class AppBaseMapFragment extends GoogleMapFragment
+public class  AppBaseMapFragment extends GoogleMapFragment
         implements LocationListener, MapRouteHandler.MapRouteListener,
         MapDriversHelper.MapDriversHelperListener, PusherListener {
 

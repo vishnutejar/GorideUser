@@ -28,7 +28,7 @@ import static java.lang.Math.toRadians;
  * Created by Sunil kumar yadav on 21/4/18.
  */
 
-public class Utils {
+public class  Utils {
 
     public static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
 

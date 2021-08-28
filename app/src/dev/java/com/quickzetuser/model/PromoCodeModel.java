@@ -7,7 +7,7 @@ import com.models.BaseModel;
  * Created by Sunil kumar yadav on 16/4/18.
  */
 
-public class PromoCodeModel extends BaseModel {
+public class  PromoCodeModel extends BaseModel {
 
     private double promocode_id;
     private String promocode_value;

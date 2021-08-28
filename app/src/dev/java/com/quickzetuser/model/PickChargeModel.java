@@ -7,7 +7,7 @@ import com.models.BaseModel;
  * Created by Sunil kumar yadav on 16/4/18.
  */
 
-public class PickChargeModel extends BaseModel{
+public class  PickChargeModel extends BaseModel{
 
     private float peak_hour_charge_value;
     private float peak_hour_charge_amount;

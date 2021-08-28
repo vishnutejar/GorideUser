@@ -12,7 +12,7 @@ import java.util.Locale;
 
 
 
-public abstract class BaseModel {
+public abstract class  BaseModel {
 
     public static final int TAG_ONE = 1;
     public static final int TAG_TWO = 2;

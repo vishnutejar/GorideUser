@@ -16,7 +16,7 @@ import java.util.List;
  * Created by ubuntu on 17/4/18.
  */
 
-public class BookCabRequestModel extends AppBaseRequestModel {
+public class  BookCabRequestModel extends AppBaseRequestModel {
 
     public String phone;
     public String mobile_code;

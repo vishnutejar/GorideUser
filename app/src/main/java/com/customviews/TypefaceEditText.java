@@ -22,7 +22,7 @@ import com.quickzetuser.R;
  * CustomEditText
  * Use for set custom font from .xml file
  */
-public class TypefaceEditText extends EditText {
+public class  TypefaceEditText extends EditText {
 
     private DeleteEmptyListener mDeleteEmptyListener;
 

@@ -19,7 +19,7 @@ import com.quickzetuser.R;
  * Use for set custom font from .xml file
  */
 @SuppressLint("AppCompatCustomView")
-public class TypefaceCheckBox extends CheckBox {
+public class  TypefaceCheckBox extends CheckBox {
 
 
 

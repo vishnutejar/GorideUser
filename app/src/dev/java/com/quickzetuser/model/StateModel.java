@@ -7,7 +7,7 @@ import com.models.BaseModel;
  * Created by Sunil kumar yadav on 13/3/18.
  */
 
-public class StateModel extends BaseModel {
+public class  StateModel extends BaseModel {
 
     private float state_id;
     private String state_name;

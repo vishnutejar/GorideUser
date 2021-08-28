@@ -21,7 +21,7 @@ import com.quickzetuser.R;
  */
 
 
-public class DiamondDrawable extends Drawable {
+public class  DiamondDrawable extends Drawable {
 
     Paint mPaint;
     Rect rectBound;

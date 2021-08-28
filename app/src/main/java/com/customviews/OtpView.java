@@ -29,7 +29,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-public class OtpView extends LinearLayout {
+public class  OtpView extends LinearLayout {
     private EditText currentlyFocusedEditText;
     private List<EditText> editTexts = new ArrayList<>();
     private int length;

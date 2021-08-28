@@ -25,7 +25,7 @@ import java.io.IOException;
 
 
 
-public class FilePathHelper {
+public class  FilePathHelper {
 
     private ProviderInfo getProviderInfo(Context context) {
         return context.getPackageManager()

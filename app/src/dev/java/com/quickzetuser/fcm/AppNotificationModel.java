@@ -10,7 +10,7 @@ import com.google.firebase.messaging.RemoteMessage;
  * Created by Azher on 1/5/18.
  */
 
-public class AppNotificationModel extends NotificationModal implements AppNotificationType {
+public class  AppNotificationModel extends NotificationModal implements AppNotificationType {
 
     public AppNotificationModel (RemoteMessage remoteMessage) {
         super(remoteMessage);

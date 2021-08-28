@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
  */
 
 
-public class FullHeightLinearLayoutManager extends LinearLayoutManager {
+public class  FullHeightLinearLayoutManager extends LinearLayoutManager {
 
 
     private int[] mMeasuredDimension = new int[ 2 ];

@@ -19,7 +19,7 @@ import com.utilities.GoogleApiClientHelper;
  * @author Sunil kumar Yadav
  * @Since 23/5/18
  */
-public class AppBaseLocationService extends LocationService {
+public class  AppBaseLocationService extends LocationService {
 
 
     private IBinder mBinder = new LocationBinder();

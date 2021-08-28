@@ -8,7 +8,7 @@ import androidx.fragment.app.FragmentManager;
 import com.customviews.WrappingViewPager;
 
 
-public class WrappingViewPagerAdapter extends ViewPagerAdapter {
+public class  WrappingViewPagerAdapter extends ViewPagerAdapter {
 
     private int mCurrentPosition = -1;
 

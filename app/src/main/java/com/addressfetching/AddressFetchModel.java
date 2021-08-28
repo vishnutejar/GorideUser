@@ -14,6 +14,7 @@ import com.medy.retrofitwrapper.BaseModel;
  */
 
 
+
 public class AddressFetchModel extends BaseModel implements Parcelable {
 
     public static final Creator<AddressFetchModel> CREATOR = new Creator<AddressFetchModel>() {

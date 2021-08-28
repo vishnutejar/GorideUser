@@ -16,7 +16,7 @@ import java.util.List;
  */
 
 
-public class UserPrefs extends BasePrefs {
+public class  UserPrefs extends BasePrefs {
 
     static final String Prefsname = "prefs_user";
 

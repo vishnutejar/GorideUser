@@ -35,7 +35,7 @@ import com.utilities.Utils;
 import java.util.List;
 
 
-public class NotificationMessagingService extends FirebaseMessagingService {
+public class  NotificationMessagingService extends FirebaseMessagingService {
 
 
     public void printLog (String msg) {

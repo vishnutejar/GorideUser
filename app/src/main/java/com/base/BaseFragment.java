@@ -25,7 +25,7 @@ import com.utilities.Utils;
  * Created by bitu on 15/8/17.
  */
 
-public abstract class BaseFragment extends Fragment
+public abstract class  BaseFragment extends Fragment
         implements View.OnClickListener {
 
     protected FragmentManager childFm;

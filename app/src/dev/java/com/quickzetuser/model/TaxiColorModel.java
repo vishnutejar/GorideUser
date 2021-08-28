@@ -8,7 +8,7 @@ import com.models.BaseModel;
  * Created by ubuntu on 3/4/18.
  */
 
-public class TaxiColorModel extends BaseModel {
+public class  TaxiColorModel extends BaseModel {
     private String name;
     private String hexcode;
 

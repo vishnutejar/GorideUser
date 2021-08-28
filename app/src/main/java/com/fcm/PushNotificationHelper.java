@@ -17,7 +17,7 @@ import java.util.List;
 
 
 
-public class PushNotificationHelper {
+public class  PushNotificationHelper {
 
     Handler handler = new Handler(Looper.getMainLooper());
     Application myApplication;

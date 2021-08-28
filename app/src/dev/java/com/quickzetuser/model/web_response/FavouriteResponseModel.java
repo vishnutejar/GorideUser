@@ -9,7 +9,7 @@ import java.util.List;
  * @author Sunil kumar Yadav
  * @Since 3/7/18
  */
-public class FavouriteResponseModel extends BaseWebServiceModelResponse {
+public class  FavouriteResponseModel extends BaseWebServiceModelResponse {
 
     private List<FavouriteModel> data;
 

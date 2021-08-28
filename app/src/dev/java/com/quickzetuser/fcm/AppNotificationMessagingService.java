@@ -34,7 +34,7 @@ import java.io.IOException;
  */
 
 
-public class AppNotificationMessagingService extends NotificationMessagingService implements AppNotificationType {
+public class  AppNotificationMessagingService extends NotificationMessagingService implements AppNotificationType {
 
     public static final String KEY_NOTIFICATION_TITLE = "title";
     public static final String KEY_NOTIFICATION_MESSAGE = "message";

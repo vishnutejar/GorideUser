@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  * Created by ubuntu on 18/4/18.
  */
 
-public class BookCabModel extends BaseModel {
+public class  BookCabModel extends BaseModel {
 
     private UserModel rider;
     private long booking_id;

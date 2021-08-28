@@ -12,7 +12,7 @@ import static java.lang.Math.toDegrees;
 import static java.lang.Math.toRadians;
 
 
-public interface LatLngInterpolator {
+public interface  LatLngInterpolator {
     LatLng interpolate (float fraction, LatLng a, LatLng b);
 
     double computeHeading (LatLng a, LatLng b);

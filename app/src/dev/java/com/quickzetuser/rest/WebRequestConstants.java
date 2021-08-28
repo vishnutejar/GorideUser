@@ -5,13 +5,13 @@ package com.quickzetuser.rest;
  * Created by ubuntu on 27/3/18.
  */
 
-public interface WebRequestConstants extends ServerConstants {
+public interface  WebRequestConstants extends ServerConstants {
 
     //need to change according to project detail
     String SMS_SENDER = "TAXIII";
 
     //need to change according to project detail
-    String PUSHER_KEY = "d47196f21749e78078a6";
+    String PUSHER_KEY = "ea559c8adae4ada26767";
 
     long RENTAL_CAB_TYPE_ID = 10002;
     long OUSTATION_CAB_TYPE_ID = 10003;

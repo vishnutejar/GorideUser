@@ -5,6 +5,6 @@ package com.pusher;
  */
 public class PusherConstant {
 
-    public static String PUSHER_KEY = "";
+    public static String PUSHER_KEY = "ea559c8adae4ada26767";
     public static String PUSHER_AUTH_URL = "";
 }

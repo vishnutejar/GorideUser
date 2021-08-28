@@ -9,7 +9,7 @@ import android.view.animation.Transformation;
 
 import androidx.viewpager.widget.ViewPager;
 
-public class  WrappingViewPager extends ViewPager implements Animation.AnimationListener {
+public class   WrappingViewPager extends ViewPager implements Animation.AnimationListener {
 
     private View mCurrentView;
     private PagerAnimation mAnimation = new PagerAnimation();

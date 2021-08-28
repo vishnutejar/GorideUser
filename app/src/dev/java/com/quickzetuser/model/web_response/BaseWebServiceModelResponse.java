@@ -7,7 +7,7 @@ import com.models.BaseModel;
  * Created by ubuntu on 27/3/18.
  */
 
-public class BaseWebServiceModelResponse extends BaseModel {
+public class  BaseWebServiceModelResponse extends BaseModel {
 
     int code;
     boolean error = true;

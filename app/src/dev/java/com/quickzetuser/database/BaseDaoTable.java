@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
  * Created by ubuntu on 18/11/16.
  */
 
-public abstract class BaseDaoTable {
+public abstract class  BaseDaoTable {
 
     public static final String TAG = "BaseDaoTable";
 

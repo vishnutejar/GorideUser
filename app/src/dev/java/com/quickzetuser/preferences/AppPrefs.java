@@ -9,7 +9,7 @@ import com.preferences.BasePrefs;
  * Created by Sunil kumar yadav on 13/3/18.
  */
 
-public class AppPrefs extends BasePrefs {
+public class  AppPrefs extends BasePrefs {
 
     static final String Prefsname = "prefs_app";
     static String KEY_TERMS_CONDITION = "term_condition_visible";

@@ -5,7 +5,7 @@ package com.quickzetuser.model.request_model;
  * Created by ubuntu on 30/3/18.
  */
 
-public class LoginRequestModel extends AppBaseRequestModel{
+public class  LoginRequestModel extends AppBaseRequestModel{
 
     public String email;
     public String password;

@@ -4,7 +4,7 @@ package com.quickzetuser.model.pusher;
 
 import com.google.android.gms.maps.model.LatLng;
 
-public class PusherLocationModel {
+public class  PusherLocationModel {
 
     public double latitude;
     public double longitude;

@@ -31,7 +31,7 @@ import com.quickzetuser.R;
  * <p>
  *
  */
-public class PermissionHelperNew {
+public class  PermissionHelperNew {
 
     /**
      * Request code for permissions

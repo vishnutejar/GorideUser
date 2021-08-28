@@ -44,7 +44,7 @@ import com.utilities.Utils;
  * Created by ubuntu on 20/2/18.
  */
 
-public abstract class AppBaseActivity extends BaseActivity
+public abstract class  AppBaseActivity extends BaseActivity
         implements WebServiceResponseListener, WebRequestConstants, SmsListener {
 
     public String currency_symbol = "";

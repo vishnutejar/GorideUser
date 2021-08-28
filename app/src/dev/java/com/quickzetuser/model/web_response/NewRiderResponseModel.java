@@ -5,7 +5,7 @@ package com.quickzetuser.model.web_response;
  * Created by ubuntu on 29/3/18.
  */
 
-public class NewRiderResponseModel extends BaseWebServiceModelResponse {
+public class  NewRiderResponseModel extends BaseWebServiceModelResponse {
 
     private String otp;
 

@@ -9,7 +9,7 @@ import java.util.List;
  * Created by ubuntu on 13/4/18.
  */
 
-public class FareModel extends AppBaseModel {
+public class  FareModel extends AppBaseModel {
 
 
     private String admin_commission_type;

@@ -26,7 +26,7 @@ import com.quickzetuser.ui.utilities.Validate;
  * Created by ubuntu on 20/2/18.
  */
 
-public abstract class AppBaseFragment extends BaseFragment
+public abstract class  AppBaseFragment extends BaseFragment
         implements WebServiceResponseListener, WebRequestConstants {
 
 

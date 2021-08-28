@@ -9,7 +9,7 @@ import com.quickzetuser.ui.MyApplication;
  */
 
 
-public class DeviceUtils {
+public class  DeviceUtils {
 
     public static String getUniqueDeviceId(){
 

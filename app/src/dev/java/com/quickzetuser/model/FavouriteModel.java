@@ -8,7 +8,7 @@ import com.quickzetuser.model.web_response.BaseWebServiceModelResponse;
  * @author Sunil kumar Yadav
  * @Since 3/7/18
  */
-public class FavouriteModel extends BaseWebServiceModelResponse {
+public class  FavouriteModel extends BaseWebServiceModelResponse {
     private long id;
     private String type;
     private LocationModelFull.LocationModel detail;

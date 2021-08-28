@@ -12,7 +12,7 @@ import com.utilities.Utils;
 
 
 
-public class LocationService extends Service implements LocationListener {
+public class  LocationService extends Service implements LocationListener {
 
     private static final String TAG = LocationService.class.getSimpleName();
     private GoogleApiClientHelper googleApiClientHelper;

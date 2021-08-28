@@ -27,7 +27,7 @@ import com.utilities.Utils;
  * Created by bitu on 20/8/17.
  */
 
-public class GoogleMapFragment extends SupportMapFragment implements
+public class  GoogleMapFragment extends SupportMapFragment implements
         GoogleMap.OnMapLoadedCallback, OnMapReadyCallback, GoogleMap.OnCameraIdleListener {
 
     public static final int DEFAULT_MAP_ANIM_TIME = 300;

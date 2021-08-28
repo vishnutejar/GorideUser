@@ -7,7 +7,7 @@ import com.medy.retrofitwrapper.BaseModel;
  * Created by ubuntu on 16/4/18.
  */
 
-public class PeakHourChargeModel extends BaseModel {
+public class  PeakHourChargeModel extends BaseModel {
 
     private float peak_hour_charge_value;
     private float peak_hour_charge_amount;

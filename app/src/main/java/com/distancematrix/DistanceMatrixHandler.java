@@ -21,7 +21,7 @@ import java.util.concurrent.Executors;
 /**
  * Created by ubuntu on 21/5/16.
  */
-public class DistanceMatrixHandler {
+public class  DistanceMatrixHandler {
 
     /*public static final String URL = "https://maps.googleapis.com/maps/api/distancematrix/json?" +
             "origins=%s&destinations=%s&key=%s";

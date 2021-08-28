@@ -7,7 +7,7 @@ import com.models.BaseModel;
  * Created by Sunil kumar yadav on 16/4/18.
  */
 
-public class NightChargeModel extends BaseModel {
+public class  NightChargeModel extends BaseModel {
 
     private float night_charge_amount;
     private float night_charge_value;

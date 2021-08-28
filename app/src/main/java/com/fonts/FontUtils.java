@@ -9,7 +9,7 @@ import java.util.HashMap;
  * Created by ubuntu on 28/12/17.
  */
 
-public class FontUtils {
+public class  FontUtils {
 
     private static FontUtils instance;
     private HashMap<String, Typeface> fontsMap;

@@ -8,7 +8,7 @@ import com.quickzetuser.model.BookCabModel;
  * Created by ubuntu on 18/4/18.
  */
 
-public class BookCabResponseModel extends BaseWebServiceModelResponse{
+public class  BookCabResponseModel extends BaseWebServiceModelResponse{
 
     private BookCabModel data;
 

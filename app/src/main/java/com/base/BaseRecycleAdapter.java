@@ -16,7 +16,7 @@ import com.utilities.ItemClickSupport;
  */
 
 
-public abstract class BaseRecycleAdapter extends RecyclerView.Adapter<BaseRecycleAdapter.BaseViewHolder> {
+public abstract class  BaseRecycleAdapter extends RecyclerView.Adapter<BaseRecycleAdapter.BaseViewHolder> {
 
 
     public static final int VIEW_TYPE_LOAD_MORE = 404;

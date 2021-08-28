@@ -26,7 +26,7 @@ import com.quickzetuser.ui.utilities.Validate;
  * Created by ubuntu on 29/3/18.
  */
 
-public abstract class AppBaseDialogFragment extends BaseDialogFragment
+public abstract class  AppBaseDialogFragment extends BaseDialogFragment
         implements WebServiceResponseListener, WebRequestConstants, SmsListener {
 
     private Dialog alertDialogProgressBar;

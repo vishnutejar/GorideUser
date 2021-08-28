@@ -75,7 +75,7 @@ import java.io.File;
  *         }
  */
 
-public class CameraGallerySelectorHelper {
+public class  CameraGallerySelectorHelper {
 
     /**
      * Request code for open camera

@@ -4,7 +4,7 @@ package com.quickzetuser.model.web_response;
 
 import com.quickzetuser.model.WalletModel;
 
-public class WalletResponseModel extends BaseWebServiceModelResponse {
+public class  WalletResponseModel extends BaseWebServiceModelResponse {
 
     private WalletModel data;
 

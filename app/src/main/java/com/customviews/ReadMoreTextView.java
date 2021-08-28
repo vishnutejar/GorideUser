@@ -32,7 +32,7 @@ import com.quickzetuser.R;
 
 
 
-public class ReadMoreTextView extends TypefaceTextView {
+public class  ReadMoreTextView extends TypefaceTextView {
 
     private static final int TRIM_MODE_LINES = 0;
     private static final int TRIM_MODE_LENGTH = 1;

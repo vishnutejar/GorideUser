@@ -1,6 +1,6 @@
 package com.quickzetuser.model;
 
-public class RentalFareModel extends FareModel {
+public class  RentalFareModel extends FareModel {
 
 
     private TotalTaxModel total_tax;

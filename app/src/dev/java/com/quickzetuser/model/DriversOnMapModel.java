@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by Sunil kumar yadav on 4/5/18.
  */
-public class DriversOnMapModel extends BaseModel {
+public class  DriversOnMapModel extends BaseModel {
 
     long id;
     String name;

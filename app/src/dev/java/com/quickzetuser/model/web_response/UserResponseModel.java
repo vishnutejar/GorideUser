@@ -8,7 +8,7 @@ import com.quickzetuser.model.UserModel;
  * Created by ubuntu on 29/3/18.
  */
 
-public class UserResponseModel extends BaseWebServiceModelResponse {
+public class  UserResponseModel extends BaseWebServiceModelResponse {
 
     private UserModel data;
 

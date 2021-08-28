@@ -1,7 +1,7 @@
 package com.quickzetuser.model.web_response;
 
 
-public class BookingRouteImageSavedResponseModel extends BaseWebServiceModelResponse {
+public class  BookingRouteImageSavedResponseModel extends BaseWebServiceModelResponse {
 
 
 

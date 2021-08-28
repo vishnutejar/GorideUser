@@ -39,7 +39,7 @@ import java.util.List;
  */
 
 
-public class AutoCompleteAdapter extends BaseRecycleAdapter
+public class  AutoCompleteAdapter extends BaseRecycleAdapter
         implements Filterable, TextWatcher, ItemClickSupport.OnItemClickListener {
 
     private Context context;

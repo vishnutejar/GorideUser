@@ -9,7 +9,7 @@ import java.util.List;
  * Created by Sunil kumar yadav on 16/4/18.
  */
 
-public class TotalTaxModel extends BaseModel {
+public class  TotalTaxModel extends BaseModel {
 
     float tax_percent;
     float tax_amount;

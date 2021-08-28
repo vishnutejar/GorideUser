@@ -10,7 +10,7 @@ import android.content.pm.PackageManager;
  */
 
 
-public class DeviceInfoModal {
+public class  DeviceInfoModal {
     String PhoneModel = android.os.Build.MODEL;
     String AndroidVersion = android.os.Build.VERSION.RELEASE;
     String Board = android.os.Build.BOARD;

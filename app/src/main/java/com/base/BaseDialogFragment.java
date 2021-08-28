@@ -26,7 +26,7 @@ import com.medy.retrofitwrapper.WebServiceResponseListener;
  * Created by bitu on 15/8/17.
  */
 
-public abstract class BaseDialogFragment extends DialogFragment
+public abstract class  BaseDialogFragment extends DialogFragment
         implements View.OnClickListener, WebServiceResponseListener {
 
 

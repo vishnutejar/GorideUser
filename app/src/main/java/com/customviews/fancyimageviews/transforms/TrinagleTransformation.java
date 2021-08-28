@@ -10,7 +10,7 @@ import android.view.View;
  */
 
 
-public class TrinagleTransformation extends ViewTransformation {
+public class  TrinagleTransformation extends ViewTransformation {
 
     float centerX;
     float centerY;

@@ -9,7 +9,7 @@ import java.util.List;
  * Created by ubuntu on 29/3/18.
  */
 
-public class CityModel extends BaseModel {
+public class  CityModel extends BaseModel {
 
     private long city_id;
     private String city_name;

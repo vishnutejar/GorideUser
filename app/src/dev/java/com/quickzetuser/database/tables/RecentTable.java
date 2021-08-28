@@ -20,7 +20,7 @@ import java.util.List;
  * Created by ubuntu on 23/1/17.
  */
 
-public class RecentTable extends BaseDaoTable {
+public class  RecentTable extends BaseDaoTable {
 
     public static final String TAG = "RecentTable";
     private static final String NAME = "recent_table";

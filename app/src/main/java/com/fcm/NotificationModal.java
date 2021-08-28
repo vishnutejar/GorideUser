@@ -20,7 +20,7 @@ import java.util.Map;
 
 
 
-public class NotificationModal extends BaseModel implements Serializable {
+public class  NotificationModal extends BaseModel implements Serializable {
 
     final String from;
     final String to;

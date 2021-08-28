@@ -20,7 +20,7 @@ import com.quickzetuser.R;
  */
 
 
-public class AnimatedTextView extends TextView {
+public class  AnimatedTextView extends TextView {
 
     Animation clickAnimation;
 

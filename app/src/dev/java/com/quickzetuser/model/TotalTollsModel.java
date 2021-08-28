@@ -9,7 +9,7 @@ import java.util.List;
  * Created by Sunil kumar yadav on 16/4/18.
  */
 
-public class TotalTollsModel extends BaseModel {
+public class  TotalTollsModel extends BaseModel {
 
     private List<TollModel> tolls;
     private float toll_fare;

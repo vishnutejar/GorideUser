@@ -11,7 +11,7 @@ import android.view.View;
  */
 
 
-public abstract class ViewTransformation {
+public abstract class  ViewTransformation {
     Path path = new Path();
 
     Region.Op op = Region.Op.INTERSECT;

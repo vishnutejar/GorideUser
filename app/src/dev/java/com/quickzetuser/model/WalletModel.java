@@ -4,7 +4,7 @@ package com.quickzetuser.model;
 
 import com.models.BaseModel;
 
-public class WalletModel extends BaseModel {
+public class  WalletModel extends BaseModel {
 
     private float wallet_amount;
     int free_ride;

@@ -14,6 +14,7 @@ import com.utilities.Utils;
 public class AppUpdateUtils {
 
 
+
     public static final String TAG = "AppUpdateUtils";
 
     public static void printLog (Context context, String msg) {

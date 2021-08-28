@@ -8,7 +8,7 @@ import com.models.BaseModel;
  * Created by ubuntu on 29/3/18.
  */
 
-public class UserModel extends BaseModel {
+public class  UserModel extends BaseModel {
 
     private String AWS_KEY;
     private String AWS_SECRET;

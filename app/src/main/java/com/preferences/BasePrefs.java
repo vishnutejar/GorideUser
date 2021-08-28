@@ -10,7 +10,7 @@ import android.content.SharedPreferences;
 
 
 
-public abstract class BasePrefs {
+public abstract class  BasePrefs {
 
 
     public abstract String getPrefsName();

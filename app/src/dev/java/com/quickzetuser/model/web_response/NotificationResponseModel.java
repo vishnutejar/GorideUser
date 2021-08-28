@@ -9,7 +9,7 @@ import java.util.List;
  * @author Sunil kumar Yadav
  * @Since 24/5/18
  */
-public class NotificationResponseModel extends BaseWebServiceModelResponse {
+public class  NotificationResponseModel extends BaseWebServiceModelResponse {
 
     List<NotificationModel> data;
 

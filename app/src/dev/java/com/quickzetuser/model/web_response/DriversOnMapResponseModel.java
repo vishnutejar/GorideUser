@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by Sunil kumar yadav on 4/5/18.
  */
-public class DriversOnMapResponseModel extends BaseWebServiceModelResponse {
+public class  DriversOnMapResponseModel extends BaseWebServiceModelResponse {
 
     List<VehicleTypeModel> data;
 

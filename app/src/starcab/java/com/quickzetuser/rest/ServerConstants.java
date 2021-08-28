@@ -13,6 +13,6 @@ public interface ServerConstants {
     String BASE = DOMAIN + "p/sites/7start_taxi/apis/quickzetuser/v1/";*/
 
     /*live server*/
-    String DOMAIN = "https://quickzettrip.com/";
+    String DOMAIN = "https://backend.quickzettrip.com/";
     String BASE = DOMAIN + "apis/quickzetuser/v1/";
 }

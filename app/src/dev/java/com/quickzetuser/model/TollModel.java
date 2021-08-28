@@ -8,7 +8,7 @@ import com.models.BaseModel;
  * @since 29/8/18
  */
 
-public class TollModel extends BaseModel {
+public class  TollModel extends BaseModel {
     private long id;
     private String toll_name;
     private float value;

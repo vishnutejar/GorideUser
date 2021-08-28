@@ -12,7 +12,7 @@ import java.io.File;
  */
 
 
-public class FileInformation {
+public class  FileInformation {
 
     public static final int IMAGE_SIZE_THUMB = 300;
     public static final int IMAGE_SIZE_LARGE = 800;

@@ -15,7 +15,7 @@ import java.util.List;
  */
 
 
-public class PixlateTransformation extends ViewTransformation {
+public class  PixlateTransformation extends ViewTransformation {
 
     float pixletWidth;
     float pixletHeight;

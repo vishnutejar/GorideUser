@@ -27,6 +27,7 @@ import static com.appupdater.AppUpdateUtils.getAppPackageName;
  * Created by ubuntu on 29/5/17.
  */
 
+
 public class DialogAppUpdater extends Dialog implements View.OnClickListener
 
 {

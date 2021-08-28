@@ -14,7 +14,7 @@ import java.util.ArrayList;
  * Created by ubuntu on 18/11/16.
  */
 
-public class DaoManager extends SQLiteOpenHelper {
+public class  DaoManager extends SQLiteOpenHelper {
     public static final int DATABASE_VERSION = 3;
     public static final String TAG = "DaoManager";
 
