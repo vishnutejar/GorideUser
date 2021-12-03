@@ -52,12 +52,8 @@ public class ForgotPasswordActivity extends AppBaseActivity implements View.OnCl
     }
 
     private void findViews () {
-        iv_menu_left = findViewById(R.id.iv_menu_left);
-        iv_menu_left.setVisibility(View.GONE);
         iv_back = findViewById(R.id.iv_back);
-        iv_back.setVisibility(View.VISIBLE);
-        iv_bagghi_icon = findViewById(R.id.iv_bagghi_icon);
-        iv_bagghi_icon.setVisibility(View.GONE);
+
         tv_title = findViewById(R.id.tv_title);
         tv_title.setText(getString(R.string.forgot_password_title));
 

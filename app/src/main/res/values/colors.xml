@@ -10,7 +10,7 @@
     <color name="colorGray_50">#50959595</color>
     <color name="colorGray_30">#30959595</color>
     <color name="colorGray_10">#10959595</color>
-    <color name="app_screen_bg_color">#f2f2f2</color>
+    <color name="app_screen_bg_color">#F0F0F0</color>
     <color name="color_white">#FFFFFF</color>
 
     <!-- editText color login/ sign up -->

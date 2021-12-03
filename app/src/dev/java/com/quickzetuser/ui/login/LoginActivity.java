@@ -1,6 +1,7 @@
 package com.quickzetuser.ui.login;
 
 import android.text.Editable;
+import android.text.Html;
 import android.text.InputFilter;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -47,7 +48,7 @@ public class LoginActivity extends AppBaseActivity implements View.OnClickListen
     private EditText et_password;
     private TextView tv_sign_in;
     private TextView tv_create_account;
-    private TextView tv_forgot_password;
+    private TextView tv_forgot_password,txt_ride;
     private List<CountryModel> countryList;
     private int lastFilterLength = EMAIL_MAX_LENGTH;
 
@@ -85,6 +86,9 @@ public class LoginActivity extends AppBaseActivity implements View.OnClickListen
         tv_sign_in = findViewById(R.id.tv_sign_in);
         tv_create_account = findViewById(R.id.tv_create_account);
         tv_forgot_password = findViewById(R.id.tv_forgot_password);
+        txt_ride = findViewById(R.id.txt_ride);
+        tv_forgot_password.setText(Html.fromHtml("<p><u>Forget Password?</u></p>"));
+        txt_ride.setText(Html.fromHtml("<font color=#D7251A>R</font><font color=#414141>ider</font>"));
 
         countryList = new ArrayList<>();
         tv_mobile_code.setOnClickListener(this);

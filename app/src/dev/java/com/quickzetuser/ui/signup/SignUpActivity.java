@@ -1,5 +1,6 @@
 package com.quickzetuser.ui.signup;
 
+import android.text.Html;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -36,7 +37,7 @@ public class SignUpActivity extends AppBaseActivity implements View.OnClickListe
 
     private static final String TAG = SignUpActivity.class.getSimpleName();
     private TextView tv_sign_up;
-    private TextView tv_login;
+    private TextView tv_login,txt_ride;
     private EditText et_email;
     private EditText et_firstname;
     private EditText et_lastname;
@@ -72,6 +73,7 @@ public class SignUpActivity extends AppBaseActivity implements View.OnClickListe
 
     private void findViews() {
         et_email = findViewById(R.id.et_email);
+        txt_ride = findViewById(R.id.txt_ride);
         et_firstname = findViewById(R.id.et_firstname);
         et_lastname = findViewById(R.id.et_lastname);
         et_password = findViewById(R.id.et_password);
@@ -84,6 +86,8 @@ public class SignUpActivity extends AppBaseActivity implements View.OnClickListe
         ll_referal = findViewById(R.id.ll_referal);
         tv_have_referal_link = findViewById(R.id.tv_have_referal_link);
         tv_have_referal_link.setOnClickListener(this);
+        txt_ride.setText(Html.fromHtml("<font color=#D7251A>R</font><font color=#414141>ider</font>"));
+
     }
 
     @Override

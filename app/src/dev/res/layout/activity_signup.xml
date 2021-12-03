@@ -19,220 +19,133 @@
             android:orientation="vertical"
             android:padding="@dimen/dp20">
 
-            <ImageView
-                android:layout_width="@dimen/dp150"
-                android:layout_height="@dimen/dp150"
-                android:layout_marginLeft="@dimen/dp40"
-                android:layout_marginTop="@dimen/dp10"
-                android:layout_marginRight="@dimen/dp40"
-                android:src="@drawable/quickzetlogo" />
-
-            <com.customviews.TypefaceTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp10"
-                android:layout_marginBottom="@dimen/dp30"
-                android:text="@string/rider"
-                android:textAllCaps="true"
-                android:textColor="?attr/app_text_color"
-                android:textSize="?attr/app_text_size_extra_big"
-                app:custom_font="?attr/app_font_bold" />
-
-
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="?attr/et_height"
-                android:background="?attr/et_bg_drawable"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/dp10"
-                android:paddingRight="@dimen/dp10">
+                android:layout_height="@dimen/dp150"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp20">
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/txt_ride"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:gravity="center"
+                    android:text="Rider"
+                    android:textAllCaps="false"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_extra_big"
+                    app:custom_font="?attr/app_font_bold" />
 
                 <ImageView
-                    android:layout_width="@dimen/dp30"
-                    android:layout_height="@dimen/dp30"
-                    android:padding="@dimen/dp5"
-                    android:src="@mipmap/ic_mail"
-                    android:tint="?attr/et_img_tint_color" />
+                    android:layout_width="@dimen/dp150"
+                    android:layout_height="@dimen/dp150"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/quickzet_rider_logo" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout style="@style/et_linerlayout">
+
+                <ImageView
+                    style="@style/et_image"
+                    android:src="@mipmap/ic_mail" />
 
                 <com.customviews.TypefaceEditText
                     android:id="@+id/et_email"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="@dimen/dp10"
-                    android:background="@null"
-                    android:gravity="center_vertical"
+                    style="@style/et_edittext"
                     android:hint="@string/email_address"
                     android:imeOptions="actionNext"
                     android:inputType="textEmailAddress"
                     android:maxLength="50"
-                    android:textColor="?attr/et_text_color"
-                    android:textColorHint="?attr/et_hint_text_color"
-                    android:textSize="?attr/et_text_size"
                     app:custom_font="?attr/app_font_normal" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="?attr/et_height"
-                android:layout_marginTop="@dimen/dp10"
-                android:background="?attr/et_bg_drawable"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/dp10"
-                android:paddingRight="@dimen/dp10">
+            <LinearLayout style="@style/et_linerlayout">
 
                 <ImageView
-                    android:layout_width="@dimen/dp30"
-                    android:layout_height="@dimen/dp30"
-                    android:padding="@dimen/dp5"
-                    android:src="@mipmap/ic_user"
-                    android:tint="?attr/et_img_tint_color" />
+                    style="@style/et_image"
+                    android:src="@mipmap/ic_user" />
 
                 <com.customviews.TypefaceEditText
                     android:id="@+id/et_firstname"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="@dimen/dp10"
-                    android:background="@null"
+                   style="@style/et_edittext"
                     android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-                    android:gravity="center_vertical"
                     android:hint="@string/first_name"
                     android:imeOptions="actionNext"
                     android:inputType="text"
                     android:maxLength="20"
                     android:singleLine="true"
-                    android:textColor="?attr/et_text_color"
-                    android:textColorHint="?attr/et_hint_text_color"
-                    android:textSize="?attr/et_text_size"
-                    app:custom_font="?attr/app_font_normal" />
+                    />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="?attr/et_height"
-                android:layout_marginTop="@dimen/dp10"
-                android:background="?attr/et_bg_drawable"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/dp10"
-                android:paddingRight="@dimen/dp10">
+            <LinearLayout style="@style/et_linerlayout">
 
                 <ImageView
-                    android:layout_width="@dimen/dp30"
-                    android:layout_height="@dimen/dp30"
-                    android:padding="@dimen/dp5"
+                    style="@style/et_image"
                     android:src="@mipmap/ic_user"
                     android:tint="?attr/et_img_tint_color" />
 
                 <com.customviews.TypefaceEditText
                     android:id="@+id/et_lastname"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="@dimen/dp10"
-                    android:background="@null"
+                    style="@style/et_edittext"
                     android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-                    android:gravity="center_vertical"
                     android:hint="@string/last_name"
                     android:imeOptions="actionNext"
                     android:inputType="text"
                     android:maxLength="20"
                     android:singleLine="true"
-                    android:textColor="?attr/et_text_color"
-                    android:textColorHint="?attr/et_hint_text_color"
-                    android:textSize="?attr/et_text_size"
-                    app:custom_font="?attr/app_font_normal" />
+                   />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="?attr/et_height"
-                android:layout_marginTop="@dimen/dp10"
-                android:background="?attr/et_bg_drawable"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/dp10"
-                android:paddingRight="@dimen/dp10">
+            <LinearLayout style="@style/et_linerlayout">
 
                 <ImageView
-                    android:layout_width="@dimen/dp30"
-                    android:layout_height="@dimen/dp30"
-                    android:padding="@dimen/dp5"
+                    style="@style/et_image"
                     android:src="@mipmap/ic_lock"
                     android:tint="?attr/et_img_tint_color" />
 
                 <com.customviews.TypefaceEditText
                     android:id="@+id/et_password"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="@dimen/dp10"
-                    android:background="@null"
-                    android:gravity="center_vertical"
+                    style="@style/et_edittext"
                     android:hint="@string/password"
                     android:imeOptions="actionNext"
                     android:inputType="textPassword"
                     android:maxLength="30"
                     android:singleLine="true"
-                    android:textColor="?attr/et_text_color"
-                    android:textColorHint="?attr/et_hint_text_color"
-                    android:textSize="?attr/et_text_size"
-                    app:custom_font="?attr/app_font_normal" />
+                    />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="?attr/et_height"
-                android:layout_marginTop="@dimen/dp10"
-                android:background="?et_bg_drawable"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/dp10"
-                android:paddingRight="@dimen/dp10">
+            <LinearLayout style="@style/et_linerlayout">
 
                 <ImageView
-                    android:layout_width="@dimen/dp30"
-                    android:layout_height="@dimen/dp30"
-                    android:padding="@dimen/dp5"
+                    style="@style/et_image"
                     android:src="@mipmap/ic_lock"
                     android:tint="?attr/et_img_tint_color" />
 
                 <com.customviews.TypefaceEditText
                     android:id="@+id/et_confirm_password"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="@dimen/dp10"
-                    android:background="@null"
-                    android:gravity="center_vertical"
+                    style="@style/et_edittext"
                     android:hint="@string/confirm_password"
                     android:imeOptions="actionNext"
                     android:inputType="textPassword"
                     android:maxLength="30"
                     android:singleLine="true"
-                    android:textColor="?attr/et_text_color"
-                    android:textColorHint="?attr/et_hint_text_color"
-                    android:textSize="?attr/et_text_size"
-                    app:custom_font="?attr/app_font_normal" />
+                   />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="?attr/et_height"
-                android:layout_marginTop="@dimen/dp10"
-                android:background="?attr/et_bg_drawable"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/dp10"
-                android:paddingRight="@dimen/dp10">
+            <LinearLayout style="@style/et_linerlayout">
 
                 <ImageView
-                    android:layout_width="@dimen/dp30"
-                    android:layout_height="@dimen/dp30"
-                    android:padding="@dimen/dp5"
+                    style="@style/et_image"
                     android:src="@mipmap/ic_call"
                     android:tint="?attr/et_img_tint_color" />
 
@@ -252,57 +165,32 @@
 
                 <com.customviews.TypefaceEditText
                     android:id="@+id/et_user_mobile"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="@dimen/dp5"
-                    android:background="@null"
-                    android:gravity="center_vertical"
+                   style="@style/et_edittext"
                     android:hint="@string/mobile"
                     android:imeOptions="actionNext"
                     android:inputType="number"
                     android:maxLength="10"
                     android:singleLine="true"
-                    android:textColor="?attr/et_text_color"
-                    android:textColorHint="?attr/et_hint_text_color"
-                    android:textSize="?attr/et_text_size"
-                    app:custom_font="?attr/app_font_normal" />
+                   />
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="?attr/et_height"
-                android:layout_marginTop="@dimen/dp10"
                 android:id="@+id/ll_referal"
-                android:visibility="gone"
-                android:background="?attr/et_bg_drawable"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/dp10"
-                android:paddingRight="@dimen/dp10">
+                style="@style/et_linerlayout"
+                android:visibility="gone">
 
                 <ImageView
-                    android:layout_width="@dimen/dp30"
-                    android:layout_height="@dimen/dp30"
-                    android:padding="@dimen/dp5"
-                    android:src="@mipmap/referrer"
-                    android:tint="?attr/et_img_tint_color" />
+                    style="@style/et_image"
+                    android:src="@mipmap/referrer" />
 
                 <com.customviews.TypefaceEditText
                     android:id="@+id/et_referrer_code"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="@dimen/dp10"
-                    android:background="@null"
-                    android:gravity="center_vertical"
+                    style="@style/et_edittext"
                     android:hint="@string/referrer_id"
                     android:imeOptions="actionDone"
                     android:maxLength="20"
-                    android:singleLine="true"
-                    android:textColor="?attr/et_text_color"
-                    android:textColorHint="?attr/et_hint_text_color"
-                    android:textSize="?attr/et_text_size"
-                    app:custom_font="?attr/app_font_normal" />
+                    android:singleLine="true" />
 
             </LinearLayout>
 
@@ -310,15 +198,13 @@
                 android:id="@+id/tv_have_referal_link"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/dp5"
                 android:layout_gravity="end"
                 android:layout_marginTop="@dimen/dp5"
+                android:padding="@dimen/dp5"
                 android:text="Do u have a refferal code ?"
                 android:textColor="?attr/app_text_color"
                 android:textSize="?attr/app_text_size_normal"
                 app:custom_font="?attr/app_font_medium" />
-
-
 
 
             <com.customviews.TypefaceTextView
@@ -326,23 +212,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/btn_height"
                 android:layout_marginTop="@dimen/dp20"
-                android:layout_marginBottom="@dimen/dp20"
-                android:background="?attr/btn_bg_drawable"
+                android:background="@drawable/red_color_rect"
                 android:gravity="center"
                 android:text="@string/sign_up"
-                android:textAllCaps="true"
+                android:textAllCaps="false"
                 android:textColor="?attr/btn_text_color"
-                android:textSize="?attr/btn_text_size"
+                android:textSize="@dimen/sp16"
                 app:custom_font="?attr/app_font_medium" />
 
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp15"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="@dimen/dp5">
+                android:layout_height="@dimen/dp60"
+                android:background="@null"
+                android:gravity="center">
 
                 <com.customviews.TypefaceTextView
                     android:layout_width="wrap_content"
