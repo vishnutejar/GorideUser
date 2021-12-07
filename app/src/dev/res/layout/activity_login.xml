@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/app_screen_bg_color"
+    android:background="@drawable/bg_signin_signup"
     tools:context=".ui.login.LoginActivity">
 
 
@@ -144,7 +144,7 @@
                     android:padding="@dimen/dp10"
                     android:text="@string/forgot_password"
                     android:textColor="#D7251A"
-                    android:textSize="12sp"
+                    android:textSize="@dimen/sp14"
                     app:custom_font="?attr/app_font_medium" />
 
                 <LinearLayout
@@ -162,7 +162,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/new_user"
                         android:textColor="#414141"
-                        android:textSize="12sp"
+                        android:textSize="@dimen/sp14"
                         app:custom_font="?attr/app_font_medium" />
 
                     <com.customviews.TypefaceTextView
@@ -171,8 +171,8 @@
                         android:layout_height="wrap_content"
                         android:padding="@dimen/dp5"
                         android:text="@string/create_account"
-                        android:textColor="#393939"
-                        android:textSize="12sp"
+                        android:textColor="@color/color_blue"
+                        android:textSize="@dimen/sp14"
                         app:custom_font="?attr/app_font_medium" />
 
 

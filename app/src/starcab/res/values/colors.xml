@@ -31,4 +31,5 @@
     <color name="rating_bar_active_color">#F44336</color>
     <color name="color_white_aa">#AAffffff</color>
     <color name="color_white_trasparent">#80000000</color>
+    <color name="color_blue">#1480FF</color>
 </resources>

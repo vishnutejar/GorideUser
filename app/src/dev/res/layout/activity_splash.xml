@@ -4,13 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="@color/app_screen_bg_color"
+    android:background="@color/red"
     >
 
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:scaleType="center"
         android:background="@color/app_screen_bg_color"
         android:src="@drawable/splashscreen" />
 
