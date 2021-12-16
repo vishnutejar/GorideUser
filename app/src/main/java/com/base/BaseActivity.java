@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -77,18 +78,19 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         Fragment baseFragment = getFm().findFragmentById(getFragmentContainerResourceId());
-        if (baseFragment != null && baseFragment instanceof BaseFragment) {
+        if (baseFragment != null) {
             if (((BaseFragment) baseFragment).handleOnBackPress()) {
                 return;
             }
         }
+
         super.onBackPressed();
     }
 
     public BaseFragment getLatestFragment() {
 
         Fragment fragment = fm.findFragmentById(getFragmentContainerResourceId());
-        if (fragment != null && fragment instanceof BaseFragment) {
+        if (fragment != null) {
             return ((BaseFragment) fragment);
         }
 

@@ -1,66 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="?attr/app_screen_bg_color"
-            android:clickable="true" android:scrollbarThumbVertical="@drawable/bg_transparent"
-            android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:clickable="true"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:orientation="vertical"
+    android:scrollbarThumbVertical="@drawable/bg_transparent">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
-
-        <LinearLayout
-            android:id="@+id/ll_header"
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/app_link_text_color"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="@dimen/dp15"
-            android:visibility="visible">
-
-            <com.customviews.fancyimageviews.FancyImageVIew
-                android:id="@+id/iv_user_image"
-                android:layout_width="@dimen/dp120"
-                android:layout_height="@dimen/dp120"
-                android:scaleType="centerCrop"
-                android:src="@drawable/noimage"
-                app:centerX="0.50"
-                app:centerY="0.50"
-                app:rect_strokeColor="?attr/btn_bg_color"
-                app:rect_strokeWidth="@dimen/dp2"
-                app:transformation_type="CIRCULAR"/>
-
-            <com.customviews.TypefaceTextView
-                android:id="@+id/tv_user_name"
-                android:layout_width="wrap_content"
+            app:cardCornerRadius="@dimen/dp10"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_header"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=""
-                android:textColor="?attr/app_text_color"
-                android:textSize="?attr/app_text_size_normal"
-                android:textStyle="bold"
-                app:custom_font="?attr/app_font_bold"/>
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dp15"
+                android:visibility="visible">
 
-            <com.customviews.TypefaceTextView
-                android:id="@+id/tv_user_email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:textColor="?attr/app_text_color"
-                android:textSize="?attr/app_text_size_small"
-                app:custom_font="?attr/app_font_normal"/>
+                <com.customviews.fancyimageviews.FancyImageVIew
+                    android:id="@+id/iv_user_image"
+                    android:layout_width="@dimen/dp150"
+                    android:layout_height="@dimen/dp150"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/noimage"
+                    app:centerX="0.50"
+                    app:centerY="0.50"
 
-        </LinearLayout>
+                    app:rect_strokeWidth="@dimen/dp2"
+                    app:transformation_type="CIRCULAR" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_normal"
+                    android:textStyle="bold"
+                    app:custom_font="?attr/app_font_bold" />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_user_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="example@gmail.com"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:textColor="?attr/app_text_color"
+                    android:textSize="?attr/app_text_size_small"
+                    app:custom_font="?attr/app_font_normal" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/ll_header"
-            android:layout_marginBottom="@dimen/dp15"
-            android:layout_marginTop="@dimen/dp15">
+            app:cardCornerRadius="@dimen/dp10"
+            android:layout_margin="@dimen/dp20"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -73,19 +81,11 @@
                     android:orientation="horizontal"
                     android:padding="@dimen/dp15">
 
-                    <ImageView
-                        android:id="@+id/iv_mail"
-                        android:layout_width="@dimen/dp30"
-                        android:layout_height="@dimen/dp30"
-                        android:padding="@dimen/dp3"
-                        android:src="@mipmap/ic_mail"
-                        android:tint="?attr/et_img_tint_color"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/dp10"
-                        android:layout_toRightOf="@+id/iv_mail"
                         android:orientation="vertical">
 
                         <com.customviews.TypefaceTextView
@@ -94,7 +94,7 @@
                             android:text="@string/email_address"
                             android:textColor="?attr/app_text_color_sec"
                             android:textSize="?attr/app_text_size_small"
-                            app:custom_font="?attr/app_font_normal"/>
+                            app:custom_font="?attr/app_font_normal" />
 
                         <com.customviews.TypefaceTextView
                             android:id="@+id/tv_email"
@@ -106,13 +106,13 @@
                             android:textColor="?attr/et_text_color"
                             android:textColorHint="?attr/et_hint_text_color"
                             android:textSize="?attr/app_text_size_small"
-                            app:custom_font="?attr/app_font_normal"/>
+                            app:custom_font="?attr/app_font_normal" />
 
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/dv1"
                             android:layout_marginTop="@dimen/dp5"
-                            android:background="?attr/app_divider_color"/>
+                            android:background="?attr/app_divider_color" />
 
                     </LinearLayout>
 
@@ -124,19 +124,11 @@
                     android:orientation="horizontal"
                     android:padding="@dimen/dp15">
 
-                    <ImageView
-                        android:id="@+id/iv_firstname"
-                        android:layout_width="@dimen/dp30"
-                        android:layout_height="@dimen/dp30"
-                        android:padding="@dimen/dp3"
-                        android:src="@mipmap/ic_user"
-                        android:tint="?attr/et_img_tint_color"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/dp10"
-                        android:layout_toRightOf="@+id/iv_firstname"
                         android:orientation="vertical">
 
                         <com.customviews.TypefaceTextView
@@ -145,7 +137,7 @@
                             android:text="@string/first_name"
                             android:textColor="?attr/app_text_color_sec"
                             android:textSize="?attr/app_text_size_small"
-                            app:custom_font="?attr/app_font_normal"/>
+                            app:custom_font="?attr/app_font_normal" />
 
                         <com.customviews.TypefaceTextView
                             android:id="@+id/tv_firstname"
@@ -157,13 +149,13 @@
                             android:textColor="?attr/et_text_color"
                             android:textColorHint="?attr/et_hint_text_color"
                             android:textSize="?attr/app_text_size_small"
-                            app:custom_font="?attr/app_font_normal"/>
+                            app:custom_font="?attr/app_font_normal" />
 
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/dv1"
                             android:layout_marginTop="@dimen/dp5"
-                            android:background="?attr/app_divider_color"/>
+                            android:background="?attr/app_divider_color" />
 
                     </LinearLayout>
 
@@ -176,19 +168,11 @@
                     android:orientation="horizontal"
                     android:padding="@dimen/dp15">
 
-                    <ImageView
-                        android:id="@+id/iv_user"
-                        android:layout_width="@dimen/dp30"
-                        android:layout_height="@dimen/dp30"
-                        android:padding="@dimen/dp3"
-                        android:src="@mipmap/ic_user"
-                        android:tint="?attr/et_img_tint_color"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/dp10"
-                        android:layout_toRightOf="@+id/iv_user"
                         android:orientation="vertical">
 
                         <com.customviews.TypefaceTextView
@@ -197,7 +181,7 @@
                             android:text="@string/last_name"
                             android:textColor="?attr/app_text_color_sec"
                             android:textSize="?attr/app_text_size_small"
-                            app:custom_font="?attr/app_font_normal"/>
+                            app:custom_font="?attr/app_font_normal" />
 
                         <com.customviews.TypefaceTextView
                             android:id="@+id/tv_lastname"
@@ -209,13 +193,13 @@
                             android:textColor="?attr/et_text_color"
                             android:textColorHint="?attr/et_hint_text_color"
                             android:textSize="?attr/app_text_size_small"
-                            app:custom_font="?attr/app_font_normal"/>
+                            app:custom_font="?attr/app_font_normal" />
 
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/dv1"
                             android:layout_marginTop="@dimen/dp5"
-                            android:background="?attr/app_divider_color"/>
+                            android:background="?attr/app_divider_color" />
 
                     </LinearLayout>
 
@@ -228,20 +212,12 @@
                     android:orientation="horizontal"
                     android:padding="@dimen/dp15">
 
-                    <ImageView
-                        android:id="@+id/iv_password"
-                        android:layout_width="@dimen/dp30"
-                        android:layout_height="@dimen/dp30"
-                        android:padding="@dimen/dp3"
-                        android:src="@mipmap/ic_password"
-                        android:tint="?attr/et_img_tint_color"/>
 
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/dp10"
-                        android:layout_toRightOf="@+id/iv_password"
                         android:orientation="vertical">
 
                         <com.customviews.TypefaceTextView
@@ -250,7 +226,7 @@
                             android:text="@string/password"
                             android:textColor="?attr/app_text_color_sec"
                             android:textSize="?attr/app_text_size_small"
-                            app:custom_font="?attr/app_font_normal"/>
+                            app:custom_font="?attr/app_font_normal" />
 
                         <com.customviews.TypefaceTextView
                             android:id="@+id/tv_password"
@@ -263,13 +239,13 @@
                             android:textColor="?attr/et_text_color"
                             android:textColorHint="?attr/et_hint_text_color"
                             android:textSize="?attr/app_text_size_small"
-                            app:custom_font="?attr/app_font_normal"/>
+                            app:custom_font="?attr/app_font_normal" />
 
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/dv1"
                             android:layout_marginTop="@dimen/dp5"
-                            android:background="?attr/app_divider_color"/>
+                            android:background="?attr/app_divider_color" />
 
                     </LinearLayout>
 
@@ -282,19 +258,11 @@
                     android:orientation="horizontal"
                     android:padding="@dimen/dp15">
 
-                    <ImageView
-                        android:id="@+id/iv_mobile"
-                        android:layout_width="@dimen/dp30"
-                        android:layout_height="@dimen/dp30"
-                        android:padding="@dimen/dp3"
-                        android:src="@mipmap/ic_call"
-                        android:tint="?attr/et_img_tint_color"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/dp10"
-                        android:layout_toRightOf="@+id/iv_mobile"
                         android:orientation="vertical">
 
                         <com.customviews.TypefaceTextView
@@ -303,7 +271,7 @@
                             android:text="@string/mobile"
                             android:textColor="?attr/app_text_color_sec"
                             android:textSize="?attr/app_text_size_small"
-                            app:custom_font="?attr/app_font_normal"/>
+                            app:custom_font="?attr/app_font_normal" />
 
 
                         <com.customviews.TypefaceTextView
@@ -317,13 +285,13 @@
                             android:textColor="?attr/et_text_color"
                             android:textColorHint="?attr/et_hint_text_color"
                             android:textSize="?attr/app_text_size_small"
-                            app:custom_font="?attr/app_font_normal"/>
+                            app:custom_font="?attr/app_font_normal" />
 
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/dv1"
                             android:layout_marginTop="@dimen/dp5"
-                            android:background="?attr/app_divider_color"/>
+                            android:background="?attr/app_divider_color" />
 
                     </LinearLayout>
 
@@ -346,6 +314,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:padding="@dimen/dp15">
@@ -355,7 +325,7 @@
                     android:layout_height="@dimen/dp30"
                     android:padding="@dimen/dp3"
                     android:src="@mipmap/ic_notifi"
-                    android:tint="?attr/et_img_tint_color"/>
+                    android:tint="?attr/et_img_tint_color" />
 
                 <com.customviews.TypefaceTextView
                     android:layout_width="0dp"
@@ -366,14 +336,14 @@
                     android:textColor="?attr/et_text_color"
                     android:textColorHint="?attr/et_hint_text_color"
                     android:textSize="?attr/app_text_size_small"
-                    app:custom_font="?attr/app_font_normal"/>
+                    app:custom_font="?attr/app_font_normal" />
 
                 <com.kyleduo.switchbutton.SwitchButton
                     android:id="@+id/sw_notification"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:kswBackColor="@color/color_green"
-                    app:kswTintColor="@color/color_white"/>
+                    app:kswTintColor="@color/color_white" />
 
             </LinearLayout>
 
@@ -390,7 +360,7 @@
             android:textColor="?attr/btn_text_color"
             android:textSize="?attr/btn_text_size"
             android:visibility="gone"
-            app:custom_font="?attr/app_font_medium"/>
+            app:custom_font="?attr/app_font_medium" />
 
 
     </LinearLayout>

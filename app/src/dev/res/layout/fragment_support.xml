@@ -1,80 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="?attr/app_screen_bg_color"
-                android:clickable="true"
-                android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dp50"
+    android:background="@drawable/bg_forgotpassword"
+    android:clickable="true"
+
+    android:focusable="true"
+    android:orientation="vertical">
 
     <com.customviews.TypefaceTextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="@dimen/dp15"
+        android:gravity="center"
+        android:padding="@dimen/dp20"
+
         android:text="@string/support_text"
         android:textColor="?attr/app_text_color_sec"
         android:textSize="?attr/app_text_size_normal"
-        app:custom_font="?attr/app_font_normal"/>
+        app:custom_font="?attr/app_font_normal" />
 
     <LinearLayout
         android:id="@+id/ll_support"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp10"
+        android:background="@drawable/bg_rect_corener"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingBottom="@dimen/dp5"
-        android:paddingLeft="@dimen/dp15"
-        android:paddingRight="@dimen/dp15"
-        android:paddingTop="@dimen/dp5">
+        android:paddingLeft="@dimen/dp20"
+        android:paddingTop="@dimen/dp5"
+        android:paddingRight="@dimen/dp20"
+        android:paddingBottom="@dimen/dp5">
 
         <ImageView
             android:layout_width="@dimen/dp40"
             android:layout_height="@dimen/dp40"
             android:padding="@dimen/dp8"
             android:src="@mipmap/ic_mail"
-            android:tint="?attr/app_link_text_color"/>
+            android:tint="?attr/app_link_text_color" />
 
         <com.customviews.TypefaceTextView
             android:id="@+id/tv_support_mail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginStart="@dimen/dp10"
             android:text="@string/support_mail"
             android:textColor="?attr/app_text_color"
             android:textSize="?attr/app_text_size_normal"
-            app:custom_font="?attr/app_font_normal"/>
+            app:custom_font="?attr/app_font_normal" />
 
     </LinearLayout>
 
-    <View
-        android:id="@+id/view_support"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dv1"
-        android:layout_below="@+id/ll_support"
-        android:layout_marginBottom="@dimen/dp5"
-        android:layout_marginTop="@dimen/dp5"
-        android:background="?attr/app_divider_color"/>
 
     <LinearLayout
         android:id="@+id/ll_contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/view_support"
+        android:layout_below="@+id/ll_support"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/bg_rect_corener"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingBottom="@dimen/dp5"
         android:paddingLeft="@dimen/dp15"
+        android:paddingTop="@dimen/dp5"
         android:paddingRight="@dimen/dp15"
-        android:paddingTop="@dimen/dp5">
+        android:paddingBottom="@dimen/dp5">
 
         <ImageView
             android:layout_width="@dimen/dp40"
             android:layout_height="@dimen/dp40"
             android:padding="@dimen/dp8"
             android:src="@mipmap/ic_call"
-            android:tint="?attr/app_link_text_color"/>
+            android:tint="?attr/app_link_text_color" />
 
         <com.customviews.TypefaceTextView
             android:id="@+id/tv_support_contact"
@@ -84,37 +89,33 @@
             android:text="@string/support_contact"
             android:textColor="?attr/app_text_color"
             android:textSize="?attr/app_text_size_normal"
-            app:custom_font="?attr/app_font_normal"/>
+            app:custom_font="?attr/app_font_normal" />
 
     </LinearLayout>
 
-    <View
-        android:id="@+id/view_contact"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dv1"
-        android:layout_below="@+id/ll_contact"
-        android:layout_marginBottom="@dimen/dp5"
-        android:layout_marginTop="@dimen/dp5"
-        android:background="?attr/app_divider_color"/>
 
     <LinearLayout
         android:id="@+id/ll_web"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/view_contact"
+        android:layout_below="@+id/ll_contact"
+        android:background="@drawable/bg_rect_corener"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingBottom="@dimen/dp5"
         android:paddingLeft="@dimen/dp15"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:paddingTop="@dimen/dp5"
         android:paddingRight="@dimen/dp15"
-        android:paddingTop="@dimen/dp5">
+        android:paddingBottom="@dimen/dp5">
 
         <ImageView
             android:layout_width="@dimen/dp40"
             android:layout_height="@dimen/dp40"
             android:padding="@dimen/dp8"
             android:src="@mipmap/ic_global"
-            android:tint="?attr/app_link_text_color"/>
+            android:tint="?attr/app_link_text_color" />
 
         <com.customviews.TypefaceTextView
             android:id="@+id/tv_support_web"
@@ -124,16 +125,7 @@
             android:text="@string/support_domain"
             android:textColor="?attr/app_text_color"
             android:textSize="?attr/app_text_size_normal"
-            app:custom_font="?attr/app_font_normal"/>
+            app:custom_font="?attr/app_font_normal" />
 
     </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dv1"
-        android:layout_below="@+id/ll_web"
-        android:layout_marginBottom="@dimen/dp5"
-        android:layout_marginTop="@dimen/dp5"
-        android:background="?attr/app_divider_color"/>
-
 </RelativeLayout>

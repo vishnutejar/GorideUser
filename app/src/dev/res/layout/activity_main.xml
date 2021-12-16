@@ -33,12 +33,12 @@
             <FrameLayout
                 android:id="@+id/frag_map"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent" />
 
             <include
                 layout="@layout/layout_top_container"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
 
             <include
@@ -53,7 +53,7 @@
             layout="@layout/layout_full_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/cv_tool_bar"/>
+            android:layout_below="@+id/cv_tool_bar" />
 
     </RelativeLayout>
 

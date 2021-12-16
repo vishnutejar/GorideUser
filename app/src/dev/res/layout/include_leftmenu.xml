@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="?attr/app_screen_bg_color"
-            android:orientation="vertical"
-            android:scrollbarThumbVertical="@drawable/bg_transparent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/app_screen_bg_color"
+    android:orientation="vertical"
+    android:scrollbarThumbVertical="@drawable/bg_transparent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,84 +15,95 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/app_link_text_color">
+            android:background="@drawable/bg_nav_header"
+            android:padding="@dimen/dp10">
+
+            <com.customviews.fancyimageviews.FancyImageVIew
+                android:id="@+id/iv_user_image"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp100"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/noimage"
+                app:centerX="0.50"
+                app:centerY="0.50"
+                app:transformation_type="CIRCULAR" />
 
             <LinearLayout
                 android:id="@+id/ll_header"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/iv_user_image"
                 android:gravity="center"
+
                 android:orientation="vertical"
                 android:padding="@dimen/dp15">
 
-                <com.customviews.fancyimageviews.FancyImageVIew
-                    android:id="@+id/iv_user_image"
-                    android:layout_width="@dimen/dp120"
-                    android:layout_height="@dimen/dp120"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/noimage"
-                    app:centerX="0.50"
-                    app:centerY="0.50"
-                    app:rect_strokeColor="?attr/btn_bg_color"
-                    app:rect_strokeWidth="@dimen/dp2"
-                    app:transformation_type="CIRCULAR"/>
 
                 <com.customviews.TypefaceTextView
                     android:id="@+id/tv_user_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="name"
                     android:textColor="?attr/app_text_color"
                     android:textSize="?attr/app_text_size_big"
                     android:textStyle="bold"
-                    app:custom_font="?attr/app_font_extra_bold"/>
+                    app:custom_font="?attr/app_font_extra_bold" />
 
                 <com.customviews.TypefaceTextView
                     android:id="@+id/tv_user_email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="phone"
                     android:textColor="?attr/app_text_color"
                     android:textSize="?attr/app_text_size_normal"
-                    app:custom_font="?attr/app_font_normal"/>
+                    app:custom_font="?attr/app_font_normal" />
 
 
                 <RatingBar
                     android:id="@+id/rider_RatingBar"
+                    style="@style/CustomRatingIndicator"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:isIndicator="true"
                     android:max="5"
                     android:rating="0"
                     android:stepSize="0.01"
-                    android:theme="@style/RatingBar"
-                    style="@style/CustomRatingIndicator"
-                    />
-
+                    android:theme="@style/RatingBar" />
 
                 <LinearLayout
-                    android:id="@+id/ll_walletbal_layout"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
-                    <ImageView
-                        android:layout_width="@dimen/dp20"
-                        android:layout_height="@dimen/dp20"
-                        android:src="@mipmap/wallet_icon"
-                        android:tint="@color/color_white"/>
-
-                    <com.customviews.TypefaceTextView
+                    <LinearLayout
+                        android:id="@+id/ll_walletbal_layout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/dp5"
-                        android:layout_marginRight="@dimen/dp15"
-                        android:singleLine="true"
-                        android:text="@string/wallet_balance"
-                        android:textColor="@color/color_white"
-                        android:textSize="?attr/app_text_size_small"
-                        app:custom_font="?attr/app_font_normal"/>
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp20"
+                            android:layout_height="@dimen/dp20"
+                            android:src="@mipmap/wallet_icon"
+                            android:tint="@color/color_white" />
+
+                        <com.customviews.TypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp5"
+                            android:layout_marginEnd="@dimen/dp15"
+                            android:singleLine="true"
+                            android:text="@string/wallet_balance"
+                            android:textColor="#414141"
+                            android:textSize="?attr/app_text_size_small"
+                            app:custom_font="?attr/app_font_normal" />
+
+
+                    </LinearLayout>
 
                     <com.customviews.TypefaceTextView
                         android:id="@+id/tv_wallet"
@@ -100,9 +111,9 @@
                         android:layout_height="wrap_content"
                         android:singleLine="true"
                         android:text="₹ 550.00"
-                        android:textColor="@color/color_white"
+                        android:textColor="#414141"
                         android:textSize="?attr/app_text_size_small"
-                        app:custom_font="?attr/app_font_normal"/>
+                        app:custom_font="?attr/app_font_normal" />
 
                 </LinearLayout>
 
@@ -129,8 +140,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:padding="@dimen/dp7"
-                    android:src="@mipmap/ic_book_ride"
-                    android:tint="?attr/app_link_text_color"/>
+                    android:src="@drawable/ic_book_ride" />
 
                 <com.customviews.TypefaceTextView
                     android:id="@+id/tv_book_ride"
@@ -140,13 +150,8 @@
                     android:text="@string/text_side_menu_book_ride"
                     android:textColor="@color/left_menu_text_color"
                     android:textSize="?attr/app_text_size_normal"
-                    app:custom_font="?attr/app_font_normal"/>
+                    app:custom_font="?attr/app_font_normal" />
             </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dv1"
-                android:background="?attr/app_divider_color"/>
 
             <LinearLayout
                 android:id="@+id/ll_my_ride"
@@ -162,8 +167,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:padding="@dimen/dp7"
-                    android:src="@mipmap/ic_my_ride"
-                    android:tint="?attr/app_link_text_color"/>
+                    android:src="@drawable/ic_my_ride" />
 
                 <com.customviews.TypefaceTextView
                     android:id="@+id/tv_my_ride"
@@ -173,13 +177,9 @@
                     android:text="@string/text_side_menu_my_rides"
                     android:textColor="@color/left_menu_text_color"
                     android:textSize="?attr/app_text_size_normal"
-                    app:custom_font="?attr/app_font_normal"/>
+                    app:custom_font="?attr/app_font_normal" />
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dv1"
-                android:background="?attr/app_divider_color"/>
 
             <LinearLayout
                 android:id="@+id/ll_payment"
@@ -195,8 +195,8 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:padding="@dimen/dp7"
-                    android:src="@mipmap/ic_peyment"
-                    android:tint="?attr/app_link_text_color"/>
+                    android:src="@drawable/ic_peyment"
+                     />
 
                 <com.customviews.TypefaceTextView
                     android:id="@+id/tv_payments"
@@ -206,13 +206,8 @@
                     android:text="@string/text_side_menu_payments"
                     android:textColor="@color/left_menu_text_color"
                     android:textSize="?attr/app_text_size_normal"
-                    app:custom_font="?attr/app_font_normal"/>
+                    app:custom_font="?attr/app_font_normal" />
             </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dv1"
-                android:background="?attr/app_divider_color"/>
 
             <LinearLayout
                 android:id="@+id/ll_profile"
@@ -228,24 +223,19 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:padding="@dimen/dp7"
-                    android:src="@mipmap/ic_user_profile"
-                    android:tint="?attr/app_link_text_color"/>
+                    android:src="@drawable/ic_user_profile"
+                     />
 
                 <com.customviews.TypefaceTextView
                     android:id="@+id/tv_profile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dp15"
+                    android:layout_marginStart="@dimen/dp15"
                     android:text="@string/text_side_menu_profile"
                     android:textColor="@color/left_menu_text_color"
                     android:textSize="?attr/app_text_size_normal"
-                    app:custom_font="?attr/app_font_normal"/>
+                    app:custom_font="?attr/app_font_normal" />
             </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dv1"
-                android:background="?attr/app_divider_color"/>
 
             <LinearLayout
                 android:id="@+id/ll_support"
@@ -261,8 +251,8 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:padding="@dimen/dp7"
-                    android:src="@mipmap/ic_support"
-                    android:tint="?attr/app_link_text_color"/>
+                    android:src="@drawable/ic_user_profile"
+                    />
 
                 <com.customviews.TypefaceTextView
                     android:id="@+id/tv_support"
@@ -272,13 +262,9 @@
                     android:text="@string/text_side_menu_support"
                     android:textColor="@color/left_menu_text_color"
                     android:textSize="?attr/app_text_size_normal"
-                    app:custom_font="?attr/app_font_normal"/>
+                    app:custom_font="?attr/app_font_normal" />
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dv1"
-                android:background="?attr/app_divider_color"/>
 
             <LinearLayout
                 android:id="@+id/ll_notification"
@@ -294,8 +280,8 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:padding="@dimen/dp7"
-                    android:src="@mipmap/ic_notifi"
-                    android:tint="?attr/app_link_text_color"/>
+                    android:src="@drawable/ic_notifi"
+                    />
 
                 <com.customviews.TypefaceTextView
                     android:id="@+id/tv_notifications"
@@ -305,13 +291,9 @@
                     android:text="@string/text_side_menu_notification"
                     android:textColor="@color/left_menu_text_color"
                     android:textSize="?attr/app_text_size_normal"
-                    app:custom_font="?attr/app_font_normal"/>
+                    app:custom_font="?attr/app_font_normal" />
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dv1"
-                android:background="?attr/app_divider_color"/>
 
 
             <LinearLayout
@@ -328,8 +310,8 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:padding="@dimen/dp7"
-                    android:src="@mipmap/ic_invites"
-                    android:tint="?attr/app_link_text_color"/>
+                    android:src="@drawable/ic_invites"
+                     />
 
                 <com.customviews.TypefaceTextView
                     android:id="@+id/tv_invites"
@@ -339,13 +321,35 @@
                     android:text="@string/text_side_menu_invites"
                     android:textColor="@color/left_menu_text_color"
                     android:textSize="?attr/app_text_size_normal"
-                    app:custom_font="?attr/app_font_normal"/>
+                    app:custom_font="?attr/app_font_normal" />
             </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_theme"
 
-            <View
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/dv1"
-                android:background="?attr/app_divider_color"/>
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_pressed_state_light_gray_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp5">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="@dimen/dp7"
+                    android:src="@drawable/ic_theme"
+                     />
+
+                <com.customviews.TypefaceTextView
+                    android:id="@+id/tv_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:text="@string/text_side_menu_theme"
+                    android:textColor="@color/left_menu_text_color"
+                    android:textSize="?attr/app_text_size_normal"
+                    app:custom_font="?attr/app_font_normal" />
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/ll_logout"
@@ -361,8 +365,8 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:padding="@dimen/dp7"
-                    android:src="@mipmap/ic_logout"
-                    android:tint="?attr/app_link_text_color"/>
+                    android:src="@drawable/ic_logout"
+                   />
 
                 <com.customviews.TypefaceTextView
                     android:id="@+id/tv_logout"
@@ -372,13 +376,9 @@
                     android:text="@string/text_side_menu_logout"
                     android:textColor="@color/left_menu_text_color"
                     android:textSize="?attr/app_text_size_normal"
-                    app:custom_font="?attr/app_font_normal"/>
+                    app:custom_font="?attr/app_font_normal" />
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dv1"
-                android:background="?attr/app_divider_color"/>
 
 
         </LinearLayout>

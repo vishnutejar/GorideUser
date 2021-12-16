@@ -8,7 +8,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dp5"
+        android:layout_margin="@dimen/dp10"
         app:cardBackgroundColor="@color/color_white"
         app:cardCornerRadius="@dimen/dp5"
         app:cardElevation="@dimen/dp2">
@@ -27,10 +27,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dp1"
-                    android:layout_marginRight="@dimen/dp1"
                     android:layout_marginTop="@dimen/dp1"
+                    android:layout_marginRight="@dimen/dp1"
                     android:scaleType="centerCrop"
-                    android:src="@mipmap/ic_launcher"/>
+                    android:src="@mipmap/ic_launcher" />
 
                 <ProgressBar
                     android:id="@+id/pb_image"
