@@ -3,10 +3,7 @@
 
     <!--GOOGLE PROJECT KEYS-->
     <string name="browser_key">AIzaSyCyfDWKQngoGVIT83QlMyn6y3-iiLY_v3k</string>
-<!--
     <string name="android_key">AIzaSyCx_oNKC0yXOKCqJTdoSwy68pgEwmh8f84</string>
--->
-    <string name="android_key">AIzaSyCNClIrHEDoJZwHKqIOEuRjiI0zJkQ_T4o</string>
     <string name="server_key">AIzaSyB1rlAf83dpiQqWjwOVb24cqIWL1-iNl0c</string>
     <string name="distancematrix_apis_exernal">AlphaDMAG795kNNuJi0DjF0iWVPJG19wQ8GdoRGW</string>
 

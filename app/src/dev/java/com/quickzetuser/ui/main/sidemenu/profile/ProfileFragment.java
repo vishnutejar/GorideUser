@@ -65,11 +65,19 @@ public class ProfileFragment extends AppBaseFragment {
         UserModel userModel = ((MainActivity) getActivity()).getUserModel();
         if (userModel == null) return;
 
-        Picasso.get()
-                .load(userModel.getImage())
-                .placeholder(R.drawable.noimage)
-                .error(R.drawable.noimage)
-                .into(iv_user_image);
+        if (userModel.getImage().contains("https://backends.quickzettrip.com/img/noimage.jpg")) {
+            Picasso.get()
+                    .load(R.drawable.noimage)
+                    .placeholder(R.drawable.noimage)
+                    .error(R.drawable.noimage)
+                    .into(iv_user_image);
+        } else {
+            Picasso.get()
+                    .load(userModel.getImage())
+                    .placeholder(R.drawable.noimage)
+                    .error(R.drawable.noimage)
+                    .into(iv_user_image);
+        }
 
         tv_user_name.setText(userModel.getFullName());
         tv_user_email.setText(userModel.getEmail());

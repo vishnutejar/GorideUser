@@ -47,7 +47,7 @@ public class SideMenuHelper implements View.OnClickListener {
     LinearLayout ll_profile;
     LinearLayout ll_support;
     public LinearLayout ll_notification;
-    LinearLayout ll_invite;
+    LinearLayout ll_invite,ll_theme;
     LinearLayout ll_logout;
     LinearLayout ll_walletbal_layout;
     RatingBar rider_RatingBar;
@@ -92,7 +92,7 @@ public class SideMenuHelper implements View.OnClickListener {
     }
 
 
-    private void initView () {
+    private void initView() {
         drawer_layout = mainActivity.findViewById(R.id.drawer_layout);
         navigation_view_left = mainActivity.findViewById(R.id.navigation_view_left);
 
@@ -107,6 +107,7 @@ public class SideMenuHelper implements View.OnClickListener {
         ll_support = mainActivity.findViewById(R.id.ll_support);
         ll_notification = mainActivity.findViewById(R.id.ll_notification);
         ll_invite = mainActivity.findViewById(R.id.ll_invite);
+        ll_theme = mainActivity.findViewById(R.id.ll_theme);
         ll_logout = mainActivity.findViewById(R.id.ll_logout);
         ll_walletbal_layout = mainActivity.findViewById(R.id.ll_walletbal_layout);
 
@@ -129,19 +130,31 @@ public class SideMenuHelper implements View.OnClickListener {
         ll_support.setOnClickListener(this);
         ll_notification.setOnClickListener(this);
         ll_invite.setOnClickListener(this);
+        ll_theme.setOnClickListener(this);
         ll_logout.setOnClickListener(this);
         ll_walletbal_layout.setOnClickListener(this);
     }
 
-    public void initSetUserData () {
+    public void initSetUserData() {
         UserModel userModel = mainActivity.getUserModel();
         if (userModel == null) return;
+
         if (!userModel.getImage().isEmpty()) {
-            Picasso.get()
-                    .load(userModel.getImage())
-                    .placeholder(R.drawable.noimage)
-                    .error(R.drawable.noimage)
-                    .into(iv_user_image);
+            if (userModel.getImage().contains("https://backends.quickzettrip.com/img/noimage.jpg")) {
+                Picasso.get()
+                        .load(R.drawable.noimage)
+                        .placeholder(R.drawable.noimage)
+                        .error(R.drawable.noimage)
+                        .into(iv_user_image);
+
+            } else {
+                Picasso.get()
+                        .load(userModel.getImage())
+                        .placeholder(R.drawable.noimage)
+                        .error(R.drawable.noimage)
+                        .into(iv_user_image);
+
+            }
         } else {
             iv_user_image.setImageResource(R.drawable.noimage);
         }
