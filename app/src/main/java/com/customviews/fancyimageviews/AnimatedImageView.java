@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
-import com.quickzetuser.R;
+import com.goride.user.R;
 
 
 /**

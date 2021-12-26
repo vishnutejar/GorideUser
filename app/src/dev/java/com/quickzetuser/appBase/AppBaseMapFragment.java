@@ -55,7 +55,7 @@ import com.google.gson.JsonSyntaxException;
 import com.models.DeviceScreenModel;
 import com.pusher.PusherHandler;
 import com.pusher.PusherListener;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.model.DriverModel;
 import com.quickzetuser.model.VehicleTypeModel;
 import com.quickzetuser.model.pusher.PusherLocationModel;

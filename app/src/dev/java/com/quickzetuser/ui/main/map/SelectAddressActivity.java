@@ -13,7 +13,7 @@ import com.addressfetching.AddressFetchModel;
 import com.addressfetching.LocationModelFull;
 import com.google.gson.Gson;
 import com.permissions.PermissionHelperNew;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseActivity;
 import com.quickzetuser.model.AddressModel;
 import com.utilities.Utils;

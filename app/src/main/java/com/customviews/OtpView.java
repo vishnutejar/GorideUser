@@ -23,7 +23,7 @@ import android.widget.LinearLayout;
 
 
 
-import com.quickzetuser.R;
+import com.goride.user.R;
 
 import java.util.ArrayList;
 import java.util.List;

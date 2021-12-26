@@ -7,7 +7,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.base.BaseFragment;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.ui.main.MainActivity;
 import com.quickzetuser.ui.main.booking.addresschooser.AddressChooserFragment;
 import com.quickzetuser.ui.main.booking.cabType.CabTypeFragment;

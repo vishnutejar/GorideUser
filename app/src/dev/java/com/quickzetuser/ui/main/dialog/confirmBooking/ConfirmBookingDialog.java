@@ -17,7 +17,7 @@ import com.base.BaseDialogFragment;
 import com.distancematrix.DistanceMatrixHandler;
 import com.distancematrix.DistanceMatrixModel;
 import com.models.BaseModel;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.model.BookCabModel;
 import com.quickzetuser.model.FareModel;
 import com.quickzetuser.model.PromoCodeModel;

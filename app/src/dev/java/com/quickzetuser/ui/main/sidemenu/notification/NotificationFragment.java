@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.medy.retrofitwrapper.WebRequest;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseFragment;
 import com.quickzetuser.model.NotificationModel;
 import com.quickzetuser.model.web_response.NotificationResponseModel;

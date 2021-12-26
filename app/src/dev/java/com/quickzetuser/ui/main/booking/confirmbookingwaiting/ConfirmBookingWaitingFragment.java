@@ -9,7 +9,7 @@ import androidx.fragment.app.DialogFragment;
 
 import com.fcm.NotificationModal;
 import com.fcm.PushNotificationHelper;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseFragment;
 import com.quickzetuser.database.tables.BookingTable;
 import com.quickzetuser.fcm.AppNotificationModel;

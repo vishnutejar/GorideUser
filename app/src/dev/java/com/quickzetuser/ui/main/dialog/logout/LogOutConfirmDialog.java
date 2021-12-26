@@ -13,7 +13,7 @@ import android.widget.TextView;
 import androidx.fragment.app.DialogFragment;
 
 import com.medy.retrofitwrapper.WebRequest;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseDialogFragment;
 import com.quickzetuser.model.request_model.LogOutRequestModel;
 import com.quickzetuser.model.web_response.EmptyResponseModel;

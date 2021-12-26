@@ -19,7 +19,7 @@ import com.google.gson.Gson;
 import com.medy.retrofitwrapper.WebServiceBaseResponseModel;
 import com.permissions.PermissionHelperNew;
 import com.pusher.PusherConfig;
-import com.quickzetuser.BuildConfig;
+import com.goride.user.BuildConfig;
 import com.quickzetuser.appBase.AppBaseLocationService;
 import com.quickzetuser.database.DaoManager;
 import com.quickzetuser.database.tables.BookingTable;

@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.base.BaseDialogFragment;
 import com.customviews.TypefaceTextView;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.ui.signup.adapter.DataAdapter;
 import com.utilities.ItemClickSupport;
 

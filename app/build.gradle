@@ -23,7 +23,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.quickzetuser"
+        applicationId "com.goride.user"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 9

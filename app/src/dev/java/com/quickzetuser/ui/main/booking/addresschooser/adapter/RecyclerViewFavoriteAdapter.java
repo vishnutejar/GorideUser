@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.addressfetching.LocationModelFull;
 import com.base.BaseRecycleAdapter;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.model.FavouriteModel;
 
 import java.util.ArrayList;

@@ -1,62 +1,58 @@
 {
   "project_info": {
-    "project_number": "409557675370",
-    "project_id": "quickzettrip",
-    "storage_bucket": "quickzettrip.appspot.com"
+    "project_number": "100643245838",
+    "firebase_url": "https://gorideuser-fd87f.firebaseio.com",
+    "project_id": "gorideuser-fd87f",
+    "storage_bucket": "gorideuser-fd87f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:409557675370:android:6fee47a8591c7b8c6e4913",
+        "mobilesdk_app_id": "1:100643245838:android:1935d73e70ae9d93",
         "android_client_info": {
-          "package_name": "com.quickzetdriver"
+          "package_name": "com.goride.user"
         }
       },
       "oauth_client": [
         {
-          "client_id": "409557675370-t86qfu710trpcmtdo9u3vcgotrvbde3c.apps.googleusercontent.com",
+          "client_id": "100643245838-e6gg0ktv88b64cdeab8p0116pgdl5r3a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goride.user",
+            "certificate_hash": "f61ba313339a1e7db5c39e8fa560c6a33cbd68f0"
+          }
+        },
+        {
+          "client_id": "100643245838-sc6kn5ag0h42b3b56qadbv5co28ufgsp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goride.user",
+            "certificate_hash": "4ca3df9304fdeb0707413433fd5b58b132506bfb"
+          }
+        },
+        {
+          "client_id": "100643245838-vdkdosailgkss7daql4d43ldeug64ln2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goride.user",
+            "certificate_hash": "79325e4ec272929caf1828e94b0bc1a34b2ac85f"
+          }
+        },
+        {
+          "client_id": "100643245838-8fvvi326dspqr0sb42079mk0k5iggd0r.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBibVUMGSQjaz7LEl9MEmVZUd17tdieE34"
+          "current_key": "AIzaSyBDdB5JBOFK0Y9PeC_aoS-ncZ2ip8oExXg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "409557675370-t86qfu710trpcmtdo9u3vcgotrvbde3c.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:409557675370:android:7b2307677e3ab1ae6e4913",
-        "android_client_info": {
-          "package_name": "com.quickzetuser"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "409557675370-t86qfu710trpcmtdo9u3vcgotrvbde3c.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBibVUMGSQjaz7LEl9MEmVZUd17tdieE34"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "409557675370-t86qfu710trpcmtdo9u3vcgotrvbde3c.apps.googleusercontent.com",
+              "client_id": "100643245838-8fvvi326dspqr0sb42079mk0k5iggd0r.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

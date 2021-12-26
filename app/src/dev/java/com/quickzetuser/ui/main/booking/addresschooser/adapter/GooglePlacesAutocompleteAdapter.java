@@ -20,7 +20,7 @@ import com.addressfetching.AddressFetchModel;
 import com.addressfetching.AddressResultReceiver;
 import com.addressfetching.LocationModelFull;
 import com.base.BaseRecycleAdapter;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.ui.MyApplication;
 import com.quickzetuser.ui.utilities.PlaceJSONParser;
 import com.utilities.GoogleApiClientHelper;

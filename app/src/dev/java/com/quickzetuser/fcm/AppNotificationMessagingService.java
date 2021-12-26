@@ -19,7 +19,7 @@ import androidx.core.app.NotificationCompat;
 import com.fcm.NotificationMessagingService;
 import com.fcm.NotificationModal;
 import com.google.firebase.messaging.RemoteMessage;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.ui.MyApplication;
 import com.quickzetuser.ui.main.MainActivity;
 import com.squareup.picasso.Picasso;

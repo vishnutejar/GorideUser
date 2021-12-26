@@ -20,7 +20,7 @@ import androidx.fragment.app.DialogFragment;
 import com.addressfetching.LocationModelFull;
 import com.medy.retrofitwrapper.WebRequest;
 import com.models.DeviceScreenModel;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseDialogFragment;
 import com.quickzetuser.database.tables.FavoriteTable;
 import com.quickzetuser.model.FavouriteModel;

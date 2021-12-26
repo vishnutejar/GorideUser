@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.base.BaseRecycleAdapter;
 import com.customviews.ReadMoreTextView;
 import com.models.DeviceScreenModel;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.model.NotificationModel;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;

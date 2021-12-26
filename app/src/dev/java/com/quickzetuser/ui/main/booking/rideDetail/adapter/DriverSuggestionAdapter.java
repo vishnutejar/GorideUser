@@ -6,7 +6,7 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.base.BaseRecycleAdapter;
-import com.quickzetuser.R;
+import com.goride.user.R;
 
 import java.util.HashMap;
 import java.util.List;

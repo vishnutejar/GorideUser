@@ -23,7 +23,7 @@ import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.medy.retrofitwrapper.WebRequest;
 import com.medy.retrofitwrapper.WebServiceResponseListener;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseLocationService;
 import com.quickzetuser.appBase.AppBaseMapFragment;
 import com.quickzetuser.database.tables.BookingTable;

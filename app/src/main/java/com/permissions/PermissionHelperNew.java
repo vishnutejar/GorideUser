@@ -18,7 +18,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.PermissionChecker;
 import androidx.fragment.app.Fragment;
 
-import com.quickzetuser.R;
+import com.goride.user.R;
 
 
 /**

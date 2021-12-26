@@ -11,7 +11,7 @@ import androidx.fragment.app.DialogFragment;
 
 import com.google.android.material.navigation.NavigationView;
 import com.models.DeviceScreenModel;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.model.UserModel;
 import com.quickzetuser.ui.login.LoginActivity;
 import com.quickzetuser.ui.main.MainActivity;

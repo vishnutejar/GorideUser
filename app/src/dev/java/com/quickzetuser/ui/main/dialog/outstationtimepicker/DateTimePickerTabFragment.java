@@ -9,7 +9,7 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 
 import com.customviews.TimePickerCustom;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseFragment;
 import com.quickzetuser.appBase.AppBaseModel;
 

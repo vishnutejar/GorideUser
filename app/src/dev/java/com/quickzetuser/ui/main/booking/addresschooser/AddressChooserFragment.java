@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.addressfetching.LocationModelFull;
 import com.google.gson.Gson;
 import com.permissions.PermissionHelperNew;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseFragment;
 import com.quickzetuser.database.tables.FavoriteTable;
 import com.quickzetuser.database.tables.RecentTable;

@@ -6,7 +6,7 @@ import android.os.AsyncTask;
 import com.google.android.gms.maps.model.LatLng;
 import com.medy.retrofitwrapper.WebRequest;
 import com.medy.retrofitwrapper.WebServiceResponseListener;
-import com.quickzetuser.R;
+import com.goride.user.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;

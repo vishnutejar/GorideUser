@@ -16,7 +16,7 @@ import com.customviews.fancyimageviews.transforms.CircularTransformation;
 import com.customviews.fancyimageviews.transforms.RoundRectTransformation;
 import com.customviews.fancyimageviews.transforms.TrinagleTransformation;
 import com.customviews.fancyimageviews.transforms.ViewTransformation;
-import com.quickzetuser.R;
+import com.goride.user.R;
 
 
 /**

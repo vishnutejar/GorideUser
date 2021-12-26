@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.fcm.NotificationPrefs;
 import com.medy.retrofitwrapper.WebRequest;
 import com.models.DeviceInfoModal;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseActivity;
 import com.quickzetuser.database.DaoManager;
 import com.quickzetuser.fcm.AppNotificationMessagingService;

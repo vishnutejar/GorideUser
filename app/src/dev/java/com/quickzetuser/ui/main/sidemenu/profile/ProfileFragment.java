@@ -7,7 +7,7 @@ import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 
 import com.kyleduo.switchbutton.SwitchButton;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseFragment;
 import com.quickzetuser.model.UserModel;
 import com.quickzetuser.ui.main.MainActivity;

@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
 
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseDialogFragment;
 import com.quickzetuser.ui.MyApplication;
 

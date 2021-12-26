@@ -6,8 +6,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.quickzetuser.BuildConfig;
-import com.quickzetuser.R;
+import com.goride.user.BuildConfig;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseFragment;
 import com.quickzetuser.model.UserModel;
 import com.quickzetuser.preferences.UserPrefs;

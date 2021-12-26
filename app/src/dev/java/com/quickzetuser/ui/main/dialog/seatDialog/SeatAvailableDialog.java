@@ -7,7 +7,7 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseDialogFragment;
 import com.quickzetuser.model.RentalFareModel;
 

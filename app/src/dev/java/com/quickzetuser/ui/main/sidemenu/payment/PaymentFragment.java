@@ -4,7 +4,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseFragment;
 import com.quickzetuser.ui.main.sidemenu.payment.cash.CashFragment;
 import com.quickzetuser.ui.main.sidemenu.payment.remainingPayment.PaymentRemainingFragment;

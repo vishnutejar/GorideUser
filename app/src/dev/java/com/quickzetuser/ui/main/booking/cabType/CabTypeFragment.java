@@ -22,7 +22,7 @@ import com.distancematrix.DistanceMatrixModel;
 import com.kunzisoft.switchdatetime.SwitchDateTimeDialogFragment;
 import com.medy.retrofitwrapper.WebRequest;
 import com.models.BaseModel;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseFragment;
 import com.quickzetuser.database.tables.BookingTable;
 import com.quickzetuser.fcm.AppNotificationMessagingService;

@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.widget.RadioButton;
 
 import com.fonts.FontUtils;
-import com.quickzetuser.R;
+import com.goride.user.R;
 
 
 

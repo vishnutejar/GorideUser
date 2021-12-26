@@ -5,7 +5,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.base.BaseRecycleAdapter;
-import com.quickzetuser.R;
+import com.goride.user.R;
 
 import java.util.List;
 

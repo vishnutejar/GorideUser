@@ -28,7 +28,7 @@ import com.google.android.gms.tasks.Task;
 import com.medy.retrofitwrapper.WebRequest;
 import com.medy.retrofitwrapper.WebRequestErrorDialog;
 import com.medy.retrofitwrapper.WebServiceResponseListener;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.rest.WebRequestConstants;
 import com.quickzetuser.rest.WebRequestHelper;
 import com.quickzetuser.ui.MyApplication;

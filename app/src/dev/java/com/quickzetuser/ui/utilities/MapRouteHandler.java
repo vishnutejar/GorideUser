@@ -14,7 +14,7 @@ import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.android.gms.maps.model.RoundCap;
 import com.medy.retrofitwrapper.WebRequest;
 import com.medy.retrofitwrapper.WebServiceResponseListener;
-import com.quickzetuser.R;
+import com.goride.user.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;

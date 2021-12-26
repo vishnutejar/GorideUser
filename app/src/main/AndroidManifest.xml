@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.quickzetuser">
+    package="com.goride.user">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -19,7 +19,7 @@
 
     <application
 
-        android:name=".ui.MyApplication"
+        android:name="com.quickzetuser.ui.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -31,7 +31,7 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="manifest_pkg"
-            android:value="com.quickzetuser" />
+            android:value="com.goride.user" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/android_key" />
@@ -40,9 +40,9 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".ui.splash.SplashActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/SplashTheme"
+            android:name="com.quickzetuser.ui.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -51,31 +51,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.login.LoginActivity"
+            android:name="com.quickzetuser.ui.login.LoginActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.signup.SignUpActivity"
+            android:name="com.quickzetuser.ui.signup.SignUpActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.login.forgot.ForgotPasswordActivity"
+            android:name="com.quickzetuser.ui.login.forgot.ForgotPasswordActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.login.forgot.NewPasswordActivity"
+            android:name="com.quickzetuser.ui.login.forgot.NewPasswordActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name="com.quickzetuser.ui.main.MainActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".ui.main.map.SelectAddressActivity"
+            android:name="com.quickzetuser.ui.main.map.SelectAddressActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
 
-        <service android:name=".fcm.AppNotificationMessagingService">
+        <service android:name="com.quickzetuser.fcm.AppNotificationMessagingService"
+            >
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
@@ -84,14 +85,14 @@
             android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
             android:enabled="true" />
         <service
-            android:name=".appBase.AppBaseLocationService"
+            android:name="com.quickzetuser.appBase.AppBaseLocationService"
             android:exported="false"
             android:stopWithTask="false" />
         <service
             android:name="com.addressfetching.AddressFetchingService"
             android:exported="false" />
 
-        <service android:name=".ui.utilities.RunningBookingHead" />
+        <service android:name="com.quickzetuser.ui.utilities.RunningBookingHead" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

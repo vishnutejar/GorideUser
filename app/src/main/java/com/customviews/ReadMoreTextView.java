@@ -28,7 +28,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
-import com.quickzetuser.R;
+import com.goride.user.R;
 
 
 

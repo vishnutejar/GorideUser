@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseDialogFragment;
 import com.quickzetuser.model.TotalTollsModel;
 import com.quickzetuser.ui.main.dialog.tollsdetail.adapter.TollsAdapter;

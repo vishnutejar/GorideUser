@@ -4,7 +4,7 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import com.quickzetuser.BuildConfig;
+import com.goride.user.BuildConfig;
 
 
 

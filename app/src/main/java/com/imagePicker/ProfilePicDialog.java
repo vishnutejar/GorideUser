@@ -17,7 +17,7 @@ import androidx.fragment.app.FragmentManager;
 
 import com.base.BaseDialogFragment;
 import com.permissions.PermissionHelperNew;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.utilities.Utils;
 
 

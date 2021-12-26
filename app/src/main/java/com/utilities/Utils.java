@@ -12,7 +12,7 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
-import com.quickzetuser.BuildConfig;
+import com.goride.user.BuildConfig;
 
 import java.lang.reflect.Field;
 

@@ -10,9 +10,9 @@ import android.util.Log;
 
 import androidx.annotation.Nullable;
 
+import com.goride.user.R;
 import com.medy.retrofitwrapper.WebRequest;
 import com.medy.retrofitwrapper.WebServiceResponseListener;
-import com.quickzetuser.R;
 import com.utilities.Utils;
 
 import org.json.JSONArray;

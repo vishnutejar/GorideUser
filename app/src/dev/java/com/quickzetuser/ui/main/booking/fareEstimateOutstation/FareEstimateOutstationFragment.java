@@ -19,7 +19,7 @@ import com.distancematrix.DistanceMatrixHandler;
 import com.distancematrix.DistanceMatrixModel;
 import com.medy.retrofitwrapper.WebRequest;
 import com.models.BaseModel;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseDialogFragment;
 import com.quickzetuser.appBase.AppBaseFragment;
 import com.quickzetuser.database.tables.BookingTable;

@@ -6,7 +6,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.base.BaseRecycleAdapter;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.model.RentalFareModel;
 import com.quickzetuser.model.VehicleTypeModel;
 import com.squareup.picasso.Picasso;

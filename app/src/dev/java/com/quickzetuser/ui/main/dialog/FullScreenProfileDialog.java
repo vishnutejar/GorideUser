@@ -7,7 +7,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 
 import com.models.DeviceScreenModel;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseDialogFragment;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;

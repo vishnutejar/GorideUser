@@ -4,7 +4,7 @@ import android.view.View;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.quickzetuser.R;
+import com.goride.user.R;
 
 
 

@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.fragment.app.DialogFragment;
 
 import com.base.BaseDialogFragment;
-import com.quickzetuser.R;
+import com.goride.user.R;
 
 
 

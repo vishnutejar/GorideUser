@@ -19,7 +19,7 @@ import com.addressfetching.AddressFetchModel;
 import com.addressfetching.AddressResultReceiver;
 import com.customviews.GoogleMapFragment;
 import com.permissions.PermissionHelperNew;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseFragment;
 
 /**

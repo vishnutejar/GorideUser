@@ -1,6 +1,6 @@
 package com.quickzetuser.ui.main.sidemenu.payment.cash;
 
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseFragment;
 
 

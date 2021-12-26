@@ -13,7 +13,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.customviews.WrappingViewPager;
 import com.google.android.material.tabs.TabLayout;
-import com.quickzetuser.R;
+import com.goride.user.R;
 import com.quickzetuser.appBase.AppBaseDialogFragment;
 import com.quickzetuser.appBase.AppBaseModel;
 import com.quickzetuser.appBase.WrappingViewPagerAdapter;
