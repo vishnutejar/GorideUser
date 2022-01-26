@@ -6,7 +6,6 @@ package com.quickzetuser.rest;
 
 public interface ServerConstants {
 
-
     /*Test*/
 
     /*String DOMAIN = "http://205.147.102.6/";
@@ -15,6 +14,6 @@ public interface ServerConstants {
     /*live server*/
     //String DOMAIN = "https://backend.quickzettrip.com/";
     /*https://backends.quickzettrip.com/APIs/rider/v1*/
-    String DOMAIN = "https://backends.quickzettrip.com/";
+    String DOMAIN = "http://backends.goridecabs.com/";
     String BASE = DOMAIN + "apis/rider/v1/";
 }

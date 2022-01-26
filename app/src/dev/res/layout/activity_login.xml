@@ -38,7 +38,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
+                        android:layout_marginStart="@dimen/dp10"
                         android:layout_marginBottom="@dimen/dp10"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginEnd="@dimen/dp10"
                         android:gravity="center"
                         android:text="Rider"
                         android:textAllCaps="false"
@@ -47,10 +50,11 @@
                         app:custom_font="?attr/app_font_bold" />
 
                     <ImageView
-                        android:layout_width="@dimen/dp150"
+                        android:layout_width="200dp"
                         android:layout_height="@dimen/dp150"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/quickzet_rider_logo" />
+                        android:layout_marginBottom="@dimen/dp30"
+                        android:src="@drawable/ic_splash_gorider" />
 
 
                 </RelativeLayout>

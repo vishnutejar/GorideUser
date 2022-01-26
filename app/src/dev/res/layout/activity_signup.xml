@@ -42,7 +42,7 @@
                     android:layout_width="@dimen/dp150"
                     android:layout_height="@dimen/dp150"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/quickzet_rider_logo" />
+                    android:src="@drawable/ic_splash_gorider" />
 
 
             </RelativeLayout>
